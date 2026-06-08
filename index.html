@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legal Job Radar</title>
+<style>
+  :root { --ink:#0D1014; --silver:#C0C0C0; --accent:#5B4980; --line:#2A2D33; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; height:100%; font-family:-apple-system,'Inter',system-ui,sans-serif; }
+  body { display:flex; flex-direction:column; background:#FbFbFa; }
+  header { background:var(--ink); color:#fff; padding:18px 22px 0; flex:none; }
+  .kicker { font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--silver); font-weight:600; }
+  h1 { font-size:20px; font-weight:500; margin:6px 0 14px; letter-spacing:-0.01em; }
+  .tabs { display:flex; gap:4px; }
+  .tab { background:transparent; color:#B8B8B3; border:none; border-bottom:3px solid transparent;
+         font-size:14px; font-weight:500; padding:10px 16px; cursor:pointer; font-family:inherit; }
+  .tab:hover { color:#fff; }
+  .tab.active { color:#fff; border-bottom-color:var(--accent); }
+  .tab small { display:block; font-size:10px; letter-spacing:0.04em; color:#8A8A85; font-weight:400; text-transform:uppercase; }
+  iframe { flex:1; width:100%; border:none; background:#FbFbFa; }
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">Mithril &middot; Legal Job Radar</div>
+  <h1>UK &amp; London legal vacancies</h1>
+  <div class="tabs">
+    <button class="tab active" id="t-inhouse" onclick="show('inhouse')">In-house<small>FTSE 100 + US</small></button>
+    <button class="tab" id="t-traditional" onclick="show('traditional')">Traditional<small>firms &middot; IP &middot; China-desk</small></button>
+  </div>
+</header>
+<iframe id="frame" src="inhouse.html" title="report"></iframe>
+<script>
+  function show(which) {
+    document.getElementById('frame').src = which + '.html';
+    document.getElementById('t-inhouse').classList.toggle('active', which === 'inhouse');
+    document.getElementById('t-traditional').classList.toggle('active', which === 'traditional');
+  }
+</script>
+</body>
+</html>
