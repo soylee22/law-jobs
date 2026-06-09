@@ -27,15 +27,16 @@
   <h1>UK &amp; London legal vacancies</h1>
   <div class="tabs">
     <button class="tab active" id="t-inhouse" onclick="show('inhouse')">In-house<small>FTSE 100 + US</small></button>
-    <button class="tab" id="t-traditional" onclick="show('traditional')">Traditional<small>firms &middot; IP &middot; China-desk</small></button>
+    <button class="tab" id="t-china" onclick="show('china')">China bridge<small>Chinese multinationals</small></button>
+    <button class="tab" id="t-traditional" onclick="show('traditional')">Traditional<small>firms &middot; IP &middot; recruiters</small></button>
   </div>
 </header>
 <iframe id="frame" src="inhouse.html" title="report"></iframe>
 <script>
+  var TABS = ['inhouse', 'china', 'traditional'];
   function show(which) {
     document.getElementById('frame').src = which + '.html';
-    document.getElementById('t-inhouse').classList.toggle('active', which === 'inhouse');
-    document.getElementById('t-traditional').classList.toggle('active', which === 'traditional');
+    TABS.forEach(function(t){ document.getElementById('t-' + t).classList.toggle('active', t === which); });
   }
 </script>
 </body>
