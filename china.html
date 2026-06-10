@@ -32,12 +32,21 @@
   .band-mid { background:#F0ECE0; color:#8A7A45; }
   .band-senior { background:#F3E0E0; color:#9B3B3B; }
   .fit { display:inline-block; font-size:10px; letter-spacing:0.04em; text-transform:uppercase; padding:2px 7px; border-radius:3px; margin-right:6px; background:#EAE3F5; color:#5B4980; font-weight:600; }
+  .fitscore { display:inline-block; font-size:10px; letter-spacing:0.04em; text-transform:uppercase; padding:2px 7px; border-radius:3px; margin-right:6px; font-weight:700; }
+  .fs-hi { background:#216B45; color:#fff; }
+  .fs-mid { background:#E7E3D6; color:#6B6B68; }
+  .fs-lo { background:#F0E5E5; color:#9B6B6B; }
+  .newbadge { display:inline-block; font-size:9px; letter-spacing:0.1em; text-transform:uppercase; vertical-align:middle; padding:2px 6px; border-radius:3px; margin-right:7px; background:#D4351C; color:#fff; font-weight:700; }
   .shortlist a.apply { float:right; }
   .shortlist .row { padding:8px 0; border-bottom:1px solid #ECECE8; font-size:14px; }
   .shortlist .co { color:#6B6B68; font-size:12px; }
   .ats { color:#A8A8A3; font-size:11px; }
   a.apply { flex:none; background:var(--accent); color:#fff; font-size:12px; text-decoration:none; padding:7px 13px; border-radius:4px; white-space:nowrap; }
   a.apply:hover { background:#473a66; }
+  .filterbar { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin:30px 0 4px; }
+  .flabel { font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6B68; font-weight:600; }
+  .fbtn { font-family:inherit; font-size:12px; padding:5px 12px; border:1px solid var(--line); background:#fff; color:#6B6B68; border-radius:14px; cursor:pointer; }
+  .fbtn.active { background:var(--ink); color:#fff; border-color:var(--ink); }
   table.grid { width:100%; border-collapse:collapse; font-size:13px; }
   table.grid th { text-align:left; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#6B6B68; border-bottom:1px solid var(--line); padding:6px 8px; }
   table.grid td { padding:7px 8px; border-bottom:1px solid #ECECE8; vertical-align:top; }
@@ -50,10 +59,11 @@
 <header class="hero">
   <div class="kicker">Mithril · China bridge Legal Scan</div>
   <h1>UK &amp; London in-house legal vacancies across the China bridge</h1>
-  <div class="sub">Wednesday 10 June 2026, 20:20 · read directly from each company's own careers system</div>
+  <div class="sub">Wednesday 10 June 2026, 21:35 · read directly from each company's own careers system</div>
   <div class="stats">
     <div class="stat"><b>18</b><span>UK / London roles</span></div>
-    <div class="stat"><b>1</b><span>profile matches</span></div>
+    <div class="stat"><b>6</b><span>high-fit roles</span></div>
+    <div class="stat"><b>36</b><span>new this run</span></div>
     <div class="stat"><b>18</b><span>location unclear</span></div>
     <div class="stat"><b>6/18</b><span>companies covered</span></div>
     
@@ -64,136 +74,143 @@
 applicant-tracking feed (the same data its public careers page renders), not from a job-board aggregator.
 "View role" opens the role on the employer's own careers domain.</div>
 
-<div class="note"><strong>Strongest profile match.</strong> In-house specialisms are built in private practice first, so most roles want 2 to 5 PQE in a niche. This view filters to IP, brand and cross-border roles (including China) at NQ-to-mid level, where that background is the asked-for experience rather than a wrong-lane stretch. The rest of the list is a longer-term target radar.</div><h2>Strongest profile match &middot; IP / brand / cross-border, NQ to mid <span class="muted">(1)</span></h2><div class="shortlist"><div class="row">🇨🇳 <strong>IP Counsel, IP Platform Governance, EMEA</strong> <span class="co">TikTok &middot; London</span><a class="apply" href="https://lifeattiktok.com/search/7644949228695308549" target="_blank" rel="noopener">View &rsaquo;</a></div></div>
+<div class="note"><strong>Strongest matches, by fit score.</strong> Fit = niche (IP, brand, China, cross-border) + level (NQ to mid) + a real legal-function title. In-house specialisms are built in private practice first, so most roles want 2 to 5 PQE; these are the ones where her background is the asked-for experience. The score is title-based, so verify PQE in the JD.</div><h2>Strongest matches &middot; by fit score <span class="muted">(6)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-hi">90</span> 🇨🇳 <strong>IP Counsel, IP Platform Governance, EMEA</strong> <span class="co">TikTok &middot; London</span><a class="apply" href="https://lifeattiktok.com/search/7644949228695308549" target="_blank" rel="noopener">View &rsaquo;</a></div><div class="row"><span class="fitscore fs-hi">70</span> 🇨🇳 <strong>Governance &amp; Experience Project Intern (TikTok Shop) - 2026 Start (BS/MS)</strong> <span class="co">TikTok &middot; London</span><a class="apply" href="https://lifeattiktok.com/search/7574456396314855733" target="_blank" rel="noopener">View &rsaquo;</a></div><div class="row"><span class="fitscore fs-hi">70</span> 🇨🇳 <strong>LIVE Infra &amp; Governance Project Intern (EU TikTok Shop LIVE) - 2026 Start (BS/MS)</strong> <span class="co">TikTok &middot; London</span><a class="apply" href="https://lifeattiktok.com/search/7599977951069325621" target="_blank" rel="noopener">View &rsaquo;</a></div><div class="row"><span class="fitscore fs-hi">65</span> 🇨🇳 <strong>Employment Litigation Counsel, EMEA</strong> <span class="co">TikTok &middot; London</span><a class="apply" href="https://lifeattiktok.com/search/7649699704017570053" target="_blank" rel="noopener">View &rsaquo;</a></div><div class="row"><span class="fitscore fs-hi">65</span> 🇨🇳 <strong>Legal Counsel (eCommerce - Product), London</strong> <span class="co">TikTok &middot; London</span><a class="apply" href="https://lifeattiktok.com/search/7640089882535266565" target="_blank" rel="noopener">View &rsaquo;</a></div><div class="row"><span class="fitscore fs-hi">65</span> 🇨🇳 <strong>Privacy Counsel, E-Commerce, EMEA</strong> <span class="co">TikTok &middot; London</span><a class="apply" href="https://lifeattiktok.com/search/7644951287692626181" target="_blank" rel="noopener">View &rsaquo;</a></div></div>
 
+<div class="filterbar">
+  <span class="flabel">Filter</span>
+  <button class="fbtn active" onclick="filt('all',this)">All</button>
+  <button class="fbtn" onclick="filt('hi',this)">High-fit 65+</button>
+  <button class="fbtn" onclick="filt('jr',this)">Junior band</button>
+  <button class="fbtn" onclick="filt('new',this)">New this run</button>
+</div>
 <h2>All UK &amp; London legal roles <span class="muted">(18)</span></h2>
 
     <div class="company">
       <div class="co-head"><h3>TikTok <span class='cmeta'>(🇨🇳, Technology)</span></h3><span class="co-count">18 roles</span><a class='co-link' href='https://lifeattiktok.com/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role">
+    <div class="role" data-fit="55" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Budgeting &amp; Supply Governance Specialist, Business &amp; Partnership Management - Trust &amp; Safety</div>
-        <div class="role-meta"><span class="badge">Company Secretarial / Governance</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Budgeting &amp; Supply Governance Specialist, Business &amp; Partnership Management - Trust &amp; Safety</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Company Secretarial / Governance</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7637143835382171957" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="65" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Employment Litigation Counsel, EMEA</div>
-        <div class="role-meta"><span class="badge">Litigation / Disputes</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Employment Litigation Counsel, EMEA</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 65</span><span class="badge">Litigation / Disputes</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7649699704017570053" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="55" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Ethics and Compliance Manager - EMEA</div>
-        <div class="role-meta"><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Ethics and Compliance Manager - EMEA</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7599663005456664837" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="70" data-band="junior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Governance &amp; Experience Project Intern (TikTok Shop) - 2026 Start (BS/MS)</div>
-        <div class="role-meta"><span class="badge">Company Secretarial / Governance</span><span class="band band-junior">NQ-junior</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Governance &amp; Experience Project Intern (TikTok Shop) - 2026 Start (BS/MS)</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 70</span><span class="badge">Company Secretarial / Governance</span><span class="band band-junior">NQ-junior</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7574456396314855733" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="55" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Governance Strategy Manager, Creator &amp; Content, TikTok Shop, EMEA</div>
-        <div class="role-meta"><span class="badge">Company Secretarial / Governance</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Governance Strategy Manager, Creator &amp; Content, TikTok Shop, EMEA</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Company Secretarial / Governance</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7578868642956724533" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="90" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">IP Counsel, IP Platform Governance, EMEA</div>
-        <div class="role-meta"><span class="badge">IP</span><span class="band band-mid">mid</span><span class="fit">&#9733; profile match</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>IP Counsel, IP Platform Governance, EMEA</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 90</span><span class="badge">IP</span><span class="band band-mid">mid</span><span class="fit">&#9733; lane</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7644949228695308549" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="55" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">IPR Proactive Governance Manager, TikTok Shop, EMEA</div>
-        <div class="role-meta"><span class="badge">Company Secretarial / Governance</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>IPR Proactive Governance Manager, TikTok Shop, EMEA</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Company Secretarial / Governance</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7578872696160733493" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="65" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Legal Counsel (eCommerce - Product), London</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Legal Counsel (eCommerce - Product), London</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7640089882535266565" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="35" data-band="senior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Legal Counsel/ Senior Legal Counsel (Payments), London</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Legal Counsel/ Senior Legal Counsel (Payments), London</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7592633774278871349" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="70" data-band="junior" data-new="1">
       <div class="role-main">
-        <div class="role-title">LIVE Infra &amp; Governance Project Intern (EU TikTok Shop LIVE) - 2026 Start (BS/MS)</div>
-        <div class="role-meta"><span class="badge">Company Secretarial / Governance</span><span class="band band-junior">NQ-junior</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>LIVE Infra &amp; Governance Project Intern (EU TikTok Shop LIVE) - 2026 Start (BS/MS)</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 70</span><span class="badge">Company Secretarial / Governance</span><span class="band band-junior">NQ-junior</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7599977951069325621" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="55" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Payroll Compliance Manager, EMEA</div>
-        <div class="role-meta"><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Payroll Compliance Manager, EMEA</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7636178436987799813" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="65" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Privacy Counsel, E-Commerce, EMEA</div>
-        <div class="role-meta"><span class="badge">Privacy / Data Protection</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Privacy Counsel, E-Commerce, EMEA</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 65</span><span class="badge">Privacy / Data Protection</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7644951287692626181" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="35" data-band="senior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Senior Counsel, Monetization Legal</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Senior Counsel, Monetization Legal</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7642847586436827445" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="35" data-band="senior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Senior Legal Counsel (Financial Crime Compliance), London</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Senior Legal Counsel (Financial Crime Compliance), London</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7600391251690866997" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="35" data-band="senior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Senior Legal Counsel (Regulatory Investigations), London or Dublin</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Senior Legal Counsel (Regulatory Investigations), London or Dublin</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7623388280383523077" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="35" data-band="senior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Senior Litigation Counsel, EMEA</div>
-        <div class="role-meta"><span class="badge">Litigation / Disputes</span><span class="band band-senior">senior</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Senior Litigation Counsel, EMEA</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 35</span><span class="badge">Litigation / Disputes</span><span class="band band-senior">senior</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7643992766003546421" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="25" data-band="senior" data-new="1">
       <div class="role-main">
-        <div class="role-title">TikTok EU/UK Senior Financial Crime Compliance Officer</div>
-        <div class="role-meta"><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>TikTok EU/UK Senior Financial Crime Compliance Officer</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7594406912191383813" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="55" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">TikTok Shop - Seller Governance Program Manager, EMEA</div>
-        <div class="role-meta"><span class="badge">Company Secretarial / Governance</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
+        <div class="role-title"><span class="newbadge">new</span>TikTok Shop - Seller Governance Program Manager, EMEA</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Company Secretarial / Governance</span><span class="band band-mid">mid</span> London <span class="ats">via tiktok</span></div>
       </div>
       <a class="apply" href="https://lifeattiktok.com/search/7641546312014350645" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
@@ -204,108 +221,108 @@ applicant-tracking feed (the same data its public careers page renders), not fro
     <div class="company">
       <div class="co-head"><h3>BYD Europe <span class='cmeta'>(🇨🇳, Automotive)</span></h3><span class="co-count">15 roles</span><a class='co-link' href='https://careers.bydeurope.com/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role">
+    <div class="role" data-fit="55" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Compliance And Homologation Specialist Benelux</div>
-        <div class="role-meta"><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Compliance And Homologation Specialist Benelux</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7825149-compliance-and-homologation-specialist-benelux" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="80" data-band="junior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Junior Legal Counsel</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Junior Legal Counsel</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 80</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7566710-junior-legal-counsel" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="65" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Legal Counsel</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Legal Counsel</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7345378-legal-counsel" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="65" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Legal Counsel</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Legal Counsel</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7235957-legal-counsel" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="65" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Legal Counsel Switzerland Austria Czech Republic Slovakia</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Legal Counsel Switzerland Austria Czech Republic Slovakia</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7826718-legal-counsel-switzerland-austria-czech-republic-slovakia" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="55" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Pan Eu Customs Compliance Expert Procurement Division</div>
-        <div class="role-meta"><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Pan Eu Customs Compliance Expert Procurement Division</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7137369-pan-eu-customs-compliance-expert-procurement-division" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="25" data-band="senior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Pan European Compliance Lead</div>
-        <div class="role-meta"><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Pan European Compliance Lead</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7590533-pan-european-compliance-lead" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="55" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Product Compliance And Homologation Specialist</div>
-        <div class="role-meta"><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Product Compliance And Homologation Specialist</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7768295-product-compliance-and-homologation-specialist" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="55" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Product Compliance Engineer</div>
-        <div class="role-meta"><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Product Compliance Engineer</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/6563938-product-compliance-engineer" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="35" data-band="senior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Senior Legal Counsel</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Senior Legal Counsel</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7860890-senior-legal-counsel" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="35" data-band="senior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Senior Legal Counsel</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Senior Legal Counsel</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7566170-senior-legal-counsel" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="35" data-band="senior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Senior Legal Counsel Budapest Hungary</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Senior Legal Counsel Budapest Hungary</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7566560-senior-legal-counsel-budapest-hungary" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="25" data-band="senior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Senior Legal Counsel_Budapest Europe</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Senior Legal Counsel_Budapest Europe</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7634148-senior-legal-counsel_budapest-europe" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="25" data-band="senior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Senior Pan European Compliance Officer Workplace Conduct Employee Relations</div>
-        <div class="role-meta"><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Senior Pan European Compliance Officer Workplace Conduct Employee Relations</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7173320-senior-pan-european-compliance-officer-workplace-conduct-employee-relations" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
-    <div class="role">
+    <div class="role" data-fit="65" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Sr Legal Counsel Emea Region</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Sr Legal Counsel Emea Region</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.bydeurope.com/jobs/7538411-sr-legal-counsel-emea-region" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
@@ -313,10 +330,10 @@ applicant-tracking feed (the same data its public careers page renders), not fro
     <div class="company">
       <div class="co-head"><h3>Huawei UK <span class='cmeta'>(🇨🇳, Technology)</span></h3><span class="co-count">1 role</span><a class='co-link' href='https://huaweiuk.teamtailor.com/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role">
+    <div class="role" data-fit="65" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Legal Counsel</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Legal Counsel</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://huaweiuk.teamtailor.com/jobs/5609972-legal-counsel" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
@@ -324,10 +341,10 @@ applicant-tracking feed (the same data its public careers page renders), not fro
     <div class="company">
       <div class="co-head"><h3>Lotus Cars <span class='cmeta'>(🇨🇳, Automotive)</span></h3><span class="co-count">1 role</span><a class='co-link' href='https://careers.uk.lotuscars.com/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role">
+    <div class="role" data-fit="35" data-band="senior" data-new="1">
       <div class="role-main">
-        <div class="role-title">Senior Legal Counsel</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Senior Legal Counsel</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://careers.uk.lotuscars.com/jobs/7723188-senior-legal-counsel" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
@@ -335,10 +352,10 @@ applicant-tracking feed (the same data its public careers page renders), not fro
     <div class="company">
       <div class="co-head"><h3>Polestar <span class='cmeta'>(🇨🇳, Automotive)</span></h3><span class="co-count">1 role</span><a class='co-link' href='https://polestar.teamtailor.com/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role">
+    <div class="role" data-fit="55" data-band="mid" data-new="1">
       <div class="role-main">
-        <div class="role-title">Rechtsreferendar M W D Legal Commercial</div>
-        <div class="role-meta"><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
+        <div class="role-title"><span class="newbadge">new</span>Rechtsreferendar M W D Legal Commercial</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> <span style='color:#9A9A95'>location unspecified</span> <span class="ats">via teamtailor</span></div>
       </div>
       <a class="apply" href="https://polestar.teamtailor.com/jobs/6468430-rechtsreferendar-m-w-d-legal-commercial" target="_blank" rel="noopener">View role &rsaquo;</a>
     </div>
@@ -353,4 +370,19 @@ applicant-tracking feed (the same data its public careers page renders), not fro
   Generated by <code>tools/ftse-law-jobs</code>. Re-run: <code>uv run --project tools/ftse-law-jobs python -m src.run</code>.
   Legal filter is deliberately broad (counsel, IP, company-secretarial, privacy, compliance). Verify each role on the employer site before applying.
 </footer>
+<script>
+function filt(mode, btn) {
+  document.querySelectorAll('.fbtn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('.role').forEach(function(r) {
+    var fit = +r.dataset.fit, band = r.dataset.band, isnew = r.dataset.new === '1';
+    var show = mode === 'all' || (mode === 'hi' && fit >= 65) || (mode === 'jr' && band === 'junior') || (mode === 'new' && isnew);
+    r.style.display = show ? '' : 'none';
+  });
+  document.querySelectorAll('.company').forEach(function(c) {
+    var any = Array.prototype.slice.call(c.querySelectorAll('.role')).some(function(r){ return r.style.display !== 'none'; });
+    c.style.display = any ? '' : 'none';
+  });
+}
+</script>
 </div></body></html>
