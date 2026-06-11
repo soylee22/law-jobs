@@ -1,0 +1,264 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FTSE 100 — In-house Legal Vacancies</title>
+<style>
+  :root { --ink:#0D1014; --silver:#C0C0C0; --paper:#FbFbFa; --line:#D8D8D3; --accent:#5B4980; --green:#2F6B4F; --amber:#A8843A; }
+  * { box-sizing:border-box; }
+  body { font-family:-apple-system,'Inter',system-ui,sans-serif; background:var(--paper); color:var(--ink); margin:0; line-height:1.45; }
+  .wrap { max-width:860px; margin:0 auto; padding:32px 22px 80px; }
+  header.hero { background:var(--ink); color:#fff; margin:-32px -22px 28px; padding:34px 22px 26px; }
+  .kicker { font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--silver); font-weight:600; }
+  h1 { font-size:27px; font-weight:500; letter-spacing:-0.01em; margin:8px 0 4px; }
+  .sub { font-size:13px; color:#B8B8B3; }
+  .stats { display:flex; flex-wrap:wrap; gap:18px; margin-top:18px; }
+  .stat b { display:block; font-size:22px; font-weight:600; }
+  .stat span { font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#B8B8B3; }
+  h2 { font-size:13px; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent); font-weight:600; border-bottom:2px solid var(--ink); padding-bottom:6px; margin:38px 0 14px; }
+  h2 .muted { color:#9A9A95; }
+  .company { margin:0 0 22px; }
+  .co-head { display:flex; align-items:baseline; gap:12px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+  .co-head h3 { font-size:17px; font-weight:600; margin:0; }
+  .tick { font-size:11px; color:#9A9A95; font-weight:400; letter-spacing:0.05em; }
+  .cmeta { font-size:12.5px; color:#6B6B68; font-weight:400; }
+  .co-count { font-size:11px; color:var(--green); letter-spacing:0.08em; }
+  .co-link, .co-head a { margin-left:auto; font-size:12px; color:var(--accent); text-decoration:none; }
+  .role { display:flex; align-items:center; gap:14px; padding:11px 0; border-bottom:1px solid #ECECE8; }
+  .role-main { flex:1; }
+  .role-title { font-size:15px; font-weight:500; }
+  .role-meta { font-size:12px; color:#6B6B68; margin-top:3px; }
+  .badge { display:inline-block; background:#EEEBF3; color:var(--accent); font-size:10px; letter-spacing:0.06em; text-transform:uppercase; padding:2px 7px; border-radius:3px; margin-right:6px; }
+  .band { display:inline-block; font-size:10px; letter-spacing:0.04em; text-transform:uppercase; padding:2px 7px; border-radius:3px; margin-right:6px; }
+  .band-junior { background:#DBF0E4; color:#216B45; }
+  .band-mid { background:#F0ECE0; color:#8A7A45; }
+  .band-senior { background:#F3E0E0; color:#9B3B3B; }
+  .fit { display:inline-block; font-size:10px; letter-spacing:0.04em; text-transform:uppercase; padding:2px 7px; border-radius:3px; margin-right:6px; background:#EAE3F5; color:#5B4980; font-weight:600; }
+  .fitscore { display:inline-block; font-size:10px; letter-spacing:0.04em; text-transform:uppercase; padding:2px 7px; border-radius:3px; margin-right:6px; font-weight:700; }
+  .fs-hi { background:#216B45; color:#fff; }
+  .fs-mid { background:#E7E3D6; color:#6B6B68; }
+  .fs-lo { background:#F0E5E5; color:#9B6B6B; }
+  .newbadge { display:inline-block; font-size:9px; letter-spacing:0.1em; text-transform:uppercase; vertical-align:middle; padding:2px 6px; border-radius:3px; margin-right:7px; background:#D4351C; color:#fff; font-weight:700; }
+  .shortlist a.apply { float:right; }
+  .shortlist .row { padding:8px 0; border-bottom:1px solid #ECECE8; font-size:14px; }
+  .shortlist .co { color:#6B6B68; font-size:12px; }
+  .ats { color:#A8A8A3; font-size:11px; }
+  a.apply { flex:none; background:var(--accent); color:#fff; font-size:12px; text-decoration:none; padding:7px 13px; border-radius:4px; white-space:nowrap; }
+  a.apply:hover { background:#473a66; }
+  .filterbar { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin:30px 0 4px; }
+  .flabel { font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#6B6B68; font-weight:600; }
+  .fbtn { font-family:inherit; font-size:12px; padding:5px 12px; border:1px solid var(--line); background:#fff; color:#6B6B68; border-radius:14px; cursor:pointer; }
+  .fbtn.active { background:var(--ink); color:#fff; border-color:var(--ink); }
+  table.grid { width:100%; border-collapse:collapse; font-size:13px; }
+  table.grid th { text-align:left; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#6B6B68; border-bottom:1px solid var(--line); padding:6px 8px; }
+  table.grid td { padding:7px 8px; border-bottom:1px solid #ECECE8; vertical-align:top; }
+  table.grid a { color:var(--accent); text-decoration:none; }
+  .empty { color:#9A9A95; font-style:italic; }
+  footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); font-size:11px; color:#8A8A85; }
+  .note { background:#F2EFE7; border-left:3px solid var(--amber); padding:12px 16px; font-size:12px; color:#5a5141; margin:14px 0 0; }
+</style></head>
+<body><div class="wrap">
+<header class="hero">
+  <div class="kicker">Mithril · Law firms Legal Scan</div>
+  <h1>UK &amp; London in-house legal vacancies across the Law firms</h1>
+  <div class="sub">Thursday 11 June 2026, 19:30 · read directly from each company's own careers system</div>
+  <div class="stats">
+    <div class="stat"><b>12</b><span>UK / London roles</span></div>
+    <div class="stat"><b>9</b><span>high-fit roles</span></div>
+    
+    <div class="stat"><b>8</b><span>location unclear</span></div>
+    <div class="stat"><b>1/20</b><span>companies covered</span></div>
+    
+  </div>
+</header>
+
+<div class="note"><strong>Source integrity:</strong> every role below was pulled from the named company's own
+applicant-tracking feed (the same data its public careers page renders), not from a job-board aggregator.
+"View role" opens the role on the employer's own careers domain.</div>
+
+<div class="note"><strong>Strongest matches, by fit score.</strong> Fit = niche (IP, brand, China, cross-border) + level (NQ to mid) + a real legal-function title. In-house specialisms are built in private practice first, so most roles want 2 to 5 PQE; these are the ones where her background is the asked-for experience. The score is title-based, so verify PQE in the JD.</div><h2>Strongest matches &middot; by fit score <span class="muted">(9)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-hi">70</span> 🇬🇧 <strong>Associate - ENRI</strong> <span class="co">Simmons &amp; Simmons &middot; Bristol</span><a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/Bristol/Associate---ENRI_JR102040" target="_blank" rel="noopener">View &rsaquo;</a></div><div class="row"><span class="fitscore fs-hi">70</span> 🇬🇧 <strong>Associate - ENRI (Corporate)</strong> <span class="co">Simmons &amp; Simmons &middot; Bristol</span><a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/Bristol/Associate---ENRI--Corporate-_JR101902" target="_blank" rel="noopener">View &rsaquo;</a></div><div class="row"><span class="fitscore fs-hi">70</span> 🇬🇧 <strong>Associate - Funds</strong> <span class="co">Simmons &amp; Simmons &middot; London</span><a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-or-Managing-Associate---Private-Funds_JR101977" target="_blank" rel="noopener">View &rsaquo;</a></div><div class="row"><span class="fitscore fs-hi">70</span> 🇬🇧 <strong>Associate or Supervising Associate - Fund Finance</strong> <span class="co">Simmons &amp; Simmons &middot; London</span><a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-Associate---Fund-Finance_JR100948-30" target="_blank" rel="noopener">View &rsaquo;</a></div><div class="row"><span class="fitscore fs-hi">70</span> 🇬🇧 <strong>Supervising Associate - Banking</strong> <span class="co">Simmons &amp; Simmons &middot; London</span><a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-Associate---Banking_JR101929" target="_blank" rel="noopener">View &rsaquo;</a></div><div class="row"><span class="fitscore fs-hi">70</span> 🇬🇧 <strong>Supervising Associate - Employment</strong> <span class="co">Simmons &amp; Simmons &middot; London</span><a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-Associate---Employment_JR101836" target="_blank" rel="noopener">View &rsaquo;</a></div><div class="row"><span class="fitscore fs-hi">65</span> 🇬🇧 <strong>Of Counsel - Real Estate Finance</strong> <span class="co">Simmons &amp; Simmons &middot; Bristol</span><a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/Bristol/Of-Counsel-MA---REF_JR101805" target="_blank" rel="noopener">View &rsaquo;</a></div><div class="row"><span class="fitscore fs-hi">65</span> 🇬🇧 <strong>Simmons Adaptive – Interim Banking/Finance Lawyer (Leveraged &amp; Structured Finance)</strong> <span class="co">Simmons &amp; Simmons &middot; London</span><a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Simmons-Adaptive---Interim-Banking-Finance-Lawyer--Leveraged---Structured-Finance-_JR101986" target="_blank" rel="noopener">View &rsaquo;</a></div><div class="row"><span class="fitscore fs-hi">65</span> 🇬🇧 <strong>Simmons Adaptive – Interim Commercial Support Lawyer</strong> <span class="co">Simmons &amp; Simmons &middot; London</span><a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Simmons-Adaptive---Interim-Commercial-Support-Lawyer_JR101998" target="_blank" rel="noopener">View &rsaquo;</a></div></div>
+
+<div class="filterbar">
+  <span class="flabel">Filter</span>
+  <button class="fbtn active" onclick="filt('all',this)">All</button>
+  <button class="fbtn" onclick="filt('hi',this)">High-fit 65+</button>
+  <button class="fbtn" onclick="filt('jr',this)">Junior band</button>
+  <button class="fbtn" onclick="filt('new',this)">New this run</button>
+</div>
+<h2>All UK &amp; London legal roles <span class="muted">(12)</span></h2>
+
+    <div class="company">
+      <div class="co-head"><h3>Simmons &amp; Simmons <span class='cmeta'>(🇬🇧, IP / tech / financial)</span></h3><span class="co-count">12 roles</span><a class='co-link' href='https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
+      
+    <div class="role" data-fit="70" data-band="junior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Associate - ENRI</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 70</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span> Bristol <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/Bristol/Associate---ENRI_JR102040" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="70" data-band="junior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Associate - ENRI (Corporate)</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 70</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span> Bristol <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/Bristol/Associate---ENRI--Corporate-_JR101902" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="70" data-band="junior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Associate - Funds</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 70</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span> London <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-or-Managing-Associate---Private-Funds_JR101977" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="70" data-band="junior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Associate or Supervising Associate - Fund Finance</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 70</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span> London <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-Associate---Fund-Finance_JR100948-30" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="55" data-band="mid" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Business Applications Engineer – Legal Applications</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> Bristol <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/Bristol/Business-Applications-Engineer---Legal-Applications_JR102024" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="65" data-band="mid" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Of Counsel - Real Estate Finance</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> Bristol <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/Bristol/Of-Counsel-MA---REF_JR101805" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="55" data-band="mid" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Pricing Manager - Disputes</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Litigation / Disputes</span><span class="band band-mid">mid</span> London <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Pricing-Manager---Disputes_JR102003" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="65" data-band="mid" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Simmons Adaptive – Interim Banking/Finance Lawyer (Leveraged &amp; Structured Finance)</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> London <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Simmons-Adaptive---Interim-Banking-Finance-Lawyer--Leveraged---Structured-Finance-_JR101986" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="65" data-band="mid" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Simmons Adaptive – Interim Commercial Support Lawyer</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> London <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Simmons-Adaptive---Interim-Commercial-Support-Lawyer_JR101998" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="55" data-band="mid" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Simmons Adaptive – Interim Legal Operations/Technology Implementation Consultant</div>
+        <div class="role-meta"><span class="fitscore fs-mid">fit 55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span> London <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Simmons-Adaptive---Interim-Legal-Operations-Technology-Implementation-Consultant_JR102020" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="70" data-band="junior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Supervising Associate - Banking</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 70</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span> London <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-Associate---Banking_JR101929" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="70" data-band="junior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Supervising Associate - Employment</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 70</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span> London <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-Associate---Employment_JR101836" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    </div>
+
+<h2>Location unclear — worth a click <span class="muted">(8)</span></h2>
+
+    <div class="company">
+      <div class="co-head"><h3>Simmons &amp; Simmons <span class='cmeta'>(🇬🇧, IP / tech / financial)</span></h3><span class="co-count">8 roles</span><a class='co-link' href='https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
+      
+    <div class="role" data-fit="70" data-band="junior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Associate - Construction Disputes</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 70</span><span class="badge">Litigation / Disputes</span><span class="band band-junior">NQ-junior</span> 2 Locations <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-Associate---Construction-Disputes_JR102055" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="95" data-band="junior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Associate - FS Regulatory (Cross Border Unit)</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 95</span><span class="badge">Compliance / Regulatory</span><span class="band band-junior">NQ-junior</span><span class="fit">&#9733; lane</span> 2 Locations <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-Associate---Cross-Border-Unit_JR102028" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="70" data-band="junior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Associate - Restructuring &amp; Insolvency</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 70</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span> 2 Locations <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Associate---Restructuring---Special-Situations_JR102041" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="25" data-band="senior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Managing Associate - Structured Products</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> 2 Locations <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-or-Managing-Associate---Structured-Finance---Derivatives_JR101325" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="25" data-band="senior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Senior Legal Engineer</div>
+        <div class="role-meta"><span class="fitscore fs-lo">fit 25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span> 2 Locations <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/UK-London/Senior-Legal-Engineer_JR101655" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="70" data-band="junior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Supervising Associate - AI Regulatory &amp; Disputes</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 70</span><span class="badge">Compliance / Regulatory</span><span class="band band-junior">NQ-junior</span> 2 Locations <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-Associate---AI-Regulatory---Disputes_JR102025" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="70" data-band="junior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Supervising Associate - Derivatives</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 70</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span> 2 Locations <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-Associate---Derivatives_JR101779-3" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    <div class="role" data-fit="70" data-band="junior" data-new="0">
+      <div class="role-main">
+        <div class="role-title">Supervising Associate - FS Regulatory</div>
+        <div class="role-meta"><span class="fitscore fs-hi">fit 70</span><span class="badge">Compliance / Regulatory</span><span class="band band-junior">NQ-junior</span> 2 Locations <span class="ats">via workday</span></div>
+      </div>
+      <a class="apply" href="https://wd3.myworkdaysite.com/en-US/recruiting/simmonssimmons/SimmonsSimmonsExternal/job/London/Supervising-Associate---FS-Regulatory_JR102037" target="_blank" rel="noopener">View role &rsaquo;</a>
+    </div>
+    </div>
+
+
+
+
+
+<footer>
+  Companies scanned: 20 · API-covered: 1 · ATS mix — workday: 23<br>
+  Generated by <code>tools/ftse-law-jobs</code>. Re-run: <code>uv run --project tools/ftse-law-jobs python -m src.run</code>.
+  Legal filter is deliberately broad (counsel, IP, company-secretarial, privacy, compliance). Verify each role on the employer site before applying.
+</footer>
+<script>
+function filt(mode, btn) {
+  document.querySelectorAll('.fbtn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  document.querySelectorAll('.role').forEach(function(r) {
+    var fit = +r.dataset.fit, band = r.dataset.band, isnew = r.dataset.new === '1';
+    var show = mode === 'all' || (mode === 'hi' && fit >= 65) || (mode === 'jr' && band === 'junior') || (mode === 'new' && isnew);
+    r.style.display = show ? '' : 'none';
+  });
+  document.querySelectorAll('.company').forEach(function(c) {
+    var any = Array.prototype.slice.call(c.querySelectorAll('.role')).some(function(r){ return r.style.display !== 'none'; });
+    c.style.display = any ? '' : 'none';
+  });
+}
+</script>
+</div></body></html>
