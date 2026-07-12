@@ -31,11 +31,12 @@
     <button class="tab" id="t-china" onclick="show('china')">China bridge<small>Chinese multinationals</small></button>
     <button class="tab" id="t-firms" onclick="show('firms')">Law firms<small>UK IP &middot; on-ramp</small></button>
     <button class="tab" id="t-traditional" onclick="show('traditional')">Traditional<small>boutiques &middot; recruiters</small></button>
+    <button class="tab" id="t-gone" onclick="show('gone')">Ex jobs<small>no longer listed</small></button>
   </div>
 </header>
 <iframe id="frame" src="openmarket.html" title="report"></iframe>
 <script>
-  var TABS = ['openmarket', 'inhouse', 'china', 'firms', 'traditional'];
+  var TABS = ['openmarket', 'inhouse', 'china', 'firms', 'traditional', 'gone'];
   function show(which) {
     document.getElementById('frame').src = which + '.html';
     TABS.forEach(function(t){ document.getElementById('t-' + t).classList.toggle('active', t === which); });
