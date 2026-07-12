@@ -26,7 +26,8 @@
   <div class="kicker">Mithril &middot; Legal Job Radar</div>
   <h1>UK legal vacancies</h1>
   <div class="tabs">
-    <button class="tab active" id="t-openmarket" onclick="show('openmarket')">Open market<small>wider net &middot; live</small></button>
+    <button class="tab active" id="t-all" onclick="show('all')">All<small>every route &middot; by score</small></button>
+    <button class="tab" id="t-openmarket" onclick="show('openmarket')">Open market<small>wider net &middot; live</small></button>
     <button class="tab" id="t-inhouse" onclick="show('inhouse')">In-house<small>FTSE 100 + US</small></button>
     <button class="tab" id="t-china" onclick="show('china')">China bridge<small>Chinese multinationals</small></button>
     <button class="tab" id="t-firms" onclick="show('firms')">Law firms<small>UK IP &middot; on-ramp</small></button>
@@ -34,9 +35,9 @@
     <button class="tab" id="t-gone" onclick="show('gone')">Ex jobs<small>no longer listed</small></button>
   </div>
 </header>
-<iframe id="frame" src="openmarket.html" title="report"></iframe>
+<iframe id="frame" src="all.html" title="report"></iframe>
 <script>
-  var TABS = ['openmarket', 'inhouse', 'china', 'firms', 'traditional', 'gone'];
+  var TABS = ['all', 'openmarket', 'inhouse', 'china', 'firms', 'traditional', 'gone'];
   function show(which) {
     document.getElementById('frame').src = which + '.html';
     TABS.forEach(function(t){ document.getElementById('t-' + t).classList.toggle('active', t === which); });
