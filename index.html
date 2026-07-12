@@ -3,44 +3,135 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Legal Job Radar</title>
+<title>Legal Job Radar · Mithril</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root { --ink:#0D1014; --silver:#C0C0C0; --accent:#5B4980; --line:#2A2D33; }
-  * { box-sizing:border-box; }
-  html, body { margin:0; height:100%; font-family:-apple-system,'Inter',system-ui,sans-serif; }
-  body { display:flex; flex-direction:column; background:#FbFbFa; }
-  header { background:var(--ink); color:#fff; padding:18px 22px 0; flex:none; }
-  .kicker { font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--silver); font-weight:600; }
-  h1 { font-size:20px; font-weight:500; margin:6px 0 14px; letter-spacing:-0.01em; }
-  .tabs { display:flex; gap:4px; }
-  .tab { background:transparent; color:#B8B8B3; border:none; border-bottom:3px solid transparent;
-         font-size:14px; font-weight:500; padding:10px 16px; cursor:pointer; font-family:inherit; }
-  .tab:hover { color:#fff; }
-  .tab.active { color:#fff; border-bottom-color:var(--accent); }
-  .tab small { display:block; font-size:10px; letter-spacing:0.04em; color:#8A8A85; font-weight:400; text-transform:uppercase; }
-  iframe { flex:1; width:100%; border:none; background:#FbFbFa; }
+  :root {
+    --ink: #0D1014;
+    --bone: #D4D4CC;
+    --mute: #8A8A85;
+    --lilac: #B8A2D6;
+    --lilac-deep: #5B4980;
+    --hairline-dk: #2A2D33;
+    --stage: #F4F4F1;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
+  body { display: flex; flex-direction: column; background: var(--stage); -webkit-font-smoothing: antialiased; }
+  header {
+    background: var(--ink);
+    color: #fff;
+    padding: 20px 28px 0;
+    flex: none;
+    border-bottom: 1px solid var(--hairline-dk);
+  }
+  .top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 18px;
+  }
+  .brand { min-width: 0; }
+  .kicker {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--lilac);
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 6px 0 0;
+    letter-spacing: -0.02em;
+    color: #fff;
+  }
+  .tagline {
+    font-size: 12px;
+    color: var(--mute);
+    margin-top: 4px;
+    font-weight: 400;
+  }
+  .tabs {
+    display: flex;
+    gap: 2px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    background: transparent;
+    color: var(--mute);
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 12px 14px 14px;
+    cursor: pointer;
+    font-family: inherit;
+    white-space: nowrap;
+    transition: color 0.12s ease, border-color 0.12s ease;
+  }
+  .tab:hover { color: var(--bone); }
+  .tab.active {
+    color: #fff;
+    border-bottom-color: var(--lilac);
+  }
+  .tab small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    color: #5A5A55;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+  .tab.active small { color: var(--lilac); }
+  iframe {
+    flex: 1;
+    width: 100%;
+    border: none;
+    background: var(--stage);
+  }
+  @media (max-width: 720px) {
+    header { padding: 16px 16px 0; }
+    h1 { font-size: 18px; }
+    .tagline { display: none; }
+    .tab { padding: 10px 12px 12px; font-size: 12px; }
+  }
 </style>
 </head>
 <body>
 <header>
-  <div class="kicker">Mithril &middot; Legal Job Radar</div>
-  <h1>UK legal vacancies</h1>
-  <div class="tabs">
-    <button class="tab active" id="t-all" onclick="show('all')">All<small>every route &middot; by score</small></button>
-    <button class="tab" id="t-openmarket" onclick="show('openmarket')">Open market<small>wider net &middot; live</small></button>
-    <button class="tab" id="t-inhouse" onclick="show('inhouse')">In-house<small>FTSE 100 + US</small></button>
-    <button class="tab" id="t-china" onclick="show('china')">China bridge<small>Chinese multinationals</small></button>
-    <button class="tab" id="t-firms" onclick="show('firms')">Law firms<small>UK IP &middot; on-ramp</small></button>
-    <button class="tab" id="t-traditional" onclick="show('traditional')">Traditional<small>boutiques &middot; recruiters</small></button>
-    <button class="tab" id="t-gone" onclick="show('gone')">Ex jobs<small>no longer listed</small></button>
+  <div class="top">
+    <div class="brand">
+      <div class="kicker">Mithril</div>
+      <h1>Legal Job Radar</h1>
+      <div class="tagline">UK legal vacancies · employer feeds · fit-ranked</div>
+    </div>
+  </div>
+  <div class="tabs" role="tablist">
+    <button class="tab active" id="t-all" onclick="show('all')" role="tab">All<small>by score</small></button>
+    <button class="tab" id="t-openmarket" onclick="show('openmarket')" role="tab">Open market<small>wide net</small></button>
+    <button class="tab" id="t-inhouse" onclick="show('inhouse')" role="tab">In-house<small>FTSE + US</small></button>
+    <button class="tab" id="t-china" onclick="show('china')" role="tab">China bridge<small>PRC multinationals</small></button>
+    <button class="tab" id="t-firms" onclick="show('firms')" role="tab">Law firms<small>IP on-ramp</small></button>
+    <button class="tab" id="t-traditional" onclick="show('traditional')" role="tab">Traditional<small>boutiques</small></button>
+    <button class="tab" id="t-gone" onclick="show('gone')" role="tab">Ex jobs<small>gone</small></button>
   </div>
 </header>
-<iframe id="frame" src="all.html" title="report"></iframe>
+<iframe id="frame" src="all.html" title="Legal job report"></iframe>
 <script>
   var TABS = ['all', 'openmarket', 'inhouse', 'china', 'firms', 'traditional', 'gone'];
   function show(which) {
     document.getElementById('frame').src = which + '.html';
-    TABS.forEach(function(t){ document.getElementById('t-' + t).classList.toggle('active', t === which); });
+    TABS.forEach(function(t) {
+      document.getElementById('t-' + t).classList.toggle('active', t === which);
+    });
   }
 </script>
 </body>
