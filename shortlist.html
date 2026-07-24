@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Legal roles worth your time · 24 July 2026</title>
 <meta property="og:title" content="Legal roles worth your time">
-<meta property="og:description" content="32 job ads read in full, ranked. Five to apply for now.">
+<meta property="og:description" content="Sixty roles read in full and scored. Seventeen worth applying for, ranked.">
 <style>
 :root{
   --ink:#0D1014; --paper:#FFFFFF; --stage:#F4F4F1; --text:#1A1A1A; --soft:#55585E;
@@ -15,7 +15,7 @@
   --lilac:#B8A2D6; --lilac-deep:#5B4980; --lilac-wash:#F3EFF9;
   --green:#0F9F5C; --green-wash:#E8F7F0; --green-ink:#0B6B3E;
   --amber-wash:#F7F2E6; --amber-ink:#8A6410;
-  --clay-wash:#F8EEEE; --clay-ink:#96382E;
+  --clay:#C2564A; --clay-wash:#F8EEEE; --clay-ink:#96382E;
 }
 @media (prefers-color-scheme: dark){
   :root{
@@ -28,10 +28,8 @@
   }
 }
 *{box-sizing:border-box;-webkit-text-size-adjust:100%}
-body{
-  margin:0;background:var(--stage);color:var(--text);
-  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-}
+body{margin:0;background:var(--stage);color:var(--text);
+  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
 .wrap{max-width:720px;margin:0 auto;background:var(--paper)}
 header{background:var(--ink);color:#fff;padding:28px 20px 26px}
 .kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--lilac);font-weight:700}
@@ -45,24 +43,27 @@ h2{font-size:18px;font-weight:700;letter-spacing:-.01em;margin:0 0 14px;
   padding-bottom:10px;border-bottom:2px solid var(--line)}
 h2 em{font-style:normal;color:var(--lilac-deep);margin-right:7px}
 p{margin:0 0 14px;color:var(--soft)}
-p.tight{margin-bottom:10px}
-ol{margin:0 0 16px;padding-left:22px;color:var(--soft)}
-ol li{margin-bottom:10px}
+ol,ul{margin:0 0 16px;padding-left:22px;color:var(--soft)}
+li{margin-bottom:9px}
 b,strong{color:var(--text);font-weight:600}
-.note{background:var(--lilac-wash);border-left:4px solid var(--lilac);
-  padding:14px 16px;margin:18px 0;font-size:15px;color:var(--soft);border-radius:0 4px 4px 0}
+.note{background:var(--lilac-wash);border-left:4px solid var(--lilac);padding:14px 16px;
+  margin:18px 0;font-size:15px;color:var(--soft);border-radius:0 4px 4px 0}
 .note b{color:var(--text)}
+.urgent{background:var(--clay-wash);border-left:4px solid var(--clay);padding:14px 16px;
+  margin:18px 0;font-size:15px;color:var(--clay-ink);border-radius:0 4px 4px 0}
+.urgent b{color:var(--clay-ink)}
 
-.card{border:1px solid var(--line);border-radius:8px;margin:0 0 16px;
-  background:var(--paper);padding:16px;overflow:hidden}
+.card{border:1px solid var(--line);border-radius:8px;margin:0 0 16px;background:var(--paper);padding:16px}
 .card.pick{border-color:var(--green);border-width:1.5px}
-.rank{display:inline-flex;align-items:center;justify-content:center;
-  min-width:26px;height:26px;padding:0 7px;border-radius:13px;
-  background:var(--stage);color:var(--lilac-deep);font-weight:700;font-size:14px;
-  margin-right:9px;vertical-align:2px}
+.hd{display:flex;align-items:flex-start;gap:10px;margin-bottom:4px}
+.rank{flex:none;display:inline-flex;align-items:center;justify-content:center;
+  min-width:27px;height:27px;padding:0 7px;border-radius:14px;background:var(--stage);
+  color:var(--lilac-deep);font-weight:700;font-size:14px;margin-top:1px}
 .card.pick .rank{background:var(--green-wash);color:var(--green-ink)}
-h3{font-size:17px;line-height:1.3;font-weight:700;margin:0 0 3px;letter-spacing:-.01em}
-.co{color:var(--mute);font-size:14.5px;margin:0 0 10px}
+.hd h3{font-size:17px;line-height:1.3;font-weight:700;margin:0;letter-spacing:-.01em;flex:1}
+.score{flex:none;font-size:13px;font-weight:700;color:var(--lilac-deep);
+  background:var(--lilac-wash);padding:3px 9px;border-radius:12px;margin-top:2px}
+.co{color:var(--mute);font-size:14.5px;margin:0 0 10px 37px}
 .facts{font-size:13.5px;color:var(--mute);margin:0 0 12px;line-height:1.5}
 .facts b{color:var(--text);font-weight:600}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 13px}
@@ -73,30 +74,34 @@ h3{font-size:17px;line-height:1.3;font-weight:700;margin:0 0 3px;letter-spacing:
 .tag.warn{background:var(--amber-wash);color:var(--amber-ink);border-color:transparent}
 .tag.bad{background:var(--clay-wash);color:var(--clay-ink);border-color:transparent}
 .card p{font-size:15px;margin:0 0 12px}
-.risk{background:var(--amber-wash);color:var(--amber-ink);padding:11px 13px;
-  border-radius:5px;font-size:14.5px;margin:0 0 13px}
+.risk{background:var(--amber-wash);color:var(--amber-ink);padding:11px 13px;border-radius:5px;
+  font-size:14.5px;margin:0 0 13px}
 .risk b{color:var(--amber-ink)}
-a.btn{display:block;text-align:center;padding:13px 16px;border-radius:6px;
-  background:var(--ink);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+.ready{background:var(--green-wash);color:var(--green-ink);padding:11px 13px;border-radius:5px;
+  font-size:14.5px;margin:0 0 13px;font-weight:500}
+a.btn{display:block;text-align:center;padding:13px 16px;border-radius:6px;background:var(--ink);
+  color:#fff;text-decoration:none;font-weight:600;font-size:15px}
 @media (prefers-color-scheme: dark){a.btn{background:var(--lilac-wash);color:var(--lilac-deep);
   border:1px solid var(--lilac-deep)}}
 a.btn:active{opacity:.75}
-
 .tierhead{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;
   color:var(--lilac-deep);margin:30px 0 6px;padding-bottom:8px;border-bottom:1px solid var(--line)}
 .tiersub{font-size:14px;color:var(--mute);margin:0 0 16px}
-
-.out{border-top:1px solid var(--line);padding:13px 0}
+.out{border-top:1px solid var(--line);padding:12px 0}
 .out:last-of-type{border-bottom:1px solid var(--line);margin-bottom:18px}
 .out h4{font-size:15px;font-weight:600;margin:0 0 2px}
 .out .oc{font-size:13.5px;color:var(--mute);margin:0 0 6px}
 .out p{font-size:14px;margin:0;color:var(--soft)}
+.rub{width:100%;border-collapse:collapse;font-size:14px;margin:4px 0 18px}
+.rub th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--mute);font-weight:700;padding:0 8px 7px 0;border-bottom:1px solid var(--line)}
+.rub td{padding:8px 8px 8px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--soft)}
+.rub td:last-child{text-align:right;white-space:nowrap;color:var(--text);font-weight:600}
 footer{padding:24px 20px 40px;color:var(--mute);font-size:13px;border-top:1px solid var(--line);margin-top:26px}
 footer a{color:var(--lilac-deep)}
 @media (min-width:680px){
   header{padding:38px 32px 34px}h1{font-size:31px}
-  section{padding:32px 32px 4px}.card{padding:20px}
-  footer{padding:26px 32px 44px}
+  section{padding:32px 32px 4px}.card{padding:20px}footer{padding:26px 32px 44px}
 }
 </style>
 </head>
@@ -104,217 +109,277 @@ footer a{color:var(--lilac-deep)}
 <div class="wrap">
 
 <header>
-  <div class="kicker">Shortlist · 24 July 2026</div>
+  <div class="kicker">Shortlist v2 · 24 July 2026</div>
   <h1>Legal roles worth your time</h1>
-  <p>Six hundred live UK legal vacancies were scanned. Thirty-two were picked out by hand, every job advertisement was opened and read properly, and they are ranked below. Five are worth applying for now.</p>
+  <p>Sixty roles read in full, across the live job boards, the specialist IP boards and firms' own careers pages. Seventeen are worth an application. They are scored and ranked below, and the scoring is shown so you can disagree with it.</p>
   <div class="stats">
-    <div class="stat"><b>614</b><span>scanned</span></div>
-    <div class="stat"><b>32</b><span>read in full</span></div>
-    <div class="stat"><b>12</b><span>worth applying</span></div>
-    <div class="stat"><b>5</b><span>do these first</span></div>
+    <div class="stat"><b>60</b><span>read in full</span></div>
+    <div class="stat"><b>17</b><span>worth applying</span></div>
+    <div class="stat"><b>6</b><span>real IP roles</span></div>
+    <div class="stat"><b>4</b><span>CVs already built</span></div>
   </div>
 </header>
 
 <section>
-  <h2><em>01</em>How these were judged</h2>
-  <p>Four things decided the order, in this sequence.</p>
-  <ol>
-    <li><b>Do you clear the stated bar?</b> The PQE line is what actually rejects people. A role asking five years or more is not a stretch, it is a wasted evening. Up to about three years is arguable on four years of Chinese IP litigation. Two years or under you clear outright.</li>
-    <li><b>Is the work yours?</b> Trade marks, designs, copyright, brand protection, enforcement, contentious work, cross-border. Not patent prosecution: you are a solicitor, not a CITMA or CIPA attorney, so patent attorney, formalities and renewals roles are out no matter how well they appear to match.</li>
-    <li><b>Does the China side help or box you in?</b> It helps at Chinese companies building out Europe, and at any brand enforcing into Asia. It boxes you in where the role is really a China desk.</li>
-    <li><b>How crowded is it?</b> Applicant numbers are shown where the advert gave them. A perfect role with two hundred applicants is worth less than a good role with twenty-five and a bar you clear.</li>
-  </ol>
-  <div class="note"><b>Ignore the automatic match scores.</b> They read job titles, not requirements. One role scored 90 and wants six to ten years' experience. Another was titled "Junior Legal Counsel", scored 62, and wants five years plus native Hungarian in Budapest. Three of the four roles that scored 100 are paralegal jobs. Everything below is from reading the actual advert.</div>
+  <div class="urgent"><b>Do this first, before anything else on the page.</b> The University of Cambridge role (number 12) <b>closes on Monday 27 July</b> and your CV and covering letter for it were written weeks ago and never sent. Three others also have finished, tailored CVs sitting unsent: Mishcon, ASOS and Alexander McQueen. Sending what already exists costs an evening. Writing something new costs a week.</div>
 </section>
 
 <section>
-  <h2><em>02</em>The five to do now</h2>
-  <p>Picked as a spread, not as the five best matches: one bullseye, one you should genuinely win, one fresh IP role, one top-tier law firm brands seat, and one nobody else will spot.</p>
+  <h2><em>01</em>What changed since the first version</h2>
+  <p>The first list leaned on job titles with "IP" in them. That was wrong, and it mixed up two different jobs.</p>
+  <p><b>You are an IP solicitor, not a trade mark attorney.</b> Trade mark attorney and patent attorney roles need CITMA or CIPA qualification, and the day job is filing and prosecution. Those are excluded now, however well they scored. So are paralegal, formalities and renewals grades. What counts is an IP or brands seat at a law firm, or an IP or brand counsel job in-house, where the work is advisory and contentious.</p>
+  <p><b>Your strength is soft and contentious.</b> Trade marks, passing off, copyright, designs, brand enforcement, disputes. Patent work is fine as part of a broader IP disputes practice, and your electrical engineering degree and the US ITC case make it credible, but a role that is only patent prosecution is the wrong job. General commercial and contracts work is a legitimate second lane.</p>
+  <p>The search was also widened well past the automated scan, which only covers a set list of employers and is heavily weighted toward patent attorney firms. Added this time: the specialist IP job boards, The Lawyer and TotallyLegal, the CITMA board, and the careers pages of fourteen brands and IP firms.</p>
+</section>
+
+<section>
+  <h2><em>02</em>How the scoring works</h2>
+  <p>Every role gets a score out of 100 from four things. No employer bonuses, no keyword tricks.</p>
+  <table class="rub">
+    <thead><tr><th>What</th><th>Range</th></tr></thead>
+    <tbody>
+      <tr><td><b>Lane.</b> Contentious soft IP 40 · non-contentious soft IP 34 · IP litigation including patent 30 · IP-adjacent, meaning media rights, copyright, brand and advertising 24 · general commercial 14</td><td>0&ndash;40</td></tr>
+      <tr><td><b>Band.</b> You clear the stated bar 30 · under a year short 22 · one to two years short 12 · more than two years short, or attorney-qualified only 0</td><td>0&ndash;30</td></tr>
+      <tr><td><b>Employer.</b> How much the name and the seat are worth to the next move, not how famous it is</td><td>0&ndash;15</td></tr>
+      <tr><td><b>Odds.</b> Applicant count and how fresh the advert is. Under 30 applicants scores 15, over 150 scores 2</td><td>0&ndash;15</td></tr>
+    </tbody>
+  </table>
+  <div class="note"><b>Why the old numbers were wrong.</b> The automatic score reads titles and employers and never opens the advert. It gave 90 to a role wanting six to ten years, 62 to a "Junior" role wanting five years and native Hungarian, and 100 to three paralegal jobs. Every number below comes from a human reading the actual requirements.</div>
+</section>
+
+<section>
+  <h2><em>03</em>The six real IP roles</h2>
+  <p>Sixty adverts read, and this is every genuine IP role you can actually do and actually get. That scarcity is the single most useful fact on this page.</p>
 
   <div class="card pick">
-    <h3><span class="rank">1</span>IP &amp; Brand Counsel</h3>
-    <p class="co">JD.com · London</p>
+    <div class="hd"><span class="rank">1</span><h3>IP &amp; Brand Counsel</h3><span class="score">87</span></div>
+    <p class="co">JD.com · London · in-house</p>
     <p class="facts"><b>No PQE stated</b> · 37 applicants · posted around 17 July</p>
-    <div class="tags"><span class="tag ip">Trade marks and brand</span><span class="tag good">Chinese multinational</span><span class="tag good">No stated bar</span></div>
-    <p>The best alignment on the whole board between what you are and what a company needs. A NASDAQ-listed Chinese retail and logistics group building European brand enforcement, hiring in London, wanting IP and brand. Your PRC qualification, English admission, Mandarin and four years of Chinese IP litigation are not extras here, they are the job.</p>
-    <p>The advert is entirely boilerplate. No duties, no PQE line, no required experience. That mostly works in your favour: nothing on the page can rule you out on paper, so the covering letter does all the work. Thirty-seven applicants over a week is moderate for a role like this.</p>
-    <p class="risk"><b>Watch out:</b> "Counsel" at a group this size often means four to six years in practice even when unstated, so you are applying slightly blind. Worth it anyway. This exact role was advertised earlier in the summer, filled or withdrawn, and has come back. It will not come back a third time.</p>
+    <div class="tags"><span class="tag ip">Soft IP + brand</span><span class="tag good">No stated bar</span><span class="tag good">China credential is the job</span></div>
+    <p>A NASDAQ-listed Chinese group building European brand enforcement, hiring in London for IP and brand. Your PRC qualification, English admission, Mandarin and four years of Chinese IP litigation are the specification, not extras. It was advertised earlier in the summer, went, and has come back on a new posting.</p>
+    <p>The advert is pure boilerplate with no duties and no experience bar, which mostly helps: nothing on the page can rule you out, so the covering letter does the work.</p>
+    <p class="risk"><b>Watch out:</b> "Counsel" at a group this size often means four to six years in practice even when unstated. You are applying blind. Do it anyway.</p>
     <a class="btn" href="https://uk.linkedin.com/jobs/view/ip-brand-counsel-at-jd-com-4440911538">Open the advert</a>
   </div>
 
   <div class="card pick">
-    <h3><span class="rank">2</span>Junior Legal Counsel, Disputes</h3>
-    <p class="co">Endava · London</p>
-    <p class="facts">Wants <b>NQ to 2 years' PQE, England &amp; Wales</b> · 100 applicants · posted 21 July</p>
-    <div class="tags"><span class="tag good">Exact band</span><span class="tag ip">IP and trade mark disputes</span><span class="tag good">Contentious work</span></div>
-    <p>The one most likely to end in an offer, and it is not close. The band is "qualified solicitor (England &amp; Wales), ideally NQ to 2 PQE", which you clear outright rather than have to argue around. The work is commercial contract, customer, service, payment, <b>IP and trade mark disputes</b> from pre-action through litigation, disclosure, mediation and settlement. That is a description of what you already do, in the jurisdiction you do it in.</p>
-    <p>Every other IP role here asks you to stretch upward. This one asks you to be exactly what you are, and against a field of genuine newly-qualifieds the four extra years of IP litigation make you the strongest candidate in the room rather than a borderline one.</p>
-    <p class="risk"><b>Watch out:</b> a hundred applicants, and it is technology disputes rather than brand work, so it builds English litigation credibility rather than IP specialism.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/junior-legal-counsel-disputes-at-endava-4442657069">Open the advert</a>
-  </div>
-
-  <div class="card pick">
-    <h3><span class="rank">3</span>Legal Counsel (IP), Product and Technology</h3>
-    <p class="co">Sage · London</p>
-    <p class="facts">Wants <b>solicitor, at least 2 years' PQE</b> · under 25 applicants · <b>posted 24 July</b></p>
-    <div class="tags"><span class="tag ip">IP in the job title</span><span class="tag good">Brand new</span><span class="tag good">Barely any competition yet</span><span class="tag warn">Asks 2 years</span></div>
-    <p>Posted hours before this list was made, with fewer than twenty-five applicants. That will not last the week. IP is in the title, and the team supports trade mark and brand management including protection, <b>enforcement</b>, dispute management and portfolio governance. That half of the role is yours on the merits, and it is a FTSE 100 in-house legal team, which is where the whole plan is pointed.</p>
-    <p>Two years against where you are now is the smallest genuine gap of any IP-titled role on this list, and four years of Chinese IP practice answers it without straining.</p>
-    <p class="risk"><b>Watch out:</b> the other half is AI, product advice and third-party technology integration, where you have nothing yet. Expect to be asked. Apply within days.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-ip-product-and-technology-at-sage-4444938685">Open the advert</a>
-  </div>
-
-  <div class="card pick">
-    <h3><span class="rank">4</span>Associate (2&ndash;4 PQE), IP Brands</h3>
-    <p class="co">Mishcon de Reya · London</p>
-    <p class="facts">Wants <b>2&ndash;4 years' PQE in IP, private practice</b> · 73 applicants · <b>posted around late May</b></p>
-    <div class="tags"><span class="tag ip">Exactly your subject</span><span class="tag good">Top-tier brands practice</span><span class="tag warn">Two months old</span></div>
-    <p>On substance this is the best law firm role on the board. A market-leading brands practice covering the full lifecycle from inception through protection, commercialisation and enforcement. The role is explicitly soft IP: trade marks, designs and copyright, advisory and disputes, portfolio management, worldwide filing and prosecution, and registry disputes at the UK IPO. That is your Beijing practice moved to London, and a firm of this name on the CV changes what comes after it.</p>
-    <p>Two to four years against where you are is a real stretch, but the four Chinese years plus the IP LLM plus INTA and the publications make it a conversation rather than an automatic no.</p>
-    <p class="risk"><b>Watch out:</b> posted around two months ago with 73 applicants, so it may be filled. Ring the firm and check before writing a tailored application. If it has gone, put that effort into <b>Cursitor</b> at number 7 instead, which is the same work, posted this week, with under 25 applicants.</p>
+    <div class="hd"><span class="rank">2</span><h3>Associate (2&ndash;4 PQE), IP Brands</h3><span class="score">82</span></div>
+    <p class="co">Mishcon de Reya · London · law firm</p>
+    <p class="facts">Wants <b>2&ndash;4 years' PQE in IP, private practice</b> · 73 applicants · posted around late May</p>
+    <div class="tags"><span class="tag ip">Soft IP, contentious and advisory</span><span class="tag good">Top brands practice</span><span class="tag good">CV already written</span><span class="tag warn">Two months old</span></div>
+    <p>The best law firm role available to you. A market-leading brands practice covering the full lifecycle from inception through protection, commercialisation and enforcement, and the seat is explicitly soft IP: trade marks, designs and copyright, advisory and disputes, portfolio management, worldwide filing and enforcement, and registry disputes at the UK IPO. Your Beijing practice, moved to London.</p>
+    <p class="ready">A tailored CV for this exact role was built weeks ago and has never been sent.</p>
+    <p class="risk"><b>Watch out:</b> two months old with 73 applicants, so ring the firm and check it is still open before spending an evening on the covering letter.</p>
     <a class="btn" href="https://uk.linkedin.com/jobs/view/associate-2-4pqe-%E2%80%93-ip-brands-at-mishcon-de-reya-llp-4391761789">Open the advert</a>
   </div>
 
   <div class="card pick">
-    <h3><span class="rank">5</span>Legal Counsel</h3>
-    <p class="co">Nominet · London or Oxford, hybrid</p>
-    <p class="facts"><b>No number given</b>, just "proven post-qualification experience" · under 25 applicants · posted 22 July</p>
-    <div class="tags"><span class="tag ip">Domain name disputes</span><span class="tag good">No numeric bar</span><span class="tag good">Barely any competition</span><span class="tag good">34-hour week</span></div>
-    <p>The most overlooked role on the list, and the one nobody scanning job titles would pick out. Nominet runs the .UK domain registry, and the job includes domain suspension queries and <b>domain dispute resolution</b> alongside County Court disputes, commercial contracts and governance. Domain disputes are trade mark disputes in substance, so this is real IP-adjacent work sitting behind a completely generic job title.</p>
-    <p>No numeric experience bar, which is rare, and under twenty-five applicants. It is also the best job on this list to actually have: a thirty-four hour week finishing Friday lunchtime, thirty days' holiday plus bank holidays, and only twenty per cent of your time required in an office.</p>
-    <p class="risk"><b>Watch out:</b> they ask for government framework contracts and County Court disputes experience, neither of which you have in that exact form. The disputes half you can answer properly; the government contracts half you cannot, so lead with the first.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-nominet-4443780147">Open the advert</a>
+    <div class="hd"><span class="rank">3</span><h3>Intellectual Property Associate (trade mark focus)</h3><span class="score">78</span></div>
+    <p class="co">Through Cursitor, for a global law firm · London</p>
+    <p class="facts">Wants <b>3+ years' PQE</b> · under 25 applicants · <b>posted 24 July</b></p>
+    <div class="tags"><span class="tag ip">Pure trade mark work</span><span class="tag good">Brand new</span><span class="tag warn">Asks 3 years</span></div>
+    <p>The duties are your CV almost line for line: UK, EU and international trade mark portfolios, brand clearance and filing strategy, oppositions, cancellations, revocations and infringement before the UK IPO and EU IPO, coordinating international enforcement with overseas counsel, licensing and coexistence agreements, for luxury, fashion, retail and technology clients. Contentious and non-contentious both, at a genuinely global firm.</p>
+    <p class="risk"><b>Watch out:</b> three years is the biggest gap worth attempting, and a recruiter reads the number before the story. Telephone the recruiter rather than applying cold, so the Beijing years get explained by a person and not by a form.</p>
+    <a class="btn" href="https://uk.linkedin.com/jobs/view/intellectual-property-associate-at-cursitor-4444944599">Open the advert</a>
+  </div>
+
+  <div class="card pick">
+    <div class="hd"><span class="rank">4</span><h3>Patent Litigation Associate</h3><span class="score">72</span></div>
+    <p class="co">Through G2 Legal · London · law firm</p>
+    <p class="facts">Wants <b>2&ndash;5 years' PQE in intellectual property disputes</b>, UK qualified solicitor</p>
+    <div class="tags"><span class="tag ip">Contentious IP</span><span class="tag good">Solicitor role, not attorney</span><span class="tag good">Cross-border</span></div>
+    <p>A solicitor role in an IP disputes practice advising on UK and cross-border IP litigation, not a patent attorney job. Patent leads the work, but this is contentious IP, which is your actual strength, and your electrical engineering degree plus the US ITC Section 337 case make the technical side credible rather than claimed. Very few UK IP disputes seats open at this band.</p>
+    <p>There is a sister role at the same agency, <b>Patent Litigation Solicitor, 2&ndash;4 PQE</b>, so one conversation covers both.</p>
+    <p class="risk"><b>Watch out:</b> the firm is not named, so ask which one before investing. G2 Legal also advertised a 1&ndash;3 PQE trade mark associate role that has now gone, which tells you they handle exactly your niche. Register with them properly.</p>
+    <a class="btn" href="https://www.totallylegal.com/job/4050569/patent-litigation-associate-/">Open the advert</a>
+  </div>
+
+  <div class="card pick">
+    <div class="hd"><span class="rank">5</span><h3>Legal Counsel (IP), Product and Technology</h3><span class="score">71</span></div>
+    <p class="co">Sage · London · in-house, FTSE 100</p>
+    <p class="facts">Wants <b>solicitor, at least 2 years' PQE</b> · under 25 applicants · <b>posted 24 July</b></p>
+    <div class="tags"><span class="tag ip">Trade mark enforcement in the remit</span><span class="tag good">Very fresh</span><span class="tag warn">Half of it is product tech</span></div>
+    <p>The team supports trade mark and brand management including protection, enforcement, dispute management and portfolio governance. That half is genuinely yours, and it is a FTSE 100 in-house team, which is where the plan is pointed. Posted hours before this list with almost no competition yet.</p>
+    <p class="risk"><b>Watch out:</b> be honest that this is not a pure IP seat. The other half is AI, product advice and third-party technology integration, where you have nothing. Expect to be asked, and apply within days before the applicant count settles it.</p>
+    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-ip-product-and-technology-at-sage-4444938685">Open the advert</a>
+  </div>
+
+  <div class="card pick">
+    <div class="hd"><span class="rank">6</span><h3>Legal Counsel, circa 0&ndash;2 years' PQE</h3><span class="score">74</span></div>
+    <p class="co">Through Michael Page, for a global consulting firm · City of London</p>
+    <p class="facts">Band tagged <b>NQ</b> · <b>£70,000&ndash;£76,000 plus bonus</b> · closes 17 August</p>
+    <div class="tags"><span class="tag good">Band bullseye</span><span class="tag good">Salary well above target</span><span class="tag ip">Manages the IP portfolio</span></div>
+    <p>Listed under Intellectual Property as well as Company and Commercial, and the duties include managing the organisation's IP portfolio: trade mark watch notices, renewals, recording know-how, and digital IP. It is not an IP specialist seat, but it is real IP responsibility inside a corporate legal team of three, reporting to the Head of Legal, at a global consulting firm.</p>
+    <p>The band is written as nought to two years and tagged NQ, so you clear it outright rather than argue. The money is a long way above what this search has been targeting.</p>
+    <p class="risk"><b>Watch out:</b> three days a week on site in London, and the client is not named until you engage the recruiter.</p>
+    <a class="btn" href="https://www.totallylegal.com/job/4051379/legal-counsel-london-hybrid-circa-0-2-yrs-pqe-/">Open the advert</a>
   </div>
 </section>
 
 <section>
-  <h2><em>03</em>The rest, in order</h2>
-
-  <div class="tierhead">Also worth applying for</div>
-  <p class="tiersub">Lower odds, or less IP in the work, but all real options.</p>
+  <h2><em>04</em>The strong adjacent roles</h2>
+  <p>Media rights, copyright, brand and advertising, then general commercial. Not IP practice, but the closest thing to it, and several are a much better bet on the numbers.</p>
 
   <div class="card">
-    <h3><span class="rank">6</span>Legal Counsel, Commercial</h3>
-    <p class="co">University of Cambridge · Cambridge</p>
-    <p class="facts"><b>"Less concerned with PQE (0&ndash;5 as a guide)"</b> · £42,254 to £56,535 · 119 applicants</p>
-    <div class="tags"><span class="tag good">Band openly flexible</span><span class="tag good">Salary published</span><span class="tag ip">Commercial, corporate and IP team</span><span class="tag warn">Cambridge based</span></div>
-    <p>The only employer here that publishes both the band and the money, and both work for you. The seat is in the commercial, corporate and IP team, and they say they want someone willing to build a specialism in areas including IP. As a safe option it is the strongest on the list, and a university post is stable in a way the others are not.</p>
-    <p class="risk"><b>Watch out:</b> it is in Cambridge, not London, so it means commuting or moving. 119 applicants. University commercial work is a long way from brand enforcement.</p>
+    <div class="hd"><span class="rank">7</span><h3>Legal Counsel</h3><span class="score">80</span></div>
+    <p class="co">NBCUniversal · London · in-house</p>
+    <p class="facts">Wants <b>0&ndash;4 years' PQE</b>, UK preferred, other jurisdictions considered · 32 applicants · <b>posted today</b></p>
+    <div class="tags"><span class="tag ip">Copyright and advertising</span><span class="tag good">Band wide open</span><span class="tag good">EMEA and Asia Pacific</span></div>
+    <p>Scores highest of everything outside the pure IP roles, and deservedly. The band is nought to four years and explicitly open to other jurisdictions, which is unusual and directly helps you. The work covers copyright, AI and advertising developments across EMEA <b>and Asia Pacific</b>, so the Mandarin and the China knowledge are useful without the role being about China. Universal, DreamWorks, Peacock, Focus Features. Posted hours ago with 32 applicants.</p>
+    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-nbcuniversal-4444965782">Open the advert</a>
+  </div>
+
+  <div class="card">
+    <div class="hd"><span class="rank">8</span><h3>Junior Legal Counsel, Disputes</h3><span class="score">70</span></div>
+    <p class="co">Endava · London · in-house</p>
+    <p class="facts">Wants <b>NQ to 2 years' PQE, England &amp; Wales</b> · 100 applicants · posted 21 July</p>
+    <div class="tags"><span class="tag good">Exact band</span><span class="tag ip">IP and trade mark disputes</span><span class="tag good">Contentious</span></div>
+    <p>The work is commercial contract, customer, service, payment, IP and trade mark disputes from pre-action through litigation, disclosure, mediation and settlement. You clear the band outright, and against a field of true newly-qualifieds the four extra years of IP litigation make you the strongest person in the room rather than a borderline one. Still the most likely single offer on the page.</p>
+    <a class="btn" href="https://uk.linkedin.com/jobs/view/junior-legal-counsel-disputes-at-endava-4442657069">Open the advert</a>
+  </div>
+
+  <div class="card">
+    <div class="hd"><span class="rank">9</span><h3>Associate Counsel</h3><span class="score">66</span></div>
+    <p class="co">IMG (TKO Group) · London · in-house</p>
+    <p class="facts">Wants <b>1&ndash;3 years' PQE</b>, fully qualified solicitor · over 200 applicants</p>
+    <div class="tags"><span class="tag good">Exact band</span><span class="tag ip">Media rights and brand</span><span class="tag bad">200+ applicants</span></div>
+    <p>Global sports marketing: media rights management and sales, brand partnerships, and the business exists to grow IP for over 200 federations and events including the Premier League, the IOC, Wimbledon, UFC and WWE. Rights licensing is IP work in commercial clothing, and the band is exactly yours.</p>
+    <p class="risk"><b>Watch out:</b> over two hundred applicants. Sports and entertainment always draws a crowd.</p>
+    <a class="btn" href="https://uk.linkedin.com/jobs/view/associate-counsel-at-img-4414930792">Open the advert</a>
+  </div>
+
+  <div class="card">
+    <div class="hd"><span class="rank">10</span><h3>Legal Counsel</h3><span class="score">63</span></div>
+    <p class="co">SPORTFIVE · London · in-house</p>
+    <p class="facts">Wants <b>UK qualified solicitor, NQ to 2 years' PQE</b> · 179 applicants · posted 3 weeks ago</p>
+    <div class="tags"><span class="tag good">Exact band</span><span class="tag ip">Media rights</span><span class="tag bad">179 applicants</span></div>
+    <p>A three-person UK legal team reporting to the General Counsel, focused on the media rights business: drafting and negotiating media rights acquisition and sales agreements. Real responsibility early, and the advert explicitly wants a junior. Voted the most attractive sports marketing agency to work for three years running, which is also why 179 people have applied.</p>
+    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-sportfive-4434330139">Open the advert</a>
+  </div>
+
+  <div class="card">
+    <div class="hd"><span class="rank">11</span><h3>Legal Counsel</h3><span class="score">63</span></div>
+    <p class="co">Nominet · London or Oxford, hybrid · in-house</p>
+    <p class="facts"><b>No number given</b>, "proven post-qualification experience" · under 25 applicants · posted 22 July</p>
+    <div class="tags"><span class="tag good">No numeric bar</span><span class="tag good">Very low competition</span><span class="tag warn">IP content is thin</span></div>
+    <p>Nominet runs the .UK domain registry and the job includes domain dispute resolution alongside County Court disputes, commercial contracts and governance. Domain disputes have a trade mark flavour, though I oversold that last time: this is mostly a broad commercial and disputes seat, not IP practice. It earns its place on no numeric bar, under 25 applicants, a 34-hour week finishing Friday lunchtime and 30 days' holiday.</p>
+    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-nominet-4443780147">Open the advert</a>
+  </div>
+
+  <div class="card">
+    <div class="hd"><span class="rank">12</span><h3>Legal Counsel, Commercial</h3><span class="score">62</span></div>
+    <p class="co">University of Cambridge · Cambridge · in-house</p>
+    <p class="facts"><b>PQE 0&ndash;5 as a guide</b> · £42,254&ndash;£56,535 · 119 applicants · <b>closes Monday 27 July</b></p>
+    <div class="tags"><span class="tag bad">Closes Monday</span><span class="tag good">CV already written</span><span class="tag good">Band openly flexible</span><span class="tag warn">Cambridge based</span></div>
+    <p>The only employer here that publishes both band and salary, and both work for you. The seat sits in the commercial, corporate and IP team and they say they want someone willing to build a specialism in areas including IP. A university post is also stable in a way none of the others are.</p>
+    <p class="ready">The CV and covering letter for this were written weeks ago and never sent. It closes on Monday.</p>
     <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-commercial-at-university-of-cambridge-4435138854">Open the advert</a>
   </div>
 
   <div class="card">
-    <h3><span class="rank">7</span>Intellectual Property Associate (trade mark focus)</h3>
-    <p class="co">Through Cursitor, for a global law firm · London</p>
-    <p class="facts">Wants <b>3+ years' PQE</b> · under 25 applicants · <b>posted 24 July</b></p>
-    <div class="tags"><span class="tag ip">Closest match on the board</span><span class="tag good">Brand new</span><span class="tag warn">Asks 3 years</span></div>
-    <p>Read the duties and it is your CV: UK, EU and international trade mark portfolios, brand clearance and filing strategy, oppositions, cancellations, revocations and infringement before the UK IPO and EU IPO, coordinating international enforcement with overseas counsel, licensing and coexistence agreements, for luxury, fashion, retail and technology clients. Contentious and non-contentious both.</p>
-    <p class="risk"><b>Watch out:</b> three years against where you are is the biggest stretch worth attempting, and going through a recruiter means someone reads the number before the story. Phone the recruiter rather than applying cold, so the four Beijing years get explained by a person.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/intellectual-property-associate-at-cursitor-4444944599">Open the advert</a>
+    <div class="hd"><span class="rank">13</span><h3>Solicitor</h3><span class="score">61</span></div>
+    <p class="co">Footballco · London · in-house</p>
+    <p class="facts">Wants <b>0&ndash;3 years' PQE</b>, ideally commercial contracts</p>
+    <div class="tags"><span class="tag good">Band wide open</span><span class="tag">Sports media</span></div>
+    <p>The largest football media business in the world, behind Goal.com and Mundial. Commercial contracts, media and sponsorship. No IP specialism, but the band is genuinely open at nought years and the sector is content and rights driven.</p>
+    <a class="btn" href="https://uk.linkedin.com/jobs/view/solicitor-at-footballco-4439846103">Open the advert</a>
   </div>
 
   <div class="card">
-    <h3><span class="rank">8</span>Legal Counsel</h3>
-    <p class="co">ASOS · London</p>
+    <div class="hd"><span class="rank">14</span><h3>Legal Counsel</h3><span class="score">60</span></div>
+    <p class="co">ASOS · London · in-house</p>
     <p class="facts"><b>No number given</b>, "qualified solicitor with experience" · 56 applicants in one day</p>
-    <div class="tags"><span class="tag ip">Brand, advertising, image rights</span><span class="tag good">No numeric bar</span><span class="tag bad">Very contested</span></div>
-    <p>Brand-side retail with real IP-adjacent content: advertising compliance under the ASA and CAP codes, influencer and talent agreements including image rights and content usage, brand partnership and marketplace agreements, and AI-generated creative. The advert says prior experience in those areas is not required, which is an unusually open door, and there is no PQE number to fail.</p>
-    <p class="risk"><b>Watch out:</b> fifty-six applicants in a single day tells you what ASOS attracts. It is a generalist seat with brand flavour, not an IP job.</p>
+    <div class="tags"><span class="tag ip">Brand, advertising, image rights</span><span class="tag good">CV already written</span><span class="tag bad">Very contested</span></div>
+    <p>Advertising compliance under the ASA and CAP codes, influencer and talent agreements including image rights and content usage, brand partnership and marketplace agreements, and AI-generated creative. The advert says prior experience in those areas is not required, which is an unusually open door, and there is no PQE number to fail.</p>
+    <p class="ready">A tailored CV for ASOS already exists and has not been sent.</p>
     <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-asos-com-4441537614">Open the advert</a>
   </div>
 
   <div class="card">
-    <h3><span class="rank">9</span>Legal Counsel, Commercial (1&ndash;3 PQE), B2B data and SaaS</h3>
-    <p class="co">Through Kingsley Green · City of London</p>
-    <p class="facts">Wants <b>1&ndash;3 years' PQE, England &amp; Wales</b> · 61 applicants</p>
-    <div class="tags"><span class="tag good">Exact band</span><span class="tag bad">No IP</span></div>
-    <p>A clean band match at a venture-backed scale-up, generalist commercial work with real responsibility early on. This one is purely about getting into a proper in-house team at the right level. No IP, so it costs you the specialism.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-commercial-1-3-pqe-b2b-data-saas-business-london-city-at-kingsley-green-recruitment-4441444753">Open the advert</a>
-  </div>
-
-  <div class="card">
-    <h3><span class="rank">10</span>Junior Legal Counsel</h3>
-    <p class="co">Alexander McQueen (Kering) · London</p>
+    <div class="hd"><span class="rank">15</span><h3>Junior Legal Counsel</h3><span class="score">59</span></div>
+    <p class="co">Alexander McQueen (Kering) · London · in-house</p>
     <p class="facts">Wants <b>0&ndash;4 years' PQE</b>, English qualified · over 200 applicants</p>
-    <div class="tags"><span class="tag good">Band wide open</span><span class="tag good">Luxury fashion house</span><span class="tag bad">200+ applicants</span></div>
-    <p>A live McQueen role, and a different one from the vacancy that closed earlier in July, so the CV already prepared for that has somewhere to go. Nought to four years is as open as bands get, and a Kering house on the CV is exactly the brand-side credential the plan wants.</p>
-    <p class="risk"><b>Watch out:</b> over two hundred applicants, and the work is general commercial, corporate governance, property and data protection. Luxury fashion attracts everyone, and the job itself is not IP.</p>
+    <div class="tags"><span class="tag good">Band wide open</span><span class="tag good">CV v3 already written</span><span class="tag bad">200+ applicants</span></div>
+    <p>A live McQueen vacancy, and a different one from the requisition that closed earlier in July, so the CV version 3 built for that has somewhere to go. A Kering house is exactly the brand-side name the plan wants, even though the work itself is commercial, corporate governance, property and data protection rather than IP.</p>
+    <p class="ready">CV version 3 is finished and waiting on a decision to send.</p>
     <a class="btn" href="https://uk.linkedin.com/jobs/view/junior-legal-counsel-at-alexander-mcqueen-4433933398">Open the advert</a>
   </div>
 
   <div class="card">
-    <h3><span class="rank">11</span>Legal Counsel (NQ to 2 PQE)</h3>
-    <p class="co">Finalto · London</p>
-    <p class="facts">Wants <b>NQ to 2 years' PQE</b>, England &amp; Wales accepted · over 200 applicants</p>
-    <div class="tags"><span class="tag good">Exact band</span><span class="tag good">"Chinese languages desirable"</span><span class="tag bad">200+ applicants</span></div>
-    <p>Rare and worth noting: the advert says "fluent in business level English, with <b>Chinese languages desirable</b>". Your Mandarin is a scored asset here rather than something to manage carefully. Band is exact and the team is only two people, so the exposure would be broad.</p>
-    <p class="risk"><b>Watch out:</b> trading technology and liquidity, nothing to do with IP, and over two hundred applicants.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-nq%2B-2pqe-at-finalto-4440063005">Open the advert</a>
+    <div class="hd"><span class="rank">16</span><h3>EMEA International Commercial Counsel</h3><span class="score">58</span></div>
+    <p class="co">Church &amp; Dwight · London · in-house</p>
+    <p class="facts"><b>No number given</b>, qualified solicitor or barrister, UK or equivalent</p>
+    <div class="tags"><span class="tag good">No numeric bar</span><span class="tag">Consumer brands</span></div>
+    <p>A US consumer goods group with a portfolio of household brands, hiring commercial counsel for EMEA. No experience bar written down, which is worth a great deal when your years are the problem. Brand-side commercial rather than IP.</p>
+    <a class="btn" href="https://uk.linkedin.com/jobs/view/emea-int-l-commercial-counsel-at-church-dwight-co-inc-4424752841">Open the advert</a>
   </div>
 
   <div class="card">
-    <h3><span class="rank">12</span>Trade Mark Attorney / Solicitor</h3>
-    <p class="co">Through Dawn Ellmore, for an IP firm · London</p>
-    <p class="facts">Wants <b>NQ to 5 years' PQE</b> · agency listing, reference 11419</p>
-    <div class="tags"><span class="tag ip">Contentious and non-contentious</span><span class="tag good">Band opens at NQ</span><span class="tag warn">Wants prosecution knowledge</span></div>
-    <p>The band opens at newly qualified, which almost no trade mark role does, and the work is both contentious and non-contentious at a well-regarded IP firm. Cheap to pursue because it is an agency: send the CV and let them place you.</p>
-    <p class="risk"><b>Watch out:</b> it asks for knowledge of trade mark and design <b>filing and prosecution</b>, which is attorney work rather than solicitor work, so you would be measured against CITMA-qualified candidates. Treat it as a conversation with the agency rather than a formal application.</p>
-    <a class="btn" href="https://www.dawnellmore.co.uk/job/trade-mark-attorney-solicitor-up-to-5-years-pqe/">Open the advert</a>
+    <div class="hd"><span class="rank">17</span><h3>Legal Counsel</h3><span class="score">56</span></div>
+    <p class="co">Roland Europe Group · London · in-house</p>
+    <p class="facts"><b>No number given</b>, qualified solicitor England &amp; Wales or European equivalent</p>
+    <div class="tags"><span class="tag good">No numeric bar</span><span class="tag ip">Copyright in the remit</span></div>
+    <p>The musical instruments manufacturer. The remit includes copyright and emerging technology alongside product safety, anti-bribery and modern slavery. Small legal function, broad exposure, well-known brand, no experience bar stated.</p>
+    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-roland-europe-group-4418837704">Open the advert</a>
   </div>
-
-  <div class="tierhead">Read and ruled out</div>
-  <p class="tiersub">All twenty were opened. Most fail on a single line in the advert. Several looked like strong matches on paper.</p>
-
-  <div class="out"><h4>Legal Counsel</h4><p class="oc">Huawei R&amp;D UK · London</p>
-    <p>Still the closest thing to a perfect fit on the board, and <b>you have already applied for it</b>. Same vacancy, same reference. It is sitting unanswered, so the thing to do here is chase it, not apply again.</p></div>
-  <div class="out"><h4>IP Counsel, IP Platform Governance, EMEA</h4><p class="oc">TikTok · London</p>
-    <p>Right subject matter, but it wants an "experienced IP attorney" with no band given, and it is the role most likely to typecast you as the China person rather than the IP person.</p></div>
-  <div class="out"><h4>Global IP Counsel, Consumer Brands</h4><p class="oc">Through Taylor Root · London</p>
-    <p><b>6 to 10 years' PQE.</b> Perfect subject matter, several times the experience.</p></div>
-  <div class="out"><h4>Intellectual Property Lawyer</h4><p class="oc">Flex Legal · UK</p>
-    <p><b>5+ years' PQE</b> for international trade marks, designs and copyright.</p></div>
-  <div class="out"><h4>Trade Mark Lawyer / Attorney</h4><p class="oc">Carpmaels &amp; Ransford · London</p>
-    <p><b>5+ years</b> as an attorney, or a solicitor with comparable trade mark experience.</p></div>
-  <div class="out"><h4>Patent Lawyer</h4><p class="oc">TaiSan · London</p>
-    <p>Patent portfolio strategy in materials chemistry and polymer electrolytes. Patent attorney work and the wrong science.</p></div>
-  <div class="out"><h4>Associate Corporate Counsel, Prime Video</h4><p class="oc">Amazon · London</p>
-    <p><b>Minimum 3+ years' PQE</b>, stated flatly. Entertainment licensing rather than IP.</p></div>
-  <div class="out"><h4>Trade Mark Solicitor, c£120,000+</h4><p class="oc">Via CITMA · London</p>
-    <p><b>Minimum 4 years' PQE.</b> The salary tells you the seniority.</p></div>
-  <div class="out"><h4>Senior IP Counsel</h4><p class="oc">JetBrains · London</p><p><b>8 to 12 years' PQE.</b></p></div>
-  <div class="out"><h4>Senior Legal Counsel, Commercial IP</h4><p class="oc">Through Major Lindsey &amp; Africa · London</p>
-    <p><b>7+ years' PQE</b> including substantial in-house experience.</p></div>
-  <div class="out"><h4>Legal Counsel</h4><p class="oc">BYD Europe · Uxbridge</p>
-    <p><b>8+ years.</b> The advert is four months old with 103 applicants.</p></div>
-  <div class="out"><h4>Junior Legal Counsel</h4><p class="oc">BYD Europe · Budapest</p>
-    <p>Titled junior, but wants <b>5+ years' PQE and native Hungarian</b>, based in Budapest.</p></div>
-  <div class="out"><h4>Legal Manager</h4><p class="oc">Chery Commercial Vehicle · UK</p>
-    <p><b>5 to 10 years</b>, two years in the automotive industry, and a CIPP/E privacy certification required.</p></div>
-  <div class="out"><h4>Legal Counsel</h4><p class="oc">Gotion High-Tech · London</p>
-    <p><b>3 to 7 years' PQE</b>, and the work is energy project M&amp;A, construction contracts and joint ventures. Mandarin only "a plus".</p></div>
-  <div class="out"><h4>Music Counsel, EMEA</h4><p class="oc">ByteDance · London</p>
-    <p>Needs a significant digital music licensing track record. Nothing transfers.</p></div>
-  <div class="out"><h4>Legal Counsel</h4><p class="oc">Canon EMEA · Uxbridge</p>
-    <p>Uxbridge, pure commercial and IT contracting, no IP, 164 applicants. Salary up to £68,000 is the only draw.</p></div>
-  <div class="out"><h4>Counsel, Legal, SSG New Services</h4><p class="oc">Lenovo · Farnborough</p>
-    <p>Farnborough. Product advice on cloud and AI services. No IP.</p></div>
-  <div class="out"><h4>Legal Counsel, Technology</h4><p class="oc">Primark · London</p><p><b>4 to 6 years' PQE.</b></p></div>
-  <div class="out"><h4>Marketplace / 3P Lawyer</h4><p class="oc">JD.com · London</p>
-    <p>Same empty advert as the IP role above. Apply for the IP one instead; two applications to the same small team weakens both.</p></div>
-  <div class="out"><h4>Trade Mark and Design Specialist</h4><p class="oc">D Young &amp; Co</p>
-    <p>The link resolves to a paralegal post in Munich. Not a real match.</p></div>
 </section>
 
 <section>
-  <h2><em>04</em>The one thing to fix</h2>
-  <p>After reading thirty-two adverts, the pattern is obvious and it is not about subject matter. <b>The years-of-experience line is what stops you, every time.</b></p>
-  <p>The market is full of trade mark and brand roles. Almost all of them want four years or more. You have four years of Chinese practice that most recruiters will not count, and a shorter English record that they will. So every single application has to do the same job: turn the Beijing years into something a recruiter reads as experience rather than as background.</p>
-  <p>That is one problem, not twelve. It is worth writing that answer once, properly, and reusing it in every covering letter and every recruiter call.</p>
-  <div class="note"><b>On timing.</b> Sage and Cursitor were both posted on 24 July with under twenty-five applicants each. Both will be crowded inside a week. Of the strong matches found since 20 June, every single one closed before an application went in. These roles last two to three weeks, not two to three months.</div>
+  <h2><em>05</em>Two channels worth more than any single advert</h2>
+
+  <div class="tierhead">Register properly with five recruiters</div>
+  <p class="tiersub">They control the elite firm IP seats, and none of those adverts name the firm.</p>
+  <p>Between them these five are currently carrying an IP and technology associate role at an elite US firm (2&ndash;4 PQE, with the advert saying candidates outside that range will also be considered), a commercial IP and IT seat at another US firm (2+ PQE), an IP seat at a Tier 1 TMT firm paying up to £140,000 covering patents, trade marks, designs and copyright (3+ PQE), and a commercial technology role at a leading UK firm covering copyright and trade marks (2&ndash;4 PQE). <b>G2 Legal</b> also advertised a 1&ndash;3 PQE trade mark associate seat that has already gone, which is proof this band exists and that you have to hear about it early.</p>
+  <p>The five: <b>G2 Legal</b>, <b>EJ Legal</b>, <b>Gardner Halliday</b>, <b>Noble Legal</b> and <b>SSQ</b>. A twenty-minute call with each, once, is worth more than another evening of applications, because they see the roles before the boards do and they can explain your four Beijing years to a partner in a way a form cannot.</p>
+
+  <div class="tierhead">Write speculatively to the brands boutiques</div>
+  <p class="tiersub">The firms that do exactly your work do not advertise.</p>
+  <p>Fourteen IP and brands firms' careers pages were checked. The specialist brand firms, the ones whose entire practice is trade marks and brand disputes, have no live junior vacancies and mostly do not use job boards at all. <b>Brandsmiths</b> says "check back soon" and invites a CV and covering letter direct to its recruitment address. <b>Waterfront</b> invites speculative applications from qualified associates and refuses agency candidates. <b>Briffa</b> says it is always looking for talent in IP whether you are at the start of your career or further on.</p>
+  <p>This is the channel for your niche, and it is not a fallback. A short, specific letter to Stobbs, Briffa, Waterfront, Bristows, Bird &amp; Bird, Rouse, Harbottle &amp; Lewis, Sheridans and Simkins costs one evening in total and reaches firms that will never appear on any of the boards above. Rouse is worth naming twice: a global IP firm with a very large China practice, and dual PRC and English qualification is rare there in London.</p>
+  <p class="risk"><b>One to chase, not to send:</b> you applied to <b>Brandsmiths</b> for an NQ litigation role on 14 June and have had no reply. That chase was due at the end of June.</p>
+</section>
+
+<section>
+  <h2><em>06</em>Ruled out, and why</h2>
+  <p class="tiersub">All were opened and read. Grouped by the reason, because the reasons repeat.</p>
+
+  <div class="out"><h4>Wrong qualification: trade mark and patent attorney track</h4>
+    <p class="oc">Carpmaels &amp; Ransford · Dawn Ellmore · Osborne Clarke · D Young &amp; Co · Boult Wade Tennant · Mathys &amp; Squire · InterDigital · TaiSan · Nokia</p>
+    <p>These need CITMA or CIPA qualification and the work is filing and prosecution. InterDigital wants five years as a qualified patent attorney. TaiSan is patent portfolio strategy in polymer electrolytes. Different profession, not a stretch you can argue.</p></div>
+
+  <div class="out"><h4>Wrong grade: paralegal, formalities, renewals, support</h4>
+    <p class="oc">Fieldfisher · HGF · J A Kemp · Lewis Silkin · Mishcon Registry Services · Larbey Evans · numerous Dawn Ellmore listings</p>
+    <p>Several of these scored 100 on the automatic system. They are a downgrade for a qualified solicitor and carry a real risk of being typed as support staff.</p></div>
+
+  <div class="out"><h4>Too senior by three years or more</h4>
+    <p class="oc">Taylor Root Global IP Counsel (6&ndash;10) · G2 IP Litigation Associate (6&ndash;8) · JetBrains Senior IP Counsel (8&ndash;12) · Major Lindsey &amp; Africa Commercial IP (7+) · Flex Legal (5+) · CITMA £120k Trade Mark Solicitor (4+) · Quintessential Brands (8+) · Starbucks (5+) · BYD Legal Counsel (8+) · Chery (5&ndash;10) · Primark (4&ndash;6) · Cisco Trade Secrets and Copyright (Principal)</p>
+    <p>Perfect subject matter in several cases. The years are not arguable at this distance.</p></div>
+
+  <div class="out"><h4>Modestly too senior, worth a look only if the top of the list runs dry</h4>
+    <p class="oc">Spotify Licensing (3+) · Jagex (3&ndash;5) · Lululemon (3&ndash;6) · Aberdeen (3&ndash;5) · Simmons Hanbury global retailer (3&ndash;6) · Taylor Root fashion FTC (3&ndash;8, and the advert says outside the range will be considered) · Gotion (3&ndash;7) · Amazon Prime Video (3+)</p></div>
+
+  <div class="out"><h4>Not really the right job, whatever the title said</h4>
+    <p class="oc">Farrer &amp; Co Associate · ByteDance Music Counsel · Lenovo · Canon EMEA · Anthropic · Gowling Knowledge Lawyer</p>
+    <p>Farrer's advert is titled simply "Associate" and turns out to be an international arbitration and sovereign disputes specialist. ByteDance needs a music licensing track record. Lenovo is Farnborough product counsel. Canon is Uxbridge commercial and IT contracting with no IP. Anthropic pays £125,000 to £165,000, which tells you the seniority. A knowledge lawyer post is non-fee-earning and a different career.</p></div>
+
+  <div class="out"><h4>Already in flight, chase rather than apply</h4>
+    <p class="oc">Huawei R&amp;D UK · Brandsmiths</p>
+    <p>Huawei Legal Counsel, applied 30 June, same vacancy, no reply. Brandsmiths NQ Litigation, applied 14 June, no reply. Both chases are overdue and both are better uses of an hour than a new application.</p></div>
+
+  <div class="out"><h4>TikTok IP Counsel, IP Platform Governance EMEA</h4><p class="oc">Deliberately set aside</p>
+    <p>Genuinely the right subject matter, but the advert wants an "experienced IP attorney" with no band stated, and of everything available it carries the highest risk of typing you as the China person rather than the IP person. Set aside by choice, not because it is a bad role.</p></div>
+</section>
+
+<section>
+  <h2><em>07</em>What sixty adverts actually show</h2>
+  <p><b>There are six real IP roles in the entire visible UK market at your level, and you can only comfortably clear the bar on two of them.</b> That is the finding. It is not a reason for gloom, it is a reason to change tactics.</p>
+  <p>The years-of-experience line is what stops you, every time. Almost every trade mark and brands seat wants four years or more. You have four years of Chinese practice that most recruiters will not count, and a shorter English record that they will. Every application has to solve that same problem, so write the answer once, properly, and reuse it in every letter and every recruiter call.</p>
+  <p>Because the advertised IP market is this thin, the two channels in section 05 matter more than the adverts. The specialist brand firms hire through speculative letters and through five recruiters, not through job boards. That is where the roles you want actually are.</p>
+  <div class="note"><b>And the simplest point.</b> Four finished, tailored CVs are sitting unsent: Cambridge, Mishcon, ASOS and Alexander McQueen. Cambridge closes on Monday. Nothing on this page is worth as much as posting those four.</div>
 </section>
 
 <footer>
-  Compiled 24 July 2026 from 614 live UK legal vacancies. Thirty-two job descriptions read in full; experience requirements, salaries and applicant counts taken from the live adverts.<br><br>
+  Compiled 24 July 2026. Sixty job descriptions read in full across the live vacancy board, The Lawyer, TotallyLegal, the CITMA jobs board and fourteen firms' own careers pages. Experience requirements, salaries and applicant counts taken from the live adverts, not from any automatic score.<br><br>
   Full live board, updated weekly: <a href="https://soylee22.github.io/law-jobs/">soylee22.github.io/law-jobs</a>
 </footer>
 
