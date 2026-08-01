@@ -1,376 +1,298 @@
-<!doctype html>
-<html lang="en-GB">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#0D1014">
-<meta name="robots" content="noindex, nofollow">
-<title>Legal roles worth your time · 24 July 2026</title>
-<meta property="og:title" content="Legal roles worth your time">
-<meta property="og:description" content="Sixty roles read in full and scored. Seventeen worth applying for, ranked.">
+<title>Shortlist: 87 legal adverts read and ranked</title>
 <style>
-:root{
-  --ink:#0D1014; --paper:#FFFFFF; --stage:#F4F4F1; --text:#1A1A1A; --soft:#55585E;
-  --mute:#8A8A85; --line:#E4E4DF;
-  --lilac:#B8A2D6; --lilac-deep:#5B4980; --lilac-wash:#F3EFF9;
-  --green:#0F9F5C; --green-wash:#E8F7F0; --green-ink:#0B6B3E;
-  --amber-wash:#F7F2E6; --amber-ink:#8A6410;
-  --clay:#C2564A; --clay-wash:#F8EEEE; --clay-ink:#96382E;
+:root {
+  --paper:#fbfbfc; --ground:#f1f2f5; --ink:#171a20; --body:#31353d; --mute:#666c77;
+  --rule:#dcdee4; --claret:#7b2431; --claret-soft:#f3e7e9;
+  --go:#166141; --warn:#8a5d12; --bad:#96262c; --go-bg:#e6f1eb; --warn-bg:#f8efdd; --bad-bg:#f8e8e8;
+  --display:Georgia,'Iowan Old Style','Times New Roman',serif;
+  --text:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
 }
-@media (prefers-color-scheme: dark){
-  :root{
-    --paper:#15171A; --stage:#0F1113; --text:#E8E8E4; --soft:#B4B7BD;
-    --mute:#8A8F98; --line:#2A2D32;
-    --lilac-deep:#C3AEE0; --lilac-wash:#241F30;
-    --green-wash:#12281E; --green-ink:#7CD9AC;
-    --amber-wash:#2A2415; --amber-ink:#E3C578;
-    --clay-wash:#2B1B19; --clay-ink:#E8A79E;
+@media (prefers-color-scheme:dark) {
+  :root {
+    --paper:#14161b; --ground:#1b1e25; --ink:#eceef2; --body:#c6cad2; --mute:#8f95a1;
+    --rule:#2b2f38; --claret:#d9a2aa; --claret-soft:#2e1f23;
+    --go:#5cbd8c; --warn:#d3a34a; --bad:#e08a8a; --go-bg:#132a20; --warn-bg:#2e2515; --bad-bg:#2e1b1b;
   }
 }
-*{box-sizing:border-box;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--stage);color:var(--text);
-  font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
-.wrap{max-width:720px;margin:0 auto;background:var(--paper)}
-header{background:var(--ink);color:#fff;padding:28px 20px 26px}
-.kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--lilac);font-weight:700}
-h1{font-size:26px;line-height:1.2;font-weight:600;letter-spacing:-.02em;margin:10px 0 10px;color:#fff}
-header p{color:#B9BCC2;font-size:15px;margin:0}
-.stats{display:flex;flex-wrap:wrap;gap:20px;margin-top:20px}
-.stat b{display:block;font-size:21px;font-weight:700;color:#fff}
-.stat span{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:#8A8F98}
-section{padding:26px 20px 4px}
-h2{font-size:18px;font-weight:700;letter-spacing:-.01em;margin:0 0 14px;
-  padding-bottom:10px;border-bottom:2px solid var(--line)}
-h2 em{font-style:normal;color:var(--lilac-deep);margin-right:7px}
-p{margin:0 0 14px;color:var(--soft)}
-ol,ul{margin:0 0 16px;padding-left:22px;color:var(--soft)}
-li{margin-bottom:9px}
-b,strong{color:var(--text);font-weight:600}
-.note{background:var(--lilac-wash);border-left:4px solid var(--lilac);padding:14px 16px;
-  margin:18px 0;font-size:15px;color:var(--soft);border-radius:0 4px 4px 0}
-.note b{color:var(--text)}
-.urgent{background:var(--clay-wash);border-left:4px solid var(--clay);padding:14px 16px;
-  margin:18px 0;font-size:15px;color:var(--clay-ink);border-radius:0 4px 4px 0}
-.urgent b{color:var(--clay-ink)}
-
-.card{border:1px solid var(--line);border-radius:8px;margin:0 0 16px;background:var(--paper);padding:16px}
-.card.pick{border-color:var(--green);border-width:1.5px}
-.hd{display:flex;align-items:flex-start;gap:10px;margin-bottom:4px}
-.rank{flex:none;display:inline-flex;align-items:center;justify-content:center;
-  min-width:27px;height:27px;padding:0 7px;border-radius:14px;background:var(--stage);
-  color:var(--lilac-deep);font-weight:700;font-size:14px;margin-top:1px}
-.card.pick .rank{background:var(--green-wash);color:var(--green-ink)}
-.hd h3{font-size:17px;line-height:1.3;font-weight:700;margin:0;letter-spacing:-.01em;flex:1}
-.score{flex:none;font-size:13px;font-weight:700;color:var(--lilac-deep);
-  background:var(--lilac-wash);padding:3px 9px;border-radius:12px;margin-top:2px}
-.co{color:var(--mute);font-size:14.5px;margin:0 0 10px 37px}
-.facts{font-size:13.5px;color:var(--mute);margin:0 0 12px;line-height:1.5}
-.facts b{color:var(--text);font-weight:600}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 13px}
-.tag{font-size:12px;padding:4px 9px;border-radius:4px;background:var(--stage);
-  color:var(--soft);border:1px solid var(--line)}
-.tag.good{background:var(--green-wash);color:var(--green-ink);border-color:transparent}
-.tag.ip{background:var(--lilac-wash);color:var(--lilac-deep);border-color:transparent}
-.tag.warn{background:var(--amber-wash);color:var(--amber-ink);border-color:transparent}
-.tag.ipflag{background:var(--lilac-deep);color:#fff;border-color:transparent;font-weight:600}
-.tag.bad{background:var(--clay-wash);color:var(--clay-ink);border-color:transparent}
-.card p{font-size:15px;margin:0 0 12px}
-.risk{background:var(--amber-wash);color:var(--amber-ink);padding:11px 13px;border-radius:5px;
-  font-size:14.5px;margin:0 0 13px}
-.risk b{color:var(--amber-ink)}
-.ready{background:var(--green-wash);color:var(--green-ink);padding:11px 13px;border-radius:5px;
-  font-size:14.5px;margin:0 0 13px;font-weight:500}
-a.btn{display:block;text-align:center;padding:13px 16px;border-radius:6px;background:var(--ink);
-  color:#fff;text-decoration:none;font-weight:600;font-size:15px}
-@media (prefers-color-scheme: dark){a.btn{background:var(--lilac-wash);color:var(--lilac-deep);
-  border:1px solid var(--lilac-deep)}}
-a.btn:active{opacity:.75}
-.tierhead{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;
-  color:var(--lilac-deep);margin:30px 0 6px;padding-bottom:8px;border-bottom:1px solid var(--line)}
-.tiersub{font-size:14px;color:var(--mute);margin:0 0 16px}
-.out{border-top:1px solid var(--line);padding:12px 0}
-.out:last-of-type{border-bottom:1px solid var(--line);margin-bottom:18px}
-.out h4{font-size:15px;font-weight:600;margin:0 0 2px}
-.out .oc{font-size:13.5px;color:var(--mute);margin:0 0 6px}
-.out p{font-size:14px;margin:0;color:var(--soft)}
-.rub{width:100%;border-collapse:collapse;font-size:14px;margin:4px 0 18px}
-.rub th{text-align:left;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
-  color:var(--mute);font-weight:700;padding:0 8px 7px 0;border-bottom:1px solid var(--line)}
-.rub td{padding:8px 8px 8px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--soft)}
-.rub td:last-child{text-align:right;white-space:nowrap;color:var(--text);font-weight:600}
-footer{padding:24px 20px 40px;color:var(--mute);font-size:13px;border-top:1px solid var(--line);margin-top:26px}
-footer a{color:var(--lilac-deep)}
-@media (min-width:680px){
-  header{padding:38px 32px 34px}h1{font-size:31px}
-  section{padding:32px 32px 4px}.card{padding:20px}footer{padding:26px 32px 44px}
+:root[data-theme="dark"] {
+  --paper:#14161b; --ground:#1b1e25; --ink:#eceef2; --body:#c6cad2; --mute:#8f95a1;
+  --rule:#2b2f38; --claret:#d9a2aa; --claret-soft:#2e1f23;
+  --go:#5cbd8c; --warn:#d3a34a; --bad:#e08a8a; --go-bg:#132a20; --warn-bg:#2e2515; --bad-bg:#2e1b1b;
+}
+:root[data-theme="light"] {
+  --paper:#fbfbfc; --ground:#f1f2f5; --ink:#171a20; --body:#31353d; --mute:#666c77;
+  --rule:#dcdee4; --claret:#7b2431; --claret-soft:#f3e7e9;
+  --go:#166141; --warn:#8a5d12; --bad:#96262c; --go-bg:#e6f1eb; --warn-bg:#f8efdd; --bad-bg:#f8e8e8;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--body);
+  font:400 17px/1.62 var(--text); -webkit-font-smoothing:antialiased; }
+.sheet { max-width:74rem; margin:0 auto; padding:clamp(28px,5vw,64px) clamp(18px,4vw,44px) 96px; }
+.masthead { border-bottom:2px solid var(--ink); padding-bottom:22px; }
+.eyebrow { font:600 11px/1 var(--text); letter-spacing:.16em; text-transform:uppercase;
+  color:var(--claret); margin:0 0 14px; }
+h1 { font:400 clamp(30px,4.6vw,46px)/1.08 var(--display); color:var(--ink);
+  margin:0 0 16px; letter-spacing:-.015em; text-wrap:balance; }
+.standfirst { max-width:62ch; margin:0; color:var(--body); font-size:17.5px; }
+.tally { display:flex; flex-wrap:wrap; gap:0; margin:26px 0 0; border-top:1px solid var(--rule); }
+.tally div { flex:1 1 128px; padding:14px 16px 12px; border-right:1px solid var(--rule); }
+.tally div:last-child { border-right:0; }
+.tally b { display:block; font:400 27px/1 var(--display); color:var(--ink);
+  font-variant-numeric:tabular-nums; }
+.tally span { display:block; font-size:12.5px; color:var(--mute); margin-top:5px; }
+h2 { font:400 clamp(21px,2.6vw,27px)/1.2 var(--display); color:var(--ink);
+  margin:64px 0 6px; letter-spacing:-.01em; }
+h2:first-of-type { margin-top:52px; }
+.lede { max-width:62ch; color:var(--mute); margin:0 0 24px; font-size:16px; }
+h3 { font:600 16px/1.35 var(--text); color:var(--ink); margin:26px 0 8px; }
+ol.entries { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0; }
+.entry { display:flex; gap:clamp(14px,2.5vw,28px); padding:26px 0; border-top:1px solid var(--rule); }
+.entry:first-child { border-top:1px solid var(--ink); }
+.num { flex:0 0 2.4rem; font:400 30px/1 var(--display); color:var(--claret);
+  font-variant-numeric:tabular-nums; padding-top:2px; }
+.entry-body { flex:1; min-width:0; }
+.entry h3 { margin:0; font:400 20px/1.28 var(--display); }
+.entry h3 a { color:var(--ink); text-decoration:none; background-image:linear-gradient(var(--rule),var(--rule));
+  background-size:100% 1px; background-repeat:no-repeat; background-position:0 1.18em; }
+.entry h3 a:hover, .entry h3 a:focus-visible { background-image:linear-gradient(var(--claret),var(--claret)); }
+.employer { margin:3px 0 12px; font:600 12px/1 var(--text); letter-spacing:.09em;
+  text-transform:uppercase; color:var(--mute); }
+.claim { margin:0 0 10px; font-weight:600; color:var(--ink); max-width:64ch; }
+.reason { margin:0 0 12px; max-width:66ch; }
+.caveat { margin:0 0 10px; max-width:66ch; font-size:15.5px; color:var(--body);
+  background:var(--warn-bg); border-radius:2px; padding:9px 13px; }
+.caveat span { font:600 11px/1 var(--text); letter-spacing:.11em; text-transform:uppercase;
+  color:var(--warn); margin-right:8px; }
+.facts { margin:0; font-size:13px; color:var(--mute); font-variant-numeric:tabular-nums; }
+ul.plain { margin:0 0 18px; padding-left:1.15rem; max-width:70ch; }
+ul.plain li { margin-bottom:9px; font-size:16px; }
+ul.plain b { color:var(--ink); }
+.panel { background:var(--ground); border-left:3px solid var(--claret); padding:18px 22px; margin:0 0 8px; }
+.panel ul { margin:0; padding-left:1.15rem; }
+.panel li { margin-bottom:9px; font-size:16px; max-width:68ch; }
+.panel li:last-child { margin-bottom:0; }
+.table-wrap { overflow-x:auto; border-top:2px solid var(--ink); margin-top:14px; }
+table { width:100%; border-collapse:collapse; font-size:13.5px; font-variant-numeric:tabular-nums; }
+th { text-align:left; font:600 10.5px/1 var(--text); letter-spacing:.11em; text-transform:uppercase;
+  color:var(--mute); padding:11px 10px; border-bottom:1px solid var(--rule); white-space:nowrap; }
+td { padding:8px 10px; border-bottom:1px solid var(--rule); vertical-align:top; }
+tr.picked td { background:var(--claret-soft); }
+td.mark { color:var(--claret); width:1.3rem; }
+td.role a { color:var(--ink); text-decoration:none; border-bottom:1px solid transparent; }
+td.role a:hover, td.role a:focus-visible { border-bottom-color:var(--claret); }
+td.co { color:var(--mute); }
+td.floor { font-weight:600; white-space:nowrap; }
+td.floor.go { color:var(--go); } td.floor.warn { color:var(--warn); }
+td.floor.bad { color:var(--bad); } td.floor.n { color:var(--mute); }
+td.num-cell { text-align:right; color:var(--mute); width:2.6rem; }
+.f { display:inline-block; font:600 10.5px/1 var(--text); letter-spacing:.05em;
+  padding:3px 6px; border-radius:2px; margin:0 4px 3px 0; }
+.f.ip { background:var(--go-bg); color:var(--go); }
+.f.cn { background:var(--claret-soft); color:var(--claret); }
+.f.tm { background:var(--warn-bg); color:var(--warn); }
+.f.bar { background:var(--bad-bg); color:var(--bad); }
+footer { margin-top:56px; padding-top:18px; border-top:1px solid var(--rule);
+  color:var(--mute); font-size:14px; max-width:70ch; }
+a:focus-visible { outline:2px solid var(--claret); outline-offset:3px; }
+@media (max-width:620px) {
+  .entry { gap:12px; } .num { flex-basis:1.8rem; font-size:23px; }
+  .tally div { flex-basis:50%; border-bottom:1px solid var(--rule); }
 }
 </style>
-</head>
-<body>
-<div class="wrap">
 
-<header>
-  <div class="kicker">Shortlist v2 · 24 July 2026</div>
-  <h1>Legal roles worth your time</h1>
-  <p>Sixty roles read in full, across the live job boards, the specialist IP boards and firms' own careers pages. Seventeen are worth an application. They are scored and ranked below, and the scoring is shown so you can disagree with it.</p>
-  <p style="margin-top:14px;color:#8A8F98;font-size:13.5px">Rechecked Tuesday 28 July: Cambridge and Endava have closed and moved to the ruled-out list. Dr. Martens added at number 5. The other sixteen are still live.</p>
-  <div class="stats">
-    <div class="stat"><b>68</b><span>read in full</span></div>
-    <div class="stat"><b>17</b><span>worth applying</span></div>
-    <div class="stat"><b>7</b><span>real IP roles</span></div>
-    <div class="stat"><b>4</b><span>CVs unsent</span></div>
+<div class="sheet">
+<header class="masthead">
+  <p class="eyebrow">Legal job search &middot; 1 August 2026</p>
+  <h1>Eighty-seven adverts read, seventeen worth applying for</h1>
+  <p class="standfirst">Both scanners re-run, 475 unique roles found, 87 longlisted on the face of the posting, every one of those retrieved and read in full. Ranked against a fixed candidate profile: solicitor of England and Wales qualified 2025, PRC-qualified with four years of Chinese IP litigation, IP LLM, native Mandarin, right to work without sponsorship, London.</p>
+  <div class="tally">
+    <div><b>475</b><span>roles scanned</span></div>
+    <div><b>87</b><span>adverts read in full</span></div>
+    <div><b>17</b><span>put forward</span></div>
+    <div><b>11</b><span>published a salary</span></div>
   </div>
 </header>
 
-<section>
-  <div class="urgent"><b>Two of these closed while the list sat unread.</b> <b>University of Cambridge closed yesterday</b> and the CV and covering letter for it had been written weeks earlier and never sent. <b>Endava stopped accepting applications</b> after seven days; it was the role most likely to end in an offer. Both are now in the ruled-out section. Today the same shape has appeared again: <b>Dr. Martens, Senior Legal Counsel, IP Disputes</b> at number 5, posted this morning, and a CV tailored to Dr Martens IP Disputes has existed since 2 July. Mishcon, ASOS and Alexander McQueen also have finished CVs sitting unsent.</div>
-</section>
+<h2>Why the rankings move</h2>
+<p class="lede">The scanners rank on job title and employer. Sixty of these roles are called Legal Counsel, and they run from newly qualified to eight years' post-qualification experience, from London to Sydney. Three things decide whether an advert is real for the candidate, and none of them is visible in a title: the stated seniority floor, the qualification it demands, and where the employer expects the candidate to have trained.</p>
 
-<section>
-  <h2><em>01</em>What changed since the first version</h2>
-  <p>The first list leaned on job titles with "IP" in them. That was wrong, and it mixed up two different jobs.</p>
-  <p><b>You are an IP solicitor, not a trade mark attorney.</b> Trade mark attorney and patent attorney roles need CITMA or CIPA qualification, and the day job is filing and prosecution. Those are excluded now, however well they scored. So are paralegal, formalities and renewals grades. What counts is an IP or brands seat at a law firm, or an IP or brand counsel job in-house, where the work is advisory and contentious.</p>
-  <p><b>Your strength is soft and contentious.</b> Trade marks, passing off, copyright, designs, brand enforcement, disputes. Patent work is fine as part of a broader IP disputes practice, and your electrical engineering degree and the US ITC case make it credible, but a role that is only patent prosecution is the wrong job. General commercial and contracts work is a legitimate second lane.</p>
-  <p>The search was also widened well past the automated scan, which only covers a set list of employers and is heavily weighted toward patent attorney firms. Added this time: the specialist IP job boards, The Lawyer and TotallyLegal, the CITMA board, and the careers pages of fourteen brands and IP firms.</p>
-</section>
+<h2>The seventeen, in the order to apply</h2>
+<p class="lede">The first five are this week's work.</p>
+<ol class="entries"><li class="entry">
+<div class="num">1</div>
+<div class="entry-body">
+<h3><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-civica-4443338289" target="_blank" rel="noopener">Legal Counsel</a></h3>
+<p class="employer">Civica</p>
+<p class="claim">1 to 4 PQE, England and Wales, and it names trade marks and brand protection</p>
+<p class="reason">“Qualified Solicitor in England & Wales with 1-4 years' PQE”, and among the listed duties: “Advise on intellectual property matters, including licensing, trademarks and brand protection.” The business serves customers across the UK and APAC, so the international side is live rather than decorative. It also says the role suits someone who “wants exposure to senior stakeholders”, which is the gap the current job leaves.</p>
+<p class="caveat"><span>Watch</span> Public-sector software, so the subject matter is unglamorous. Salary not published.</p>
+<p class="facts">1+ PQE &middot; £25,000 &middot; posted 2026-07-21</p>
+</div></li><li class="entry">
+<div class="num">2</div>
+<div class="entry-body">
+<h3><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-ifrs-foundation-4432348803" target="_blank" rel="noopener">Legal Counsel</a></h3>
+<p class="employer">Ifrs Foundation</p>
+<p class="claim">No PQE floor, England and Wales, and the heaviest IP content of any role the profile can actually reach</p>
+<p class="reason">Drafting commercial and IP contracts, and “protecting and maintaining intellectual property rights”, for an organisation whose main asset is a copyrighted standard. The team is a paralegal, a trainee, an Assistant Legal Counsel and a Legal Counsel under the Chief Legal Officer, so there is a defined junior rung. London.</p>
+<p class="caveat"><span>Watch</span> The advert carries fixed-term language. Establish whether the post is permanent before spending time on it.</p>
+<p class="facts">no PQE floor &middot; posted 2026-07-22</p>
+</div></li><li class="entry">
+<div class="num">3</div>
+<div class="entry-body">
+<h3><a href="https://huaweiuk.teamtailor.com/jobs/5609972-legal-counsel" target="_blank" rel="noopener">Legal Counsel</a></h3>
+<p class="employer">Huawei R&amp;D UK</p>
+<p class="claim">Written for “around 2 years post SQE experience”, and the profile has already applied</p>
+<p class="reason">Commercial, corporate, intellectual property and compliance for Huawei's UK research operation across London, Cambridge, Ipswich and Edinburgh. It is the only advert in the set that specifies the SQE route, which is the candidate's route, and the only one where the Mandarin is an operating asset rather than a nice line on the CV.</p>
+<p class="caveat"><span>Watch</span> An application went in on 30 June with no reply. The listing is still live on Huawei&#x27;s own site, so this is a chase, not a fresh application.</p>
+<p class="facts">no PQE floor &middot; posted 2025-02-26</p>
+</div></li><li class="entry">
+<div class="num">4</div>
+<div class="entry-body">
+<h3><a href="https://icg.wd3.myworkdayjobs.com/en-US/external_careers/job/London/Legal-Counsel_R3079-1" target="_blank" rel="noopener">Legal Counsel</a></h3>
+<p class="employer">ICG (🇬🇧, Financial services)</p>
+<p class="claim">“English qualified lawyer (NQ – 4PQE)”</p>
+<p class="reason">NQ is the bottom of the stated range rather than a stretch, and the advert says it is open to candidates qualified elsewhere too, which quietly helps a dual-qualified applicant. Intercontinental Exchange runs exchanges and clearing houses, so it is a serious in-house function in London.</p>
+<p class="caveat"><span>Watch</span> Financial markets regulation, not IP. This one is about getting into a good in-house team at the right level.</p>
+<p class="facts">1+ PQE &middot; posted 2026-05-13</p>
+</div></li><li class="entry">
+<div class="num">5</div>
+<div class="entry-body">
+<h3><a href="https://uk.linkedin.com/jobs/view/associate-counsel-at-paramount-4447526551" target="_blank" rel="noopener">Associate Counsel</a></h3>
+<p class="employer">Paramount</p>
+<p class="claim">1 to 3 PQE, and the seat is Consumer Products, which is licensing</p>
+<p class="reason">Consumer Products and Experiences at a global studio is trade mark licensing, brand approvals and merchandising agreements. That is soft IP under another name, and it is the closest thing on the list to the work done for brand owners in China. Posted 31 July, so it is fresh.</p>
+<p class="caveat"><span>Watch</span> Camden Town and on-site.</p>
+<p class="facts">1+ PQE &middot; on-site &middot; posted 2026-07-31</p>
+</div></li><li class="entry">
+<div class="num">6</div>
+<div class="entry-body">
+<h3><a href="https://uk.linkedin.com/jobs/view/associate-legal-counsel-at-legend-4444995733" target="_blank" rel="noopener">Associate Legal Counsel</a></h3>
+<p class="employer">Legend</p>
+<p class="claim">1 to 3 PQE, England and Wales, London</p>
+<p class="reason">“Qualified Solicitor (England & Wales or equivalent) with approximately 1-3 years PQE, gained within a commercial...”. The process is transparent, with a stage against the General Counsel and Senior Legal Counsel on commercial experience and contract negotiation, which is a fair test of what the profile has.</p>
+<p class="caveat"><span>Watch</span> Gaming and player experience, so consider whether the sector suits.</p>
+<p class="facts">1+ PQE &middot; posted 2026-07-24</p>
+</div></li><li class="entry">
+<div class="num">7</div>
+<div class="entry-body">
+<h3><a href="https://icg.wd3.myworkdayjobs.com/en-US/external_careers/job/London/Legal-Counsel_R3079-1" target="_blank" rel="noopener">Legal Counsel</a></h3>
+<p class="employer">ICG (🇬🇧, Financial services)</p>
+<p class="claim">1 to 4 PQE, and it says explicitly it will look past the number</p>
+<p class="reason">Advertised as “a junior legal counsel” with “1 – 4 years of post qualification experience”, and the advert adds that “while years of experience are a helpful guide, we will consider all applications”. That sentence is rare and worth taking at face value. London office, flexible working.</p>
+<p class="caveat"><span>Watch</span> Private-practice trained is stated as the expectation. Alternative asset management is a long way from IP.</p>
+<p class="facts">1+ PQE &middot; posted 2026-05-13</p>
+</div></li><li class="entry">
+<div class="num">8</div>
+<div class="entry-body">
+<h3><a href="https://uk.linkedin.com/jobs/view/associate-counsel-at-img-4414930792" target="_blank" rel="noopener">Associate Counsel</a></h3>
+<p class="employer">Img</p>
+<p class="claim">1 to 3 PQE, mandatory qualified solicitor, general commercial contracts</p>
+<p class="reason">Sports and media rights at IMG involves constant brand, image and licensing work even where the advert calls it general commercial contracting. The requirement list is short and the profile meets all of it.</p>
+<p class="caveat"><span>Watch</span> The advert is thin on what the seat actually covers.</p>
+<p class="facts">1+ PQE &middot; posted 2026-07-17</p>
+</div></li><li class="entry">
+<div class="num">9</div>
+<div class="entry-body">
+<h3><a href="https://uk.linkedin.com/jobs/view/immediately-available-legal-counsel-commercial-1-3-pqe-6-12-month-interim-b2b-data-saas-business-london-city-at-kingsley-green-recruitment-4441967076" target="_blank" rel="noopener">Immediately Available Legal Counsel Commercial 1 3 Pqe 6 12 Month Interim B2B Data Saas Business London City</a></h3>
+<p class="employer">Kingsley Green Recruitment (recruiter — client undisclosed)</p>
+<p class="claim">1 to 3 PQE, London, two to three days a week in the office</p>
+<p class="reason">Two near-identical postings from the same recruiter, one permanent at a B2B data and SaaS business and one a 6 to 12 month interim. Commercial or technology transactions experience is wanted “whether from private practice or in-house”, which does not shut the profile out.</p>
+<p class="caveat"><span>Watch</span> Recruiter-fronted, so the client is undisclosed until you engage. Worth registering with them either way.</p>
+<p class="facts">1+ PQE &middot; Hybrid &middot; posted 2026-07-17</p>
+</div></li><li class="entry">
+<div class="num">10</div>
+<div class="entry-body">
+<h3><a href="https://uk.linkedin.com/jobs/view/nq-3-pqe-lawyer-fintech-at-taylor-root-4444561777" target="_blank" rel="noopener">Nq 3 Pqe Lawyer Fintech</a></h3>
+<p class="employer">Taylor Root (recruiter — client undisclosed)</p>
+<p class="claim">NQ to 3 PQE, and it invites people outside the range</p>
+<p class="reason">A scaling fintech, and the advert closes with “candidates outside this PQE range with the prerequisite experience would be considered”. It also accepts lawyers qualified in other jurisdictions or due to qualify shortly, which suits a dual-qualified applicant.</p>
+<p class="caveat"><span>Watch</span> Client undisclosed.</p>
+<p class="facts">3+ PQE &middot; posted 2026-07-30</p>
+</div></li><li class="entry">
+<div class="num">11</div>
+<div class="entry-body">
+<h3><a href="https://uk.linkedin.com/jobs/view/nq-legal-counsel-at-robert-walters-4442013737" target="_blank" rel="noopener">Nq Legal Counsel</a></h3>
+<p class="employer">Robert Walters (recruiter — client undisclosed)</p>
+<p class="claim">Newly qualified, £80,000 to £95,000</p>
+<p class="reason">Written for an NQ moving in-house, and the only advert of the 87 that pairs an explicit NQ level with a published salary well above the candidate's stretch band. Insurance experience is expressly not required, only an interest in the market.</p>
+<p class="caveat"><span>Watch</span> Insurance sector, and the team is small. The salary suggests the bar on quality is high.</p>
+<p class="facts">no PQE floor &middot; posted 2026-07-20</p>
+</div></li><li class="entry">
+<div class="num">12</div>
+<div class="entry-body">
+<h3><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-legatics-4426842179" target="_blank" rel="noopener">Legal Counsel</a></h3>
+<p class="employer">Legatics</p>
+<p class="claim">Newly qualified up to around 3 years PQE, building the function from scratch</p>
+<p class="reason">“An early-career lawyer or legal operations specialist to run and build out our internal legal function.” Being the first lawyer in a legal-technology business is the sort of scope that answers the “what have you actually run” question was weak in a recent interview.</p>
+<p class="caveat"><span>Watch</span> Small company, so no supervision and no training budget to speak of.</p>
+<p class="facts">3+ PQE &middot; posted 2026-06-16</p>
+</div></li><li class="entry">
+<div class="num">13</div>
+<div class="entry-body">
+<h3><a href="https://www.dawnellmore.co.uk/job/trade-mark-attorney-solicitor-up-to-5-years-pqe" target="_blank" rel="noopener">Trade Mark Attorney / Solicitor (Up to 5 years&#x27; PQE)</a></h3>
+<p class="employer">Dawn Ellmore client (recruiter — client undisclosed)</p>
+<p class="claim">Up to five years&#x27; PQE, and it is a pure trade mark seat</p>
+<p class="reason">The five-year figure is a ceiling, not a floor, which almost every other IP advert here gets the other way round. Trade mark filing and prosecution with tactical and commercial work at a reputable London firm. Of everything on this list, this is the closest to the work the profile actually trained for.</p>
+<p class="caveat"><span>Watch</span> It is pitched at the attorney track as well as solicitors, so the applicant would be competing against qualified trade mark attorneys. Posted 1 May, so check it is still open.</p>
+<p class="facts">5+ PQE &middot; posted 2026-05-01</p>
+</div></li><li class="entry">
+<div class="num">14</div>
+<div class="entry-body">
+<h3><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-nominet-4443780147" target="_blank" rel="noopener">Legal Counsel</a></h3>
+<p class="employer">Nominet</p>
+<p class="claim">No PQE floor, permanent, and the subject is domain names</p>
+<p class="reason">Nominet runs the .uk registry. The role covers the Terms and Conditions of Domain Name Registration, the Dispute Resolution Service policy and the criminal practices policy. Domain disputes and cybersquatting are soft IP, and the profile has done the enforcement equivalent for Bank of America against sites impersonating the bank.</p>
+<p class="caveat"><span>Watch</span> London or Oxford, hybrid at a minimum of 20% in the office. Also heavy on cyber security regulation.</p>
+<p class="facts">no PQE floor &middot; Hybrid &middot; £60 &middot; posted 2026-07-22</p>
+</div></li><li class="entry">
+<div class="num">15</div>
+<div class="entry-body">
+<h3><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-euroclear-4403965907" target="_blank" rel="noopener">Legal Counsel</a></h3>
+<p class="employer">Euroclear</p>
+<p class="claim">2+ PQE “ideally”, London, hybrid</p>
+<p class="reason">“Qualified lawyer, ideally 2+ years PQE”, with corporate and commercial work for the UK securities settlement business inside a larger multi-jurisdiction legal division. The word ideally is doing useful work for someone at 1.4 years.</p>
+<p class="caveat"><span>Watch</span> Post-trade infrastructure is specialised and dry.</p>
+<p class="facts">2+ PQE &middot; hybrid &middot; posted 2026-07-16</p>
+</div></li><li class="entry">
+<div class="num">16</div>
+<div class="entry-body">
+<h3><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-ssq-4440157939" target="_blank" rel="noopener">Legal Counsel</a></h3>
+<p class="employer">Ssq</p>
+<p class="claim">2 to 5 PQE at a high-growth fintech</p>
+<p class="reason">Commercial contracts, product development, data protection and regulatory work, London hybrid. A year above the profile but inside the range that recruiters flex.</p>
+<p class="caveat"><span>Watch</span> Recruiter-fronted.</p>
+<p class="facts">2+ PQE &middot; Hybrid &middot; posted 2026-07-20</p>
+</div></li><li class="entry">
+<div class="num">17</div>
+<div class="entry-body">
+<h3><a href="https://uk.linkedin.com/jobs/view/legal-counsel-commercial-contracts-at-fry-brown-4441462963" target="_blank" rel="noopener">Legal Counsel Commercial Contracts</a></h3>
+<p class="employer">Fry Brown</p>
+<p class="claim">2 to 4 PQE, fintech, London</p>
+<p class="reason">Short advert, clear band, and commercial contracts are the part of the candidate's current job the candidate does most of.</p>
+<p class="caveat"><span>Watch</span> Very little detail published about the client.</p>
+<p class="facts">2+ PQE &middot; posted 2026-07-16</p>
+</div></li></ol>
 
-<section>
-  <h2><em>02</em>How the scoring works</h2>
-  <p>Every role gets a score out of 100 from four things. No employer bonuses, no keyword tricks.</p>
-  <table class="rub">
-    <thead><tr><th>What</th><th>Range</th></tr></thead>
-    <tbody>
-      <tr><td><b>Lane.</b> Contentious soft IP 40 · non-contentious soft IP 34 · IP litigation including patent 30 · IP-adjacent, meaning media rights, copyright, brand and advertising 24 · general commercial 14</td><td>0&ndash;40</td></tr>
-      <tr><td><b>Band.</b> You clear the stated bar 30 · under a year short 22 · one to two years short 12 · more than two years short, or attorney-qualified only 0</td><td>0&ndash;30</td></tr>
-      <tr><td><b>Employer.</b> How much the name and the seat are worth to the next move, not how famous it is</td><td>0&ndash;15</td></tr>
-      <tr><td><b>Odds.</b> Applicant count and how fresh the advert is. Under 30 applicants scores 15, over 150 scores 2</td><td>0&ndash;15</td></tr>
-    </tbody>
-  </table>
-  <div class="note"><b>Why the old numbers were wrong.</b> The automatic score reads titles and employers and never opens the advert. It gave 90 to a role wanting six to ten years, 62 to a "Junior" role wanting five years and native Hungarian, and 100 to three paralegal jobs. Every number below comes from a human reading the actual requirements.</div>
-</section>
+<h2>Cut: the advert outlived the job</h2>
+<div class="panel"><ul><li><b>Alexander McQueen (Kering)</b>, Junior Legal Counsel. The LinkedIn posting still renders, three weeks old with over 200 applicants, but Kering's own careers site lists exactly one Legal &amp; Compliance vacancy in Europe and it is a Balenciaga intellectual property internship in Paris starting January 2027. Requisition R167842 was already verified dead on 18 July. The role has now been resurrected twice from a LinkedIn listing that outlived it. For Kering, kering.com is the only source worth believing.</li></ul></div>
 
-<section>
-  <h2><em>03</em>The ranked list</h2>
-  <p>One list, ordered strictly by the score. The seven roles with a green border and the "genuine IP role" tag are the only true IP jobs found in sixty-eight adverts that you could both do and realistically get. Everything else is adjacent: media rights, copyright, brand and advertising, or general commercial.</p>
+<h2>Ruled out on pedigree, not on level</h2>
+<p class="lede">The filter most likely to end an application before anyone opens the CV. These adverts ask where the candidate trained, not only how long they have been qualified. The profile is an SQE qualifier with four years practising in China and no training contract, so no covering letter changes that.</p>
+<div class="panel"><ul><li><b>Artificial Labs</b>, Legal Counsel. Ranked first on the PQE band and the IP content before this was read properly. The advert opens “If you trained at a top London firm and did an in-house seat”, then asks for someone “ideally trained at a leading London law firm (Magic Circle, Silver Circle, leading City or top US firm)”, and then states as fact: “During your training contract you completed a client secondment or in-house seat.” The profile has no training contract at all, and did not qualify in London. Two of those three cannot be answered.</li><li><b>Formula 1</b>, Legal Counsel, Dispute Resolution. 1 to 2 PQE and a disputes seat, which fits. But the requirement is not hedged: “Candidates will be able to demonstrate that they: Have trained and qualified as a lawyer at a leading law firm (e.g. City, US or West End law firm)”, and then “following qualification, have worked as a junior lawyer in a leading law firm or as part of a reputable in-house team”. That is a screen the profile fails twice.</li><li><b>SSQ</b>, Legal Counsel. Milder, and probably survivable: “Strong academics and training from a recognised law firm.” Recognised is a lower bar than leading, and it does not name London.</li></ul></div>
 
-  <div class="card pick">
-    <div class="hd"><span class="rank">1</span><h3>IP &amp; Brand Counsel</h3><span class="score">87</span></div>
-    <p class="co">JD.com · London · in-house</p>
-    <p class="facts"><b>No PQE stated</b> · 37 applicants · posted around 17 July</p>
-    <div class="tags"><span class="tag ipflag">Genuine IP role</span><span class="tag ip">Soft IP + brand</span><span class="tag good">No stated bar</span><span class="tag good">China credential is the job</span></div>
-    <p>A NASDAQ-listed Chinese group building European brand enforcement, hiring in London for IP and brand. Your PRC qualification, English admission, Mandarin and four years of Chinese IP litigation are the specification, not extras. It was advertised earlier in the summer, went, and has come back on a new posting.</p>
-    <p>The advert is pure boilerplate with no duties and no experience bar, which mostly helps: nothing on the page can rule you out, so the covering letter does the work.</p>
-    <p class="risk"><b>Watch out:</b> "Counsel" at a group this size often means four to six years in practice even when unstated. You are applying blind. Do it anyway.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/ip-brand-counsel-at-jd-com-4440911538">Open the advert</a>
-  </div>
-  <div class="card pick">
-    <div class="hd"><span class="rank">2</span><h3>Associate (2&ndash;4 PQE), IP Brands</h3><span class="score">82</span></div>
-    <p class="co">Mishcon de Reya · London · law firm</p>
-    <p class="facts">Wants <b>2&ndash;4 years' PQE in IP, private practice</b> · 73 applicants · posted around late May</p>
-    <div class="tags"><span class="tag ipflag">Genuine IP role</span><span class="tag ip">Soft IP, contentious and advisory</span><span class="tag good">Top brands practice</span><span class="tag good">CV already written</span><span class="tag warn">Two months old</span></div>
-    <p>The best law firm role available to you. A market-leading brands practice covering the full lifecycle from inception through protection, commercialisation and enforcement, and the seat is explicitly soft IP: trade marks, designs and copyright, advisory and disputes, portfolio management, worldwide filing and enforcement, and registry disputes at the UK IPO. Your Beijing practice, moved to London.</p>
-    <p class="ready">A tailored CV for this exact role was built weeks ago and has never been sent.</p>
-    <p class="risk"><b>Watch out:</b> two months old with 73 applicants, so ring the firm and check it is still open before spending an evening on the covering letter.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/associate-2-4pqe-%E2%80%93-ip-brands-at-mishcon-de-reya-llp-4391761789">Open the advert</a>
-  </div>
-  <div class="card">
-    <div class="hd"><span class="rank">3</span><h3>Legal Counsel</h3><span class="score">80</span></div>
-    <p class="co">NBCUniversal · London · in-house</p>
-    <p class="facts">Wants <b>0&ndash;4 years' PQE</b>, UK preferred, other jurisdictions considered · 32 applicants · <b>posted today</b></p>
-    <div class="tags"><span class="tag ip">Copyright and advertising</span><span class="tag good">Band wide open</span><span class="tag good">EMEA and Asia Pacific</span></div>
-    <p>Scores highest of everything outside the pure IP roles, and deservedly. The band is nought to four years and explicitly open to other jurisdictions, which is unusual and directly helps you. The work covers copyright, AI and advertising developments across EMEA <b>and Asia Pacific</b>, so the Mandarin and the China knowledge are useful without the role being about China. Universal, DreamWorks, Peacock, Focus Features. Posted hours ago with 32 applicants.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-nbcuniversal-4444965782">Open the advert</a>
-  </div>
-  <div class="card pick">
-    <div class="hd"><span class="rank">4</span><h3>Intellectual Property Associate (trade mark focus)</h3><span class="score">78</span></div>
-    <p class="co">Through Cursitor, for a global law firm · London</p>
-    <p class="facts">Wants <b>3+ years' PQE</b> · under 25 applicants · <b>posted 24 July</b></p>
-    <div class="tags"><span class="tag ipflag">Genuine IP role</span><span class="tag ip">Pure trade mark work</span><span class="tag good">Brand new</span><span class="tag warn">Asks 3 years</span></div>
-    <p>The duties are your CV almost line for line: UK, EU and international trade mark portfolios, brand clearance and filing strategy, oppositions, cancellations, revocations and infringement before the UK IPO and EU IPO, coordinating international enforcement with overseas counsel, licensing and coexistence agreements, for luxury, fashion, retail and technology clients. Contentious and non-contentious both, at a genuinely global firm.</p>
-    <p class="risk"><b>Watch out:</b> three years is the biggest gap worth attempting, and a recruiter reads the number before the story. Telephone the recruiter rather than applying cold, so the Beijing years get explained by a person and not by a form.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/intellectual-property-associate-at-cursitor-4444944599">Open the advert</a>
-  </div>
-  <div class="card pick">
-    <div class="hd"><span class="rank">5</span><h3>Senior Legal Counsel, IP Disputes (maternity cover)</h3><span class="score">77</span></div>
-    <p class="co">Dr. Martens · London · in-house</p>
-    <p class="facts">"UK-qualified solicitor PQE in contentious IP" &mdash; <b>no number given</b> · LinkedIn seniority field set to <b>"Not Applicable"</b> · 48 applicants · refreshed today, but almost certainly relisted rather than brand new</p>
-    <div class="tags"><span class="tag ipflag">Genuine IP role</span><span class="tag good">Contentious IP, the whole job</span><span class="tag good">CV already written</span><span class="tag warn">Titled Senior</span><span class="tag warn">Fixed term</span></div>
-    <p>On subject matter this is the closest thing to your actual practice that has appeared anywhere in this search. The accountabilities are end-to-end IP litigation and disputes across markets with external counsel, settlement negotiation, global enforcement strategy, trade mark disputes, trade dress strategy and portfolio actions, working alongside the Brand Protection team.</p>
-    <p>Read the requirement carefully: "UK-qualified solicitor <b>PQE in contentious IP</b>", with no number attached, and it says a <b>postgraduate IP qualification is advantageous</b>, which you have. It wants multi-jurisdictional awareness, which you have in a way almost no English candidate does.</p>
-    <p class="ready">You already have a CV and covering letter tailored to "Dr Martens, IP Disputes", written on 2 July. You also applied to this employer on 8 July for their <b>Legal Counsel &ndash; IP</b> role, which closed on 14 July and has never been answered. That is a different job from this one, but it is the same legal team and probably the same hiring manager, so do not send a second cold application. Send one message that chases the July application and puts you forward for this role in the same breath.</p>
-    <p class="risk"><b>Watch out:</b> it is titled Senior, which usually means five years and up even where no number is printed, and it is a fixed-term maternity cover rather than a permanent seat. Apply regardless. A twelve-month contract doing exactly your work at a global brand is worth more to the next move than a permanent job doing something else.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/senior-legal-counsel-%E2%80%93-ip-disputes-fixed-term-maternity-at-dr-martens-plc-4428012298">Open the advert</a>
-  </div>
-  <div class="card pick">
-    <div class="hd"><span class="rank">6</span><h3>Legal Counsel, circa 0&ndash;2 years' PQE</h3><span class="score">74</span></div>
-    <p class="co">Through Michael Page, for a global consulting firm · City of London</p>
-    <p class="facts">Band tagged <b>NQ</b> · <b>£70,000&ndash;£76,000 plus bonus</b> · closes 17 August</p>
-    <div class="tags"><span class="tag ipflag">Genuine IP role</span><span class="tag good">Band bullseye</span><span class="tag good">Salary well above target</span><span class="tag ip">Manages the IP portfolio</span></div>
-    <p>Listed under Intellectual Property as well as Company and Commercial, and the duties include managing the organisation's IP portfolio: trade mark watch notices, renewals, recording know-how, and digital IP. It is not an IP specialist seat, but it is real IP responsibility inside a corporate legal team of three, reporting to the Head of Legal, at a global consulting firm.</p>
-    <p>The band is written as nought to two years and tagged NQ, so you clear it outright rather than argue. The money is a long way above what this search has been targeting.</p>
-    <p class="risk"><b>Watch out:</b> three days a week on site in London, and the client is not named until you engage the recruiter.</p>
-    <a class="btn" href="https://www.totallylegal.com/job/4051379/legal-counsel-london-hybrid-circa-0-2-yrs-pqe-/">Open the advert</a>
-  </div>
-  <div class="card pick">
-    <div class="hd"><span class="rank">7</span><h3>Patent Litigation Associate</h3><span class="score">72</span></div>
-    <p class="co">Through G2 Legal · London · law firm</p>
-    <p class="facts">Wants <b>2&ndash;5 years' PQE in intellectual property disputes</b>, UK qualified solicitor</p>
-    <div class="tags"><span class="tag ipflag">Genuine IP role</span><span class="tag ip">Contentious IP</span><span class="tag good">Solicitor role, not attorney</span><span class="tag good">Cross-border</span></div>
-    <p>A solicitor role in an IP disputes practice advising on UK and cross-border IP litigation, not a patent attorney job. Patent leads the work, but this is contentious IP, which is your actual strength, and your electrical engineering degree plus the US ITC Section 337 case make the technical side credible rather than claimed. Very few UK IP disputes seats open at this band.</p>
-    <p>There is a sister role at the same agency, <b>Patent Litigation Solicitor, 2&ndash;4 PQE</b>, so one conversation covers both.</p>
-    <p class="risk"><b>Watch out:</b> the firm is not named, so ask which one before investing. G2 Legal also advertised a 1&ndash;3 PQE trade mark associate role that has now gone, which tells you they handle exactly your niche. Register with them properly.</p>
-    <a class="btn" href="https://www.totallylegal.com/job/4050569/patent-litigation-associate-/">Open the advert</a>
-  </div>
-  <div class="card pick">
-    <div class="hd"><span class="rank">8</span><h3>Legal Counsel (IP), Product and Technology</h3><span class="score">71</span></div>
-    <p class="co">Sage · London · in-house, FTSE 100</p>
-    <p class="facts">Wants <b>solicitor, at least 2 years' PQE</b> · under 25 applicants · <b>posted 24 July</b></p>
-    <div class="tags"><span class="tag ipflag">Genuine IP role</span><span class="tag ip">Trade mark enforcement in the remit</span><span class="tag good">Very fresh</span><span class="tag warn">Half of it is product tech</span></div>
-    <p>The team supports trade mark and brand management including protection, enforcement, dispute management and portfolio governance. That half is genuinely yours, and it is a FTSE 100 in-house team, which is where the plan is pointed. Posted hours before this list with almost no competition yet.</p>
-    <p class="risk"><b>Watch out:</b> be honest that this is not a pure IP seat. The other half is AI, product advice and third-party technology integration, where you have nothing. Expect to be asked, and apply within days before the applicant count settles it.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-ip-product-and-technology-at-sage-4444938685">Open the advert</a>
-  </div>
-  <div class="card">
-    <div class="hd"><span class="rank">9</span><h3>Associate Counsel</h3><span class="score">66</span></div>
-    <p class="co">IMG (TKO Group) · London · in-house</p>
-    <p class="facts">Wants <b>1&ndash;3 years' PQE</b>, fully qualified solicitor · over 200 applicants</p>
-    <div class="tags"><span class="tag good">Exact band</span><span class="tag ip">Media rights and brand</span><span class="tag bad">200+ applicants</span></div>
-    <p>Global sports marketing: media rights management and sales, brand partnerships, and the business exists to grow IP for over 200 federations and events including the Premier League, the IOC, Wimbledon, UFC and WWE. Rights licensing is IP work in commercial clothing, and the band is exactly yours.</p>
-    <p class="risk"><b>Watch out:</b> over two hundred applicants. Sports and entertainment always draws a crowd.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/associate-counsel-at-img-4414930792">Open the advert</a>
-  </div>
-  <div class="card">
-    <div class="hd"><span class="rank">10</span><h3>Legal Counsel</h3><span class="score">63</span></div>
-    <p class="co">Nominet · London or Oxford, hybrid · in-house</p>
-    <p class="facts"><b>No number given</b>, "proven post-qualification experience" · under 25 applicants · posted 22 July</p>
-    <div class="tags"><span class="tag good">No numeric bar</span><span class="tag good">Very low competition</span><span class="tag warn">IP content is thin</span></div>
-    <p>Nominet runs the .UK domain registry and the job includes domain dispute resolution alongside County Court disputes, commercial contracts and governance. Domain disputes have a trade mark flavour, though I oversold that last time: this is mostly a broad commercial and disputes seat, not IP practice. It earns its place on no numeric bar, under 25 applicants, a 34-hour week finishing Friday lunchtime and 30 days' holiday.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-nominet-4443780147">Open the advert</a>
-  </div>
-  <div class="card">
-    <div class="hd"><span class="rank">11</span><h3>Legal Counsel</h3><span class="score">63</span></div>
-    <p class="co">SPORTFIVE · London · in-house</p>
-    <p class="facts">Wants <b>UK qualified solicitor, NQ to 2 years' PQE</b> · 179 applicants · posted 3 weeks ago</p>
-    <div class="tags"><span class="tag good">Exact band</span><span class="tag ip">Media rights</span><span class="tag bad">179 applicants</span></div>
-    <p>A three-person UK legal team reporting to the General Counsel, focused on the media rights business: drafting and negotiating media rights acquisition and sales agreements. Real responsibility early, and the advert explicitly wants a junior. Voted the most attractive sports marketing agency to work for three years running, which is also why 179 people have applied.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-sportfive-4434330139">Open the advert</a>
-  </div>
-  <div class="card">
-    <div class="hd"><span class="rank">12</span><h3>Solicitor</h3><span class="score">61</span></div>
-    <p class="co">Footballco · London · in-house</p>
-    <p class="facts">Wants <b>0&ndash;3 years' PQE</b>, ideally commercial contracts</p>
-    <div class="tags"><span class="tag good">Band wide open</span><span class="tag">Sports media</span></div>
-    <p>The largest football media business in the world, behind Goal.com and Mundial. Commercial contracts, media and sponsorship. No IP specialism, but the band is genuinely open at nought years and the sector is content and rights driven.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/solicitor-at-footballco-4439846103">Open the advert</a>
-  </div>
-  <div class="card">
-    <div class="hd"><span class="rank">13</span><h3>Legal Counsel</h3><span class="score">60</span></div>
-    <p class="co">ASOS · London · in-house</p>
-    <p class="facts"><b>No number given</b>, "qualified solicitor with experience" · 56 applicants in one day</p>
-    <div class="tags"><span class="tag ip">Brand, advertising, image rights</span><span class="tag good">CV already written</span><span class="tag bad">Very contested</span></div>
-    <p>Advertising compliance under the ASA and CAP codes, influencer and talent agreements including image rights and content usage, brand partnership and marketplace agreements, and AI-generated creative. The advert says prior experience in those areas is not required, which is an unusually open door, and there is no PQE number to fail.</p>
-    <p class="ready">A tailored CV for ASOS already exists and has not been sent.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-asos-com-4441537614">Open the advert</a>
-  </div>
-  <div class="card">
-    <div class="hd"><span class="rank">14</span><h3>Junior Legal Counsel</h3><span class="score">59</span></div>
-    <p class="co">Alexander McQueen (Kering) · London · in-house</p>
-    <p class="facts">Wants <b>0&ndash;4 years' PQE</b>, English qualified · over 200 applicants</p>
-    <div class="tags"><span class="tag good">Band wide open</span><span class="tag good">CV v3 already written</span><span class="tag bad">200+ applicants</span></div>
-    <p>A live McQueen vacancy, and a different one from the requisition that closed earlier in July, so the CV version 3 built for that has somewhere to go. A Kering house is exactly the brand-side name the plan wants, even though the work itself is commercial, corporate governance, property and data protection rather than IP.</p>
-    <p class="ready">CV version 3 is finished and waiting on a decision to send.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/junior-legal-counsel-at-alexander-mcqueen-4433933398">Open the advert</a>
-  </div>
-  <div class="card">
-    <div class="hd"><span class="rank">15</span><h3>EMEA International Commercial Counsel</h3><span class="score">58</span></div>
-    <p class="co">Church &amp; Dwight · London · in-house</p>
-    <p class="facts"><b>No number given</b>, qualified solicitor or barrister, UK or equivalent</p>
-    <div class="tags"><span class="tag good">No numeric bar</span><span class="tag">Consumer brands</span></div>
-    <p>A US consumer goods group with a portfolio of household brands, hiring commercial counsel for EMEA. No experience bar written down, which is worth a great deal when your years are the problem. Brand-side commercial rather than IP.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/emea-int-l-commercial-counsel-at-church-dwight-co-inc-4424752841">Open the advert</a>
-  </div>
-  <div class="card">
-    <div class="hd"><span class="rank">16</span><h3>Legal Counsel</h3><span class="score">56</span></div>
-    <p class="co">Roland Europe Group · London · in-house</p>
-    <p class="facts"><b>No number given</b>, qualified solicitor England &amp; Wales or European equivalent</p>
-    <div class="tags"><span class="tag good">No numeric bar</span><span class="tag ip">Copyright in the remit</span></div>
-    <p>The musical instruments manufacturer. The remit includes copyright and emerging technology alongside product safety, anti-bribery and modern slavery. Small legal function, broad exposure, well-known brand, no experience bar stated.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-roland-europe-group-4418837704">Open the advert</a>
-  </div>
-  <div class="card">
-    <div class="hd"><span class="rank">17</span><h3>Associate, Dispute Resolution (junior/mid)</h3><span class="score">54</span></div>
-    <p class="co">Bird &amp; Bird · London · law firm</p>
-    <p class="facts">Wants <b>2&ndash;3 years' PQE</b> · 90 applicants · posted 25 July</p>
-    <div class="tags"><span class="tag good">Best firm on the whole list</span><span class="tag good">Disputes</span><span class="tag warn">Not the IP team</span><span class="tag bad">Wants City training</span></div>
-    <p>New since Friday, and the score undersells it. Bird &amp; Bird is the firm this whole search should be aiming at: one of the strongest IP practices in the world with a large China desk, where dual PRC and English qualification is genuinely rare. Getting inside on any team is a route into that practice later.</p>
-    <p>But be clear-eyed about the seat. This is the <b>commercial</b> dispute resolution team, not IP: technology, life sciences, aviation, automotive and energy disputes. The score is low because the work is not IP and ninety people have applied in two days.</p>
-    <p class="risk"><b>Watch out:</b> the advert asks for "solid legal training and experience gained in a leading city firm", which is the one filter your CV cannot satisfy. Apply because of the firm, not because of the odds, and expect nothing.</p>
-    <a class="btn" href="https://uk.linkedin.com/jobs/view/associate-dispute-resolution-junior-mid-at-bird-bird-4441816351">Open the advert</a>
-  </div>
-</section>
+<h2>Worth a look, with a real stretch</h2>
+<p class="lede">Each asks for more than the profile has or carries a condition the profile does not meet. Listed because the subject matter is close enough to justify applying anyway.</p>
+<ul class="plain"><li><b>Major, Lindsey &amp; Africa</b>, Legal Counsel, Compliance (TMT &amp; E-Commerce). 4 to 8 years, so a real stretch, but it is the only advert of 87 that makes Chinese a core requirement: “English and Chinese”, “Chinese communication (core requirement)”. It accepts bar admission in England and Wales, the US “or other common law/civil law jurisdiction”, which is written for exactly this profile. Six-month interim.</li><li><b>TradingView</b>, Legal Counsel. 3 to 5 years PQE, London hybrid, and the advert wants a “subject matter expert in market data, IP, and disputes”. IP and disputes in the same sentence is rare.</li><li><b>Ultralytics</b>, Legal Counsel. No PQE floor, England and Wales, London. Owns the trade mark, copyright and trade secret portfolio and instructs counsel in the UK, Spain and China. But it says plainly: “We need someone who&#x27;s done this kind of work before, not someone learning open-source licensing on the job.”</li><li><b>Gotion High Tech</b>, Legal Counsel. 3 to 7 PQE at a Chinese battery manufacturer in London, with Mandarin named as a plus.</li><li><b>Visa</b>, Sr. Associate Counsel (London). No PQE floor stated, London hybrid, and it asks for a lawyer “qualified in England &amp; Wales” while adding that it will consider other jurisdictions. The Sr. in the title is the risk.</li><li><b>Amazon</b>, Associate Corporate Counsel (Prime Video, Music, Leo). All ask for 3+ years&#x27; post-qualification experience. An application to Prime Video went in on 13 June with no reply, so a second Amazon application adds little.</li><li><b>Major, Lindsey &amp; Africa</b>, Interim Junior Regulatory Legal Counsel. “Ideally 2–6 PQE, although all relevant profiles” considered. £100,000 to £120,000, London hybrid, interim.</li><li><b>Bending Spoons</b>, Graduate Legal Counsel. Aimed at limited experience and pays £85,797 in London on that basis. One of the core teams on offer is intellectual property. Fully remote.</li></ul>
 
-<section>
-  <h2><em>04</em>Two channels worth more than any single advert</h2>
+<h2>Ruled out, and why</h2>
+<p class="lede">Reading the adverts removes 47 of the 87. Every reason below is quoted or paraphrased from the posting itself.</p>
+<h3>Seniority floor above the profile</h3><ul class='plain'><li><b>JD.com</b>, IP &amp; Brand Counsel: 7 to 10 years&#x27; PQE, and the second language it wants is German, French, Dutch, Spanish or Portuguese</li><li><b>Kingsley Green</b>, Legal Counsel, Intellectual Property (global consumer brand): 5 to 7 years&#x27; PQE. The most painful miss on the list: a pure IP seat at a household-name brand</li><li><b>Happyrobot</b>, Legal Counsel: 6+ years of relevant legal experience</li><li><b>Flex Legal</b>, Intellectual Property Lawyer: minimum 5+ years&#x27; PQE, and a nine-month contract</li><li><b>CITMA listing</b>, Trade Mark Solicitor: minimum 4 years&#x27; PQE</li><li><b>EET Fuels</b>, Commercial Legal Counsel: 6 to 10 PQE, and Ellesmere Port</li><li><b>Revolut</b>, Legal Counsel, Loyalty: 6+ years of PQE</li><li><b>dLocal</b>, Legal Counsel: 5 to 7 years</li><li><b>Anthropic</b>, Commercial Counsel, EMEA: 4+ years, £125,000 to £165,000</li><li><b>Equinix</b>, Legal Counsel: 5+ years PQE and a construction specialism</li><li><b>BYD Europe</b>, Legal Counsel: 8+ years of professional legal experience</li><li><b>Redcloud</b>, In House Counsel: 4+ years PQE</li><li><b>Primark</b>, Legal Counsel, Technology: 4 to 6 years PQE, and Reading</li><li><b>Manolo Blahnik</b>, Legal Counsel (maternity cover): 4 to 8 years PQE, and the focus is real estate</li></ul><h3>Wrong jurisdiction or wrong qualification</h3><ul class='plain'><li><b>Visa</b>, Senior Associate Counsel: San Francisco, Juris Doctor and a US State Bar</li><li><b>Google</b>, Associate Commercial Counsel, Research EMEA: JD or LLB plus three years&#x27; attorney-level experience, and the posting sits in the US</li><li><b>Salesforce</b>, Counsel: Sydney and Melbourne, with an Australian practising certificate</li></ul><h3>Wrong practice area</h3><ul class='plain'><li><b>HSPG</b>, Junior Legal Counsel: the level is right at NQ to 2 PQE, but it is a real estate portfolio role and residential transactional experience is called essential</li><li><b>Heriot Brown</b>, Legal Counsel: corporate, M&amp;A, investment funds</li><li><b>Novo Resourcing</b>, In House Legal Counsel, Corporate: private equity and venture capital deal work</li><li><b>Brightsmith</b>, Legal Counsel: projects, construction and infrastructure, four to six years</li><li><b>Simmons Hanbury</b>, Legal Counsel, Global Retailer: real estate at its core</li><li><b>Montagu Evans</b>, Commercial Counsel: a property firm</li><li><b>Egis</b>, Legal Counsel: infrastructure, 3 to 4 years PQE</li><li><b>Roche</b>, Legal Counsel: life sciences experience required, Welwyn, fixed term</li></ul><h3>Right level, wrong place</h3><ul class='plain'><li><b>Debenhams Group</b>, Legal Counsel: explicitly says 2+ years PQE “is not essential”, and the work spans IP, advertising and consumer law, but it is Manchester and on-site</li><li><b>Rolls-Royce SMR</b>, Legal Counsel: Derby, Manchester or Warrington. £66,240 to £86,940</li><li><b>Jameson Legal</b>, Commercial Litigation Solicitor 1-3 PQE: the band is right but the role is in Surrey</li><li><b>Oxford Quantum Circuits</b>, Legal Counsel: genuinely IP-heavy and no PQE floor, but the advert places it in Reading</li></ul>
 
-  <div class="tierhead">Register properly with five recruiters</div>
-  <p class="tiersub">They control the elite firm IP seats, and none of those adverts name the firm.</p>
-  <p>Between them these five are currently carrying an IP and technology associate role at an elite US firm (2&ndash;4 PQE, with the advert saying candidates outside that range will also be considered), a commercial IP and IT seat at another US firm (2+ PQE), an IP seat at a Tier 1 TMT firm paying up to £140,000 covering patents, trade marks, designs and copyright (3+ PQE), and a commercial technology role at a leading UK firm covering copyright and trade marks (2&ndash;4 PQE). <b>G2 Legal</b> also advertised a 1&ndash;3 PQE trade mark associate seat that has already gone, which is proof this band exists and that you have to hear about it early.</p>
-  <p>The five: <b>G2 Legal</b>, <b>EJ Legal</b>, <b>Gardner Halliday</b>, <b>Noble Legal</b> and <b>SSQ</b>. A twenty-minute call with each, once, is worth more than another evening of applications, because they see the roles before the boards do and they can explain your four Beijing years to a partner in a way a form cannot.</p>
+<h2>All eighty-seven, as read</h2>
+<p class="lede">Sorted by the stated seniority floor. A dot marks the seventeen above. The IP and China columns count how often the advert uses those terms, which is a rough measure of whether the subject is in the job or only in the company.</p>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th>Role</th><th>Employer</th><th>PQE floor</th><th>Flags</th><th>IP</th><th>CN</th></tr></thead>
+<tbody><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/junior-legal-counsel-at-alexander-mcqueen-4433933398" target="_blank" rel="noopener">Junior Legal Counsel</a></td><td class="co">Alexander Mcqueen</td><td class="floor go">none</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://www.amazon.jobs/en-gb/jobs/3167397/corporate-counsel-amazon-leo-satellites-communications" target="_blank" rel="noopener">Corporate Counsel, Amazon Leo (Satellites / Communications)</a></td><td class="co">Amazon (🇺🇸, Technology / Ret</td><td class="floor go">none</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-asos-com-4441537614" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Asos Com</td><td class="floor go">none</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/graduate-legal-counsel-at-bending-spoons-4445411731" target="_blank" rel="noopener">Graduate Legal Counsel</a></td><td class="co">Bending Spoons</td><td class="floor go">none</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">1</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-bending-spoons-4445400914" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Bending Spoons</td><td class="floor go">none</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">1</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-brightsmith-4445481486" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Brightsmith</td><td class="floor go">none</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-byd-europe-4381055290" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Byd Europe</td><td class="floor go">none</td><td class="flags"><b class="f cn">China</b></td><td class="num-cell">0</td><td class="num-cell">2</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-enterprise-business-at-bytedance-4446981476" target="_blank" rel="noopener">Legal Counsel Enterprise Business</a></td><td class="co">Bytedance</td><td class="floor go">none</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/music-counsel-emea-at-bytedance-4439451543" target="_blank" rel="noopener">Music Counsel Emea</a></td><td class="co">Bytedance</td><td class="floor go">none</td><td class="flags"><b class="f cn">China</b></td><td class="num-cell">0</td><td class="num-cell">2</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-dlocal-4442402075" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Dlocal</td><td class="floor go">none</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://www.google.com/about/careers/applications/jobs/results/143133641000526534-associate-commercial-counsel-research-emea-partnerships" target="_blank" rel="noopener">Associate Commercial Counsel Research Emea Partnerships</a></td><td class="co">Google (🇺🇸, Technology)</td><td class="floor go">none</td><td class="flags"><b class="f bar">foreign bar</b></td><td class="num-cell">2</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-helsing-4400190817" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Helsing</td><td class="floor go">none</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">2</td><td class="num-cell">1</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://huaweiuk.teamtailor.com/jobs/5609972-legal-counsel" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Huawei R&amp;D UK</td><td class="floor go">none</td><td class="flags"><b class="f ip">IP</b><b class="f tm">fixed term</b></td><td class="num-cell">9</td><td class="num-cell">1</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-ifrs-foundation-4432348803" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Ifrs Foundation</td><td class="floor go">none</td><td class="flags"><b class="f ip">IP</b><b class="f tm">fixed term</b></td><td class="num-cell">11</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/privacy-cyber-lawyer-at-jd-com-4440909834" target="_blank" rel="noopener">Privacy Cyber Lawyer</a></td><td class="co">Jd Com</td><td class="floor go">none</td><td class="flags"><b class="f cn">China</b><b class="f bar">foreign bar</b></td><td class="num-cell">0</td><td class="num-cell">3</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/marketplace-3p-lawyer-at-jd-com-4440908894" target="_blank" rel="noopener">Marketplace 3P Lawyer</a></td><td class="co">Jd Com</td><td class="floor go">none</td><td class="flags"><b class="f cn">China</b><b class="f bar">foreign bar</b></td><td class="num-cell">0</td><td class="num-cell">3</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-commercial-at-legora-4417233603" target="_blank" rel="noopener">Legal Counsel Commercial</a></td><td class="co">Legora</td><td class="floor go">none</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-compliance-mid-level-tmt-e-commerce-at-major-lindsey-africa-4442297794" target="_blank" rel="noopener">Legal Counsel Compliance Mid Level Tmt E Commerce</a></td><td class="co">Major Lindsey Africa</td><td class="floor go">none</td><td class="flags"><b class="f cn">China</b><b class="f tm">fixed term</b><b class="f bar">foreign bar</b></td><td class="num-cell">0</td><td class="num-cell">6</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/commercial-counsel-at-marsh-4366913023" target="_blank" rel="noopener">Commercial Counsel</a></td><td class="co">Marsh</td><td class="floor go">none</td><td class="flags"></td><td class="num-cell">1</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/commercial-counsel-at-montagu-evans-4444329701" target="_blank" rel="noopener">Commercial Counsel</a></td><td class="co">Montagu Evans</td><td class="floor go">none</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-mott-macdonald-4418101717" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Mott Macdonald</td><td class="floor go">none</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">1</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-nominet-4443780147" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Nominet</td><td class="floor go">none</td><td class="flags"></td><td class="num-cell">3</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/in-house-legal-counsel-corporate-at-novo-resourcing-4442369644" target="_blank" rel="noopener">In House Legal Counsel Corporate</a></td><td class="co">Novo Resourcing</td><td class="floor go">none</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-oxford-quantum-circuits-oqc-4439024951" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Oxford Quantum Circuits Oqc</td><td class="floor go">none</td><td class="flags"><b class="f ip">IP</b></td><td class="num-cell">6</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-in%E2%80%91house-at-quantum-motion-4434976698" target="_blank" rel="noopener">Legal Counsel In‑House</a></td><td class="co">Quantum Motion</td><td class="floor go">none</td><td class="flags"><b class="f ip">IP</b><b class="f tm">fixed term</b></td><td class="num-cell">10</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-relex-solutions-4445654521" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Relex Solutions</td><td class="floor go">none</td><td class="flags"><b class="f cn">China</b></td><td class="num-cell">0</td><td class="num-cell">2</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-tech-firm-at-robert-half-4444553330" target="_blank" rel="noopener">Legal Counsel Tech Firm</a></td><td class="co">Robert Half</td><td class="floor go">none</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://uk.linkedin.com/jobs/view/nq-legal-counsel-at-robert-walters-4442013737" target="_blank" rel="noopener">Nq Legal Counsel</a></td><td class="co">Robert Walters (recruiter — </td><td class="floor go">none</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-12-month-ftc-at-roche-4437414378" target="_blank" rel="noopener">Legal Counsel 12 Month Ftc</a></td><td class="co">Roche</td><td class="floor go">none</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-rolls-royce-smr-4431090841" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Rolls Royce Smr</td><td class="floor go">none</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/United-Kingdom---London/Counsel--12-month-fixed-term-contract-_JR342649" target="_blank" rel="noopener">Corp Counsel (12-month fixed-term contract)</a></td><td class="co">Salesforce (🇺🇸, Software)</td><td class="floor go">none</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">1</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-commerce-subscriptions-at-spotify-4414628706" target="_blank" rel="noopener">Legal Counsel Commerce Subscriptions</a></td><td class="co">Spotify</td><td class="floor go">none</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-tata-consultancy-services-4445702457" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Tata Consultancy Services</td><td class="floor go">none</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/junior-legal-counsel-at-techchain-talent-4446972235" target="_blank" rel="noopener">Junior Legal Counsel</a></td><td class="co">Techchain Talent</td><td class="floor go">none</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-ultralytics-4438333320" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Ultralytics</td><td class="floor go">none</td><td class="flags"><b class="f ip">IP</b><b class="f cn">China</b></td><td class="num-cell">6</td><td class="num-cell">4</td></tr><tr><td class="mark"></td><td class="role"><a href="https://visa.wd5.myworkdayjobs.com/en-US/Visa/job/US---San-Francisco-CA/Senior-Associate-Counsel_REF082784W" target="_blank" rel="noopener">Senior Associate Counsel</a></td><td class="co">Visa (🇺🇸, Payments)</td><td class="floor go">none</td><td class="flags"><b class="f cn">China</b><b class="f bar">foreign bar</b></td><td class="num-cell">2</td><td class="num-cell">2</td></tr><tr><td class="mark"></td><td class="role"><a href="https://visa.wd5.myworkdayjobs.com/en-US/Visa/job/GB---London-United-Kingdom/Sr-Associate-Counsel_REF082216W" target="_blank" rel="noopener">Sr. Associate Counsel</a></td><td class="co">Visa (🇺🇸, Payments)</td><td class="floor go">none</td><td class="flags"><b class="f bar">foreign bar</b></td><td class="num-cell">1</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-artificial-labs-4446864640" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Artificial Labs</td><td class="floor go">1+</td><td class="flags"><b class="f ip">IP</b><b class="f tm">fixed term</b></td><td class="num-cell">5</td><td class="num-cell">0</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-civica-4443338289" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Civica</td><td class="floor go">1+</td><td class="flags"><b class="f ip">IP</b></td><td class="num-cell">5</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-dispute-resolution-at-formula-1-4445925096" target="_blank" rel="noopener">Legal Counsel Dispute Resolution</a></td><td class="co">Formula 1</td><td class="floor go">1+</td><td class="flags"></td><td class="num-cell">3</td><td class="num-cell">0</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://icg.wd3.myworkdayjobs.com/en-US/external_careers/job/London/Legal-Counsel_R3079-1" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">ICG (🇬🇧, Financial services)</td><td class="floor go">1+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://uk.linkedin.com/jobs/view/associate-counsel-at-img-4414930792" target="_blank" rel="noopener">Associate Counsel</a></td><td class="co">Img</td><td class="floor go">1+</td><td class="flags"></td><td class="num-cell">1</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/commercial-litigation-solicitor-1-3-pqe-at-jameson-legal-4445742379" target="_blank" rel="noopener">Commercial Litigation Solicitor 1 3 Pqe</a></td><td class="co">Jameson Legal (recruiter — c</td><td class="floor go">1+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://uk.linkedin.com/jobs/view/immediately-available-legal-counsel-commercial-1-3-pqe-6-12-month-interim-b2b-data-saas-business-london-city-at-kingsley-green-recruitment-4441967076" target="_blank" rel="noopener">Immediately Available Legal Counsel Commercial 1 3 Pqe 6 12 Mo</a></td><td class="co">Kingsley Green Recruitment (</td><td class="floor go">1+</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">1</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-commercial-1-3-pqe-b2b-data-saas-business-london-city-at-kingsley-green-recruitment-4441444753" target="_blank" rel="noopener">Legal Counsel Commercial 1 3 Pqe B2B Data Saas Business London</a></td><td class="co">Kingsley Green Recruitment (</td><td class="floor go">1+</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">1</td><td class="num-cell">0</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://uk.linkedin.com/jobs/view/associate-legal-counsel-at-legend-4444995733" target="_blank" rel="noopener">Associate Legal Counsel</a></td><td class="co">Legend</td><td class="floor go">1+</td><td class="flags"><b class="f ip">IP</b></td><td class="num-cell">5</td><td class="num-cell">0</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://uk.linkedin.com/jobs/view/associate-counsel-at-paramount-4447526551" target="_blank" rel="noopener">Associate Counsel</a></td><td class="co">Paramount</td><td class="floor go">1+</td><td class="flags"><b class="f ip">IP</b></td><td class="num-cell">4</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/Australia---Sydney/Counsel_JR351390" target="_blank" rel="noopener">Counsel</a></td><td class="co">Salesforce (🇺🇸, Software)</td><td class="floor go">1+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-debenhams-group-4439910049" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Debenhams Group</td><td class="floor go">2+</td><td class="flags"></td><td class="num-cell">1</td><td class="num-cell">0</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-euroclear-4403965907" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Euroclear</td><td class="floor go">2+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-commercial-contracts-at-fry-brown-4441462963" target="_blank" rel="noopener">Legal Counsel Commercial Contracts</a></td><td class="co">Fry Brown</td><td class="floor go">2+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/associate-commercial-counsel-london-at-harvey-4436591661" target="_blank" rel="noopener">Associate Commercial Counsel</a></td><td class="co">Harvey</td><td class="floor go">2+</td><td class="flags"></td><td class="num-cell">1</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/junior-legal-counsel-at-hspg-4427934736" target="_blank" rel="noopener">Junior Legal Counsel</a></td><td class="co">Hspg</td><td class="floor go">2+</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/interim-junior-regulatory-legal-counsel-%C2%A3100k-%C2%A3120k-fintech-at-major-lindsey-africa-4445134913" target="_blank" rel="noopener">Interim Junior Regulatory Legal Counsel £100K £120K Fintech</a></td><td class="co">Major Lindsey Africa</td><td class="floor go">2+</td><td class="flags"><b class="f cn">China</b><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">2</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/commercial-counsel-2-6-pqe-at-major-lindsey-africa-4446099004" target="_blank" rel="noopener">Commercial Counsel 2 6 Pqe</a></td><td class="co">Major Lindsey Africa</td><td class="floor go">2+</td><td class="flags"></td><td class="num-cell">1</td><td class="num-cell">0</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-ssq-4440157939" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Ssq</td><td class="floor go">2+</td><td class="flags"></td><td class="num-cell">1</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://www.amazon.jobs/en-gb/jobs/10486127/associate-corporate-counsel-amazon-leo-satellites-communications" target="_blank" rel="noopener">Associate Corporate Counsel, Amazon Leo (Satellites / Communic</a></td><td class="co">Amazon (🇺🇸, Technology / Ret</td><td class="floor go">3+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://www.amazon.jobs/en-gb/jobs/10469045/associate-corporate-counsel-amazon-music" target="_blank" rel="noopener">Associate Corporate Counsel, Amazon Music</a></td><td class="co">Amazon (🇺🇸, Technology / Ret</td><td class="floor go">3+</td><td class="flags"></td><td class="num-cell">1</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://www.amazon.jobs/en-gb/jobs/10420229/associate-corporate-counsel-prime-video" target="_blank" rel="noopener">Associate Corporate Counsel, Prime Video</a></td><td class="co">Amazon (🇺🇸, Technology / Ret</td><td class="floor go">3+</td><td class="flags"></td><td class="num-cell">1</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-emea-commercial-at-databricks-4416836567" target="_blank" rel="noopener">Legal Counsel Emea Commercial</a></td><td class="co">Databricks</td><td class="floor go">3+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-dexory-4419857092" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Dexory</td><td class="floor go">3+</td><td class="flags"></td><td class="num-cell">1</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-egis-4447041793" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Egis</td><td class="floor go">3+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-gotion-high-tech-4444264072" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Gotion High Tech</td><td class="floor go">3+</td><td class="flags"><b class="f cn">China</b></td><td class="num-cell">0</td><td class="num-cell">3</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-heriot-brown-in-house-legal-recruitment-4441803770" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Heriot Brown In House Legal </td><td class="floor go">3+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-sport-at-hydrogen-group-4441476192" target="_blank" rel="noopener">Legal Counsel Sport</a></td><td class="co">Hydrogen Group</td><td class="floor go">3+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-legatics-4426842179" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Legatics</td><td class="floor go">3+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-emea-14-months-ftc-at-lululemon-4440170207" target="_blank" rel="noopener">Legal Counsel Emea 14 Months Ftc</a></td><td class="co">Lululemon</td><td class="floor go">3+</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/in-house-corporate-and-commercial-legal-counsel-at-radius-4434855717" target="_blank" rel="noopener">In House Corporate And Commercial Legal Counsel</a></td><td class="co">Radius</td><td class="floor go">3+</td><td class="flags"></td><td class="num-cell">1</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-corporate-commercial-3-5-pqe-hybrid-remote-at-seedlegals-4372110527" target="_blank" rel="noopener">Legal Counsel Corporate Commercial 3 5 Pqe Hybrid Remote</a></td><td class="co">Seedlegals</td><td class="floor go">3+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-global-retailer-at-simmons-hanbury-4437669130" target="_blank" rel="noopener">Legal Counsel Global Retailer</a></td><td class="co">Simmons Hanbury</td><td class="floor go">3+</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-engine-by-starling-at-starling-4446839011" target="_blank" rel="noopener">Legal Counsel Engine By Starling</a></td><td class="co">Starling</td><td class="floor go">3+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://uk.linkedin.com/jobs/view/nq-3-pqe-lawyer-fintech-at-taylor-root-4444561777" target="_blank" rel="noopener">Nq 3 Pqe Lawyer Fintech</a></td><td class="co">Taylor Root (recruiter — cli</td><td class="floor go">3+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-tradingview-4415103606" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Tradingview</td><td class="floor go">3+</td><td class="flags"><b class="f ip">IP</b><b class="f cn">China</b></td><td class="num-cell">12</td><td class="num-cell">2</td></tr><tr><td class="mark"></td><td class="role"><a href="https://job-boards.greenhouse.io/anthropic/jobs/5142966008" target="_blank" rel="noopener">Commercial Counsel, EMEA</a></td><td class="co">Anthropic</td><td class="floor warn">4+</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://www.citma.org.uk/jobs/c120-000-trade-mark-solicitor-london.html" target="_blank" rel="noopener">c£120,000+ Trade Mark Solicitor – London</a></td><td class="co">CITMA listing</td><td class="floor warn">4+</td><td class="flags"><b class="f ip">IP</b></td><td class="num-cell">6</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-ice-4435196040" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Ice</td><td class="floor warn">4+</td><td class="flags"><b class="f bar">foreign bar</b></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-mat-cover-ftc-at-manolo-blahnik-4434539037" target="_blank" rel="noopener">Legal Counsel Mat Cover Ftc</a></td><td class="co">Manolo Blahnik</td><td class="floor warn">4+</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-technology-at-primark-4409449791" target="_blank" rel="noopener">Legal Counsel Technology</a></td><td class="co">Primark</td><td class="floor warn">4+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/in-house-counsel-at-redcloud-4416250209" target="_blank" rel="noopener">In House Counsel</a></td><td class="co">Redcloud</td><td class="floor warn">4+</td><td class="flags"></td><td class="num-cell">0</td><td class="num-cell">0</td></tr><tr class="picked"><td class="mark">&#9679;</td><td class="role"><a href="https://www.dawnellmore.co.uk/job/trade-mark-attorney-solicitor-up-to-5-years-pqe" target="_blank" rel="noopener">Trade Mark Attorney / Solicitor (Up to 5 years&#x27; PQE)</a></td><td class="co">Dawn Ellmore client (recruit</td><td class="floor warn">5+</td><td class="flags"></td><td class="num-cell">2</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-equinix-4443777118" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Equinix</td><td class="floor warn">5+</td><td class="flags"><b class="f tm">fixed term</b></td><td class="num-cell">0</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/intellectual-property-lawyer-at-flex-legal-4438408011" target="_blank" rel="noopener">Intellectual Property Lawyer</a></td><td class="co">Flex Legal</td><td class="floor warn">5+</td><td class="flags"><b class="f ip">IP</b><b class="f tm">fixed term</b></td><td class="num-cell">10</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-kingsley-green-recruitment-4445232784" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Kingsley Green Recruitment (</td><td class="floor warn">5+</td><td class="flags"><b class="f ip">IP</b></td><td class="num-cell">7</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/commercial-legal-counsel-at-eet-fuels-4437663167" target="_blank" rel="noopener">Commercial Legal Counsel</a></td><td class="co">Eet Fuels</td><td class="floor bad">6+</td><td class="flags"></td><td class="num-cell">2</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-at-happyrobot-4414385630" target="_blank" rel="noopener">Legal Counsel</a></td><td class="co">Happyrobot</td><td class="floor bad">6+</td><td class="flags"><b class="f ip">IP</b><b class="f tm">fixed term</b></td><td class="num-cell">16</td><td class="num-cell">0</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/legal-counsel-loyalty-at-revolut-4440224059" target="_blank" rel="noopener">Legal Counsel Loyalty</a></td><td class="co">Revolut</td><td class="floor bad">6+</td><td class="flags"><b class="f tm">fixed term</b><b class="f bar">foreign bar</b></td><td class="num-cell">0</td><td class="num-cell">1</td></tr><tr><td class="mark"></td><td class="role"><a href="https://uk.linkedin.com/jobs/view/ip-brand-counsel-at-jd-com-4439970681" target="_blank" rel="noopener">Ip Brand Counsel</a></td><td class="co">Jd Com</td><td class="floor bad">7+</td><td class="flags"><b class="f ip">IP</b><b class="f bar">foreign bar</b></td><td class="num-cell">26</td><td class="num-cell">0</td></tr></tbody></table></div>
 
-  <div class="tierhead">Write speculatively to the brands boutiques</div>
-  <p class="tiersub">The firms that do exactly your work do not advertise.</p>
-  <p>Fourteen IP and brands firms' careers pages were checked. The specialist brand firms, the ones whose entire practice is trade marks and brand disputes, have no live junior vacancies and mostly do not use job boards at all. <b>Brandsmiths</b> says "check back soon" and invites a CV and covering letter direct to its recruitment address. <b>Waterfront</b> invites speculative applications from qualified associates and refuses agency candidates. <b>Briffa</b> says it is always looking for talent in IP whether you are at the start of your career or further on.</p>
-  <p>This is the channel for your niche, and it is not a fallback. A short, specific letter to Stobbs, Briffa, Waterfront, Bristows, Bird &amp; Bird, Rouse, Harbottle &amp; Lewis, Sheridans and Simkins costs one evening in total and reaches firms that will never appear on any of the boards above. Rouse is worth naming twice: a global IP firm with a very large China practice, and dual PRC and English qualification is rare there in London.</p>
-  <p class="risk"><b>One to chase, not to send:</b> you applied to <b>Brandsmiths</b> for an NQ litigation role on 14 June and have had no reply. That chase was due at the end of June.</p>
-</section>
-
-<section>
-  <h2><em>05</em>Ruled out, and why</h2>
-  <p class="tiersub">All were opened and read. Grouped by the reason, because the reasons repeat.</p>
-
-  <div class="out"><h4>Closed since this list was written</h4>
-    <p class="oc">University of Cambridge · Endava</p>
-    <p><b>Cambridge, Legal Counsel Commercial</b> closed on 27 July. Interviews are the week of 10 August. It had a published band of nought to five years, a published salary of £42,254 to £56,535, and a finished CV and covering letter that were never sent. <b>Endava, Junior Legal Counsel Disputes</b> is no longer accepting applications, seven days after it was posted. It asked NQ to 2 PQE and covered IP and trade mark disputes, and it was the role on this list you were most likely to be offered. Both are recorded here rather than deleted, because the pattern is the point: these roles last about two weeks, not two months.</p></div>
-  <div class="out"><h4>Wrong qualification: trade mark and patent attorney track</h4>
-    <p class="oc">Carpmaels &amp; Ransford · Dawn Ellmore · Osborne Clarke · D Young &amp; Co · Boult Wade Tennant · Mathys &amp; Squire · InterDigital · TaiSan · Nokia</p>
-    <p>These need CITMA or CIPA qualification and the work is filing and prosecution. InterDigital wants five years as a qualified patent attorney. TaiSan is patent portfolio strategy in polymer electrolytes. Different profession, not a stretch you can argue.</p></div>
-
-  <div class="out"><h4>Wrong grade: paralegal, formalities, renewals, support</h4>
-    <p class="oc">Fieldfisher · HGF · J A Kemp · Lewis Silkin · Mishcon Registry Services · Larbey Evans · numerous Dawn Ellmore listings</p>
-    <p>Several of these scored 100 on the automatic system. They are a downgrade for a qualified solicitor and carry a real risk of being typed as support staff. Added 27 July: <b>CSC, Associate Brand Protection Analyst</b>. This one hurts to rule out, because the work is exactly right, online anti-counterfeiting, analysing infringing e-commerce listings and running takedowns with hosting providers, and it even lists Mandarin as an advantage. It is an analyst post, not a lawyer post. Taking it would type you as an enforcement analyst rather than a solicitor.</p></div>
-
-  <div class="out"><h4>Too senior by three years or more</h4>
-    <p class="oc">Taylor Root Global IP Counsel (6&ndash;10) · G2 IP Litigation Associate (6&ndash;8) · JetBrains Senior IP Counsel (8&ndash;12) · Major Lindsey &amp; Africa Commercial IP (7+) · Flex Legal (5+) · CITMA £120k Trade Mark Solicitor (4+) · Quintessential Brands (8+) · Starbucks (5+) · BYD Legal Counsel (8+) · Chery (5&ndash;10) · Primark (4&ndash;6) · Cisco Trade Secrets and Copyright (Principal)</p>
-    <p>Perfect subject matter in several cases. The years are not arguable at this distance.</p></div>
-
-  <div class="out"><h4>Modestly too senior, worth a look only if the top of the list runs dry</h4>
-    <p class="oc">Spotify Licensing (3+) · Jagex (3&ndash;5) · Lululemon (3&ndash;6) · Aberdeen (3&ndash;5) · Simmons Hanbury global retailer (3&ndash;6) · Taylor Root fashion FTC (3&ndash;8, and the advert says outside the range will be considered) · Gotion (3&ndash;7) · Amazon Prime Video (3+)</p></div>
-
-  <div class="out"><h4>Not really the right job, whatever the title said</h4>
-    <p class="oc">Farrer &amp; Co Associate · ByteDance Music Counsel · Lenovo · Canon EMEA · Anthropic · Gowling Knowledge Lawyer</p>
-    <p>Farrer's advert is titled simply "Associate" and turns out to be an international arbitration and sovereign disputes specialist. ByteDance needs a music licensing track record. Lenovo is Farnborough product counsel. Canon is Uxbridge commercial and IT contracting with no IP. Anthropic pays £125,000 to £165,000, which tells you the seniority. A knowledge lawyer post is non-fee-earning and a different career.</p></div>
-
-  <div class="out"><h4>Already in flight, chase rather than apply</h4>
-    <p class="oc">Huawei R&amp;D UK · Brandsmiths</p>
-    <p>Huawei Legal Counsel, applied 30 June, same vacancy, no reply. Brandsmiths NQ Litigation, applied 14 June, no reply. Both chases are overdue and both are better uses of an hour than a new application.</p></div>
-
-  <div class="out"><h4>TikTok IP Counsel, IP Platform Governance EMEA</h4><p class="oc">Deliberately set aside</p>
-    <p>Genuinely the right subject matter, but the advert wants an "experienced IP attorney" with no band stated, and of everything available it carries the highest risk of typing you as the China person rather than the IP person. Set aside by choice, not because it is a bad role.</p></div>
-</section>
-
-<section>
-  <h2><em>06</em>What sixty adverts actually show</h2>
-  <p><b>There are six real IP roles in the entire visible UK market at your level, and you can only comfortably clear the bar on two of them.</b> That is the finding. It is not a reason for gloom, it is a reason to change tactics.</p>
-  <p>The years-of-experience line is what stops you, every time. Almost every trade mark and brands seat wants four years or more. You have four years of Chinese practice that most recruiters will not count, and a shorter English record that they will. Every application has to solve that same problem, so write the answer once, properly, and reuse it in every letter and every recruiter call.</p>
-  <p>Because the advertised IP market is this thin, the two channels in section 05 matter more than the adverts. The specialist brand firms hire through speculative letters and through five recruiters, not through job boards. That is where the roles you want actually are.</p>
-  <div class="note"><b>And the simplest point.</b> Four finished, tailored CVs are sitting unsent: Cambridge, Mishcon, ASOS and Alexander McQueen. Cambridge closes on Monday. Nothing on this page is worth as much as posting those four.</div>
-</section>
-
-<footer>
-  Compiled 24 July 2026. Sixty job descriptions read in full across the live vacancy board, The Lawyer, TotallyLegal, the CITMA jobs board and fourteen firms' own careers pages. Experience requirements, salaries and applicant counts taken from the live adverts, not from any automatic score.<br><br>
-  Full live board, updated weekly: <a href="https://soylee22.github.io/law-jobs/">soylee22.github.io/law-jobs</a>
-</footer>
-
+<footer>Built from the 1 August runs of the FTSE 100, US large-cap, China-bridge, law-firm and open-market scans. Adverts retrieved from each employer's own posting, including the Workday and Oracle JSON endpoints where the page renders through JavaScript. Salary appears only where the advert published one.</footer>
 </div>
-</body>
-</html>
