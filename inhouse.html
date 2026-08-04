@@ -361,7 +361,7 @@ footer code {
 <header class="hero">
   <div class="kicker">Mithril · FTSE 100 + US + UK mid-cap</div>
   <h1>UK legal vacancies</h1>
-  <div class="sub">Tuesday 04 August 2026, 21:28 · employer ATS feeds · UK-wide · not London-only</div>
+  <div class="sub">Tuesday 04 August 2026, 22:31 · employer ATS feeds · UK-wide · not London-only</div>
   <div class="stats">
     <div class="stat"><b>110</b><span>UK roles</span></div>
     <div class="stat"><b>16</b><span>high-fit</span></div>
@@ -377,7 +377,7 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
 
 <details class="method"><summary>How this search works</summary><p>We read in-house legal vacancies straight from each company&#x27;s own careers system (the same data feed its careers page calls), across the FTSE 100 plus a curated set of the biggest US firms (about 130 employers). For each we hit its applicant-tracking feed (Workday, Oracle HCM, SuccessFactors, SmartRecruiters, Greenhouse, Eightfold and a few bespoke APIs like Amazon, Google and Apple), search the feed for legal terms (legal, counsel, intellectual property, company secretary, compliance), and keep only roles whose title is a legal-function role located in the UK (any UK city or country-level UK token — not London-only). Location is shown on every role. This is not a job-board aggregator: every link opens on the employer&#x27;s own careers domain. Fit score (0 to 100) = title lane (IP, brand, China) + level (NQ to mid) + employer/sector prior, then a light Python JD scan (httpx + BeautifulSoup, no browser) of roles scoring ≥65 to pull PQE / IP-China signals and re-rank. Three shortlist lanes: lane match, generic title at priority employers, on-ramp junior/NQ. A red NEW badge means first seen today. Ex jobs tab = dropped off. Filters narrow the full list.</p></details>
 
-<div class="note"><strong>Three-lane shortlist.</strong> Fit = title lane (IP/brand/China) + level (NQ to mid) + employer/sector prior + optional JD-body signals (PQE, moat words) on a selective subset of roles. Generic "Legal Counsel" at priority employers is its own panel so it is not buried by keyword hits. A red <span class="newbadge">new</span> badge marks roles first seen today (no separate new section). Ex-jobs that dropped off live under the Ex jobs tab. Verify PQE in the JD before applying. UK-wide, not London-only. Enrich: {'selected': 49, 'fetched': 0, 'cache_hits': 49, 'failed': 0, 'fit_min': 65, 'limit': 300}.</div><div class="note"><strong>Her lane.</strong> Title or JD body signals IP, brand, trade mark, China, Mandarin, or cross-border.</div><h2>Lane match · IP / brand / China <span class="muted">(4)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-mid" title="title-lane · senior-band">60</span> <strong>Principal Corporate Counsel: Trade Secrets, Copyrights, and AI in IP</strong> <span class="co">🇺🇸 Cisco</span> <span class="loc">6 Locations</span> <span class="bits">title-lane · senior-band</span><a class="apply" href="https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/McLean-Virginia-US/Principal-Corporate-Counsel--AI---IP-Strategy_2016045" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-mid" title="title-lane · senior-band · employer+6">56</span> <strong>Director/Senior Director, Data Governance (China)</strong> <span class="co">🇬🇧 AstraZeneca</span> <span class="loc">2 Locations</span> <span class="bits">title-lane · senior-band · employer+6</span><a class="apply" href="https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Shanghai-JingAn-Office/Director-Senior-Director--Data-Governance--China-_R-254366-1" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-mid" title="title-lane · jd-floor-high">55</span> <strong>Intellectual Property Security Engineer</strong> <span class="co">🇺🇸 NVIDIA</span> <span class="loc">5 Locations</span> <span class="sig">jd:lane-signal · jd:high-floor</span> <span class="bits">title-lane · jd-floor-high</span><a class="apply" href="https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Intellectual-Property-Security-Engineer_JR2021915" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-lo" title="title-lane · jd-floor-high · capped:foreign-bar">10</span> <strong>Counsel - Digital, IP &amp; Technology</strong> <span class="co">🇬🇧 BP</span> <span class="loc">2 Locations</span> <span class="sig">jd:foreign-bar</span> <span class="bits">title-lane · jd-floor-high · capped:foreign-bar</span><a class="apply" href="https://bpinternational.wd3.myworkdayjobs.com/en-US/bpCareers/job/United-States-of-America---Texas---Houston/Counsel---Digital--IP---Technology_RQ113071" target="_blank" rel="noopener">View</a></div></div><h2>Generic title · priority employer <span class="muted">(0)</span></h2><p class='empty'>None this run.</p><div class="note"><strong>PQE builders.</strong> Junior or explicit NQ titles (not pure attorney-profession track).</div><h2>On-ramp · junior / NQ band <span class="muted">(7)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-hi" title="jd-lane · junior-band · employer+5">95</span> <strong>Associate Corporate Counsel, Prime Video</strong> <span class="co">🇺🇸 Amazon</span> <span class="loc">London, England, GBR</span> <span class="sig">jd:lane-signal</span> <span class="bits">jd-lane · junior-band · employer+5</span><a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10420229/associate-corporate-counsel-prime-video" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band · jd:3+ PQE · employer+5">93</span> <strong>Associate Corporate Counsel, Amazon Music</strong> <span class="co">🇺🇸 Amazon</span> <span class="loc">London, England, GBR</span> <span class="sig">PQE: 3+ PQE</span> <span class="bits">junior-band · jd:3+ PQE · employer+5</span><a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10469045/associate-corporate-counsel-amazon-music" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band · jd:1-3 PQE · employer+5">93</span> <strong>Counsel</strong> <span class="co">🇺🇸 Salesforce</span> <span class="loc">2 Locations</span> <span class="sig">PQE: 1-3 PQE</span> <span class="bits">junior-band · jd:1-3 PQE · employer+5</span><a class="apply" href="https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/Australia---Sydney/Counsel_JR351390" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="jd-lane · junior-band">90</span> <strong>Sr. Associate Counsel</strong> <span class="co">🇺🇸 Visa</span> <span class="loc">GB - London, United Kingdom</span> <span class="sig">jd:lane-signal</span> <span class="bits">jd-lane · junior-band</span><a class="apply" href="https://visa.wd5.myworkdayjobs.com/en-US/Visa/job/GB---London-United-Kingdom/Sr-Associate-Counsel_REF082216W" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band · employer+5">85</span> <strong>Associate Corporate Counsel, Amazon Leo (Satellites / Communications)</strong> <span class="co">🇺🇸 Amazon</span> <span class="loc">London, England, GBR</span> <span class="bits">junior-band · employer+5</span><a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10486127/associate-corporate-counsel-amazon-leo-satellites-communications" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band · employer+5">85</span> <strong>Associate Corporate Counsel, Amazon Leo (Satellites / Communications)</strong> <span class="co">🇺🇸 Amazon</span> <span class="loc">London, England, GBR</span> <span class="bits">junior-band · employer+5</span><a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10453501/associate-corporate-counsel-amazon-leo-satellites-communications" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-mid" title="jd-lane · junior-band · jd-floor-high · employer+6">61</span> <strong>Associate Commercial Counsel Research Emea Partnerships</strong> <span class="co">🇺🇸 Google</span> <span class="loc">United Kingdom</span> <span class="sig">jd:lane-signal · jd:high-floor</span> <span class="bits">jd-lane · junior-band · jd-floor-high · employer+6</span><a class="apply" href="https://www.google.com/about/careers/applications/jobs/results/143133641000526534-associate-commercial-counsel-research-emea-partnerships" target="_blank" rel="noopener">View</a></div></div>
+<div class="note"><strong>Three-lane shortlist.</strong> Fit = title lane (IP/brand/China) + level (NQ to mid) + employer/sector prior + optional JD-body signals (PQE, moat words) on a selective subset of roles. Generic "Legal Counsel" at priority employers is its own panel so it is not buried by keyword hits. A red <span class="newbadge">new</span> badge marks roles first seen today (no separate new section). Ex-jobs that dropped off live under the Ex jobs tab. Verify PQE in the JD before applying. UK-wide, not London-only. Enrich: {'selected': 49, 'fetched': 0, 'cache_hits': 49, 'failed': 0, 'fit_min': 65, 'limit': 120}.</div><div class="note"><strong>Her lane.</strong> Title or JD body signals IP, brand, trade mark, China, Mandarin, or cross-border.</div><h2>Lane match · IP / brand / China <span class="muted">(3)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-mid" title="title-lane · senior-band">60</span> <strong>Principal Corporate Counsel: Trade Secrets, Copyrights, and AI in IP</strong> <span class="co">🇺🇸 Cisco</span> <span class="loc">6 Locations</span> <span class="bits">title-lane · senior-band</span><a class="apply" href="https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/McLean-Virginia-US/Principal-Corporate-Counsel--AI---IP-Strategy_2016045" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-mid" title="title-lane · jd-floor-high">55</span> <strong>Intellectual Property Security Engineer</strong> <span class="co">🇺🇸 NVIDIA</span> <span class="loc">5 Locations</span> <span class="sig">jd:lane-signal · jd:high-floor</span> <span class="bits">title-lane · jd-floor-high</span><a class="apply" href="https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Intellectual-Property-Security-Engineer_JR2021915" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-lo" title="title-lane · jd-floor-high · capped:foreign-bar">10</span> <strong>Counsel - Digital, IP &amp; Technology</strong> <span class="co">🇬🇧 BP</span> <span class="loc">2 Locations</span> <span class="sig">jd:foreign-bar</span> <span class="bits">title-lane · jd-floor-high · capped:foreign-bar</span><a class="apply" href="https://bpinternational.wd3.myworkdayjobs.com/en-US/bpCareers/job/United-States-of-America---Texas---Houston/Counsel---Digital--IP---Technology_RQ113071" target="_blank" rel="noopener">View</a></div></div><h2>Generic title · priority employer <span class="muted">(0)</span></h2><p class='empty'>None this run.</p><div class="note"><strong>PQE builders.</strong> Junior or explicit NQ titles (not pure attorney-profession track).</div><h2>On-ramp · junior / NQ band <span class="muted">(7)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-hi" title="jd-lane · junior-band">92</span> <strong>Associate Corporate Counsel, Prime Video</strong> <span class="co">🇺🇸 Amazon</span> <span class="loc">London, England, GBR</span> <span class="sig">jd:lane-signal</span> <span class="bits">jd-lane · junior-band</span><a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10420229/associate-corporate-counsel-prime-video" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="jd-lane · junior-band">92</span> <strong>Sr. Associate Counsel</strong> <span class="co">🇺🇸 Visa</span> <span class="loc">GB - London, United Kingdom</span> <span class="sig">jd:lane-signal</span> <span class="bits">jd-lane · junior-band</span><a class="apply" href="https://visa.wd5.myworkdayjobs.com/en-US/Visa/job/GB---London-United-Kingdom/Sr-Associate-Counsel_REF082216W" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band · jd:3+ PQE">88</span> <strong>Associate Corporate Counsel, Amazon Music</strong> <span class="co">🇺🇸 Amazon</span> <span class="loc">London, England, GBR</span> <span class="sig">PQE: 3+ PQE</span> <span class="bits">junior-band · jd:3+ PQE</span><a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10469045/associate-corporate-counsel-amazon-music" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band · jd:1-3 PQE">88</span> <strong>Counsel</strong> <span class="co">🇺🇸 Salesforce</span> <span class="loc">2 Locations</span> <span class="sig">PQE: 1-3 PQE</span> <span class="bits">junior-band · jd:1-3 PQE</span><a class="apply" href="https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/Australia---Sydney/Counsel_JR351390" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Associate Corporate Counsel, Amazon Leo (Satellites / Communications)</strong> <span class="co">🇺🇸 Amazon</span> <span class="loc">London, England, GBR</span> <span class="bits">junior-band</span><a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10486127/associate-corporate-counsel-amazon-leo-satellites-communications" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Associate Corporate Counsel, Amazon Leo (Satellites / Communications)</strong> <span class="co">🇺🇸 Amazon</span> <span class="loc">London, England, GBR</span> <span class="bits">junior-band</span><a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10453501/associate-corporate-counsel-amazon-leo-satellites-communications" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-mid" title="jd-lane · junior-band · jd-floor-high">57</span> <strong>Associate Commercial Counsel Research Emea Partnerships</strong> <span class="co">🇺🇸 Google</span> <span class="loc">United Kingdom</span> <span class="sig">jd:lane-signal · jd:high-floor</span> <span class="bits">jd-lane · junior-band · jd-floor-high</span><a class="apply" href="https://www.google.com/about/careers/applications/jobs/results/143133641000526534-associate-commercial-counsel-research-emea-partnerships" target="_blank" rel="noopener">View</a></div></div>
 
 <div class="filterbar">
   <span class="flabel">Filter</span>
@@ -394,192 +394,192 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Amazon <span class='cmeta'>(🇺🇸, Technology / Retail)</span></h3><span class="co-count">27 roles</span><a class='co-link' href='https://www.amazon.jobs/en-gb/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="95" data-band="junior" data-new="0" data-loc="london" data-lane="on-ramp">
+    <div class="role" data-fit="92" data-band="junior" data-new="0" data-loc="london" data-lane="on-ramp">
       <div class="role-main">
         <div class="role-title">Associate Corporate Counsel, Prime Video</div>
-        <div class="role-meta"><span class="fitscore fs-hi" title="jd-lane · junior-band · employer+5">95</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit">&#9733; lane</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">jd:lane-signal</span></div>
+        <div class="role-meta"><span class="fitscore fs-hi" title="jd-lane · junior-band">92</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit">&#9733; lane</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">jd:lane-signal</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10420229/associate-corporate-counsel-prime-video" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="93" data-band="junior" data-new="0" data-loc="london" data-lane="on-ramp">
+    <div class="role" data-fit="88" data-band="junior" data-new="0" data-loc="london" data-lane="on-ramp">
       <div class="role-main">
         <div class="role-title">Associate Corporate Counsel, Amazon Music</div>
-        <div class="role-meta"><span class="fitscore fs-hi" title="junior-band · jd:3+ PQE · employer+5">93</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit fit-ramp">on-ramp</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">PQE: 3+ PQE</span></div>
+        <div class="role-meta"><span class="fitscore fs-hi" title="junior-band · jd:3+ PQE">88</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit fit-ramp">on-ramp</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">PQE: 3+ PQE</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10469045/associate-corporate-counsel-amazon-music" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="85" data-band="junior" data-new="0" data-loc="london" data-lane="on-ramp">
+    <div class="role" data-fit="80" data-band="junior" data-new="0" data-loc="london" data-lane="on-ramp">
       <div class="role-main">
         <div class="role-title">Associate Corporate Counsel, Amazon Leo (Satellites / Communications)</div>
-        <div class="role-meta"><span class="fitscore fs-hi" title="junior-band · employer+5">85</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit fit-ramp">on-ramp</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">junior-band · employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-hi" title="junior-band">80</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit fit-ramp">on-ramp</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">junior-band</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10486127/associate-corporate-counsel-amazon-leo-satellites-communications" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="85" data-band="junior" data-new="0" data-loc="london" data-lane="on-ramp">
+    <div class="role" data-fit="80" data-band="junior" data-new="0" data-loc="london" data-lane="on-ramp">
       <div class="role-main">
         <div class="role-title">Associate Corporate Counsel, Amazon Leo (Satellites / Communications)</div>
-        <div class="role-meta"><span class="fitscore fs-hi" title="junior-band · employer+5">85</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit fit-ramp">on-ramp</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">junior-band · employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-hi" title="junior-band">80</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit fit-ramp">on-ramp</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">junior-band</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10453501/associate-corporate-counsel-amazon-leo-satellites-communications" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="70" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Corporate Counsel, Amazon Leo (Satellites / Communications)</div>
-        <div class="role-meta"><span class="fitscore fs-hi" title="employer+5">70</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/3167397/corporate-counsel-amazon-leo-satellites-communications" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Compliance Manager - Insurance Regulation, AEU UK, Risk and Compliance Solution (UK)</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10447509/compliance-manager-insurance-regulation-aeu-uk-risk-and-compliance-solution-uk" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Contract Manager, AWS Legal</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10406386/contract-manager-aws-legal" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Delivery Consultant - Security, Risk, and Compliance, Professional Services</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10393650/delivery-consultant-security-risk-and-compliance-professional-services" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Environmental Compliance Manager, Environmental Assurance and Protection</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">Darlington, England, GBR</span><span class="ats">via amazon</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">Darlington, England, GBR</span><span class="ats">via amazon</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10418128/environmental-compliance-manager-environmental-assurance-and-protection" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Risk Mgr, Compliance 2LOD, Global Operations Enterprise Services</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10451815/risk-mgr-compliance-2lod-global-operations-enterprise-services" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Security Assurance Specialist , AWS Compliance and Security Assurance EMEA</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10434652/security-assurance-specialist-aws-compliance-and-security-assurance-emea" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Security Specialist SA, EMEA Security and Compliance Specialist SA</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/3203593/security-specialist-sa-emea-security-and-compliance-specialist-sa" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Sr. Privacy Industry Specialist, Operations Trust</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Privacy / Data Protection</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Privacy / Data Protection</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10480711/sr-privacy-industry-specialist-operations-trust" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Sr. Privacy Industry Specialist, Operations Trust</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Privacy / Data Protection</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Privacy / Data Protection</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10465018/sr-privacy-industry-specialist-operations-trust" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Sr. Sec &amp; Compliance Engineer, AWS Security Assurance Services, LLC</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10455265/sr-sec-compliance-engineer-aws-security-assurance-services-llc" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Transportation Audit &amp; Compliance Specialist, Transportation Risk and Compliance (TRC)</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10478565/transportation-audit-compliance-specialist-transportation-risk-and-compliance-trc" target="_blank" rel="noopener">View</a>
-    </div>
-    <div class="role" data-fit="30" data-band="senior" data-new="0" data-loc="london" data-lane="other">
-      <div class="role-main">
-        <div class="role-title">Lead, Licensing &amp; Regulatory Affairs - Africa, Amazon Leo Global Licensing - EMEA</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+5">30</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">senior-band · employer+5</span></div>
-      </div>
-      <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10439825/lead-licensing-regulatory-affairs-africa-amazon-leo-global-licensing-emea" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="30" data-band="junior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Real Estate Associate Corporate Counsel, AWS Legal</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · jd:3+ PQE · employer+5 · capped:wrong-lane">30</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">PQE: 3+ PQE</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · jd:3+ PQE · capped:wrong-lane">30</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">PQE: 3+ PQE</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10403041/real-estate-associate-corporate-counsel-aws-legal" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="30" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+      <div class="role-main">
+        <div class="role-title">Lead, Licensing &amp; Regulatory Affairs - Africa, Amazon Leo Global Licensing - EMEA</div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">senior-band</span></div>
+      </div>
+      <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10439825/lead-licensing-regulatory-affairs-africa-amazon-leo-global-licensing-emea" target="_blank" rel="noopener">View</a>
+    </div>
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Financial Analyst, Global Trade Compliance</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+5">30</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">senior-band · employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10466120/senior-financial-analyst-global-trade-compliance" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="30" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Regulatory Assurance Specialist, Security &amp; Privacy Regulatory Enablement (SPRe)</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+5">30</span><span class="badge">Privacy / Data Protection</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">senior-band · employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Privacy / Data Protection</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10468121/senior-regulatory-assurance-specialist-security-privacy-regulatory-enablement-spre" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="30" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Regulatory Assurance Specialist, Security &amp; Privacy Regulatory Enablement (SPRe)</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+5">30</span><span class="badge">Privacy / Data Protection</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">senior-band · employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Privacy / Data Protection</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10468117/senior-regulatory-assurance-specialist-security-privacy-regulatory-enablement-spre" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="30" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Security Assurance Specialist , AWS Compliance and Security Assurance EMEA</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+5">30</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">senior-band · employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10434660/senior-security-assurance-specialist-aws-compliance-and-security-assurance-emea" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="5" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="0" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Corporate Counsel</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · jd:5+ PQE · jd-floor-high · employer+5 · capped:floor">5</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">jd:floor-5y</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · jd:5+ PQE · jd-floor-high · capped:floor">0</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">jd:floor-5y</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10431909/corporate-counsel" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="5" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="0" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Corporate Counsel, Amazon Leo (Satellites / Communications)</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · jd:5+ PQE · jd-floor-high · employer+5 · capped:floor">5</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">jd:floor-5y</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · jd:5+ PQE · jd-floor-high · capped:floor">0</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">jd:floor-5y</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10411505/corporate-counsel-amazon-leo-satellites-communications" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="5" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="0" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Corporate Counsel, AWS Legal</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · jd:5+ PQE · jd-floor-high · employer+5 · capped:floor">5</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">PQE: 5+ PQE · jd:floor-5y</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · jd:5+ PQE · jd-floor-high · capped:floor">0</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">PQE: 5+ PQE · jd:floor-5y</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10455476/corporate-counsel-aws-legal" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="5" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="0" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal Counsel, Amazon Leo</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · jd:5+ PQE · jd-floor-high · employer+5">5</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">PQE: 5+ PQE · jd:high-floor</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · jd:5+ PQE · jd-floor-high">0</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">PQE: 5+ PQE · jd:high-floor</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10435857/legal-counsel-amazon-leo" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="5" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="0" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal Counsel, Amazon Leo (Satellites / Communications)</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · jd:5+ PQE · jd-floor-high · employer+5 · capped:floor">5</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">jd:floor-5y</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · jd:5+ PQE · jd-floor-high · capped:floor">0</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London, England, GBR</span><span class="ats">via amazon</span><span class="sig">jd:floor-5y</span></div>
       </div>
       <a class="apply" href="https://www.amazon.jobs/en-gb/jobs/10377214/legal-counsel-amazon-leo-satellites-communications" target="_blank" rel="noopener">View</a>
     </div>
@@ -616,10 +616,10 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Apple <span class='cmeta'>(🇺🇸, Technology)</span></h3><span class="co-count">1 role</span><a class='co-link' href='https://jobs.apple.com/en-gb/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="71" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Antitrust/Regulatory Litigation Counsel</div>
-        <div class="role-meta"><span class="fitscore fs-hi" title="employer+6">71</span><span class="badge">Litigation / Disputes</span><span class="band band-mid">mid</span><span class="loc">London, United Kingdom</span><span class="ats">via apple</span><span class="sig">employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Litigation / Disputes</span><span class="band band-mid">mid</span><span class="loc">London, United Kingdom</span><span class="ats">via apple</span></div>
       </div>
       <a class="apply" href="https://jobs.apple.com/en-gb/details/200666271/antitrust-regulatory-litigation-counsel" target="_blank" rel="noopener">View</a>
     </div>
@@ -627,10 +627,10 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>AstraZeneca <span class='cmeta'>(🇬🇧, Pharmaceuticals &amp; biotechnology)</span></h3><span class="co-count">1 role</span><a class='co-link' href='https://careers.astrazeneca.com/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="61" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Study Contracts Manager - Cell Therapy</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+6">61</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">Australia – New South Wales</span><span class="ats">via workday</span><span class="sig">employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">Australia – New South Wales</span><span class="ats">via workday</span></div>
       </div>
       <a class="apply" href="https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Australia--New-South-Wales/Study-Contracts-Manager---Cell-Therapy_R-253606-1" target="_blank" rel="noopener">View</a>
     </div>
@@ -682,10 +682,10 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Bristol Myers Squibb <span class='cmeta'>(🇺🇸, Pharmaceuticals)</span></h3><span class="co-count">1 role</span><a class='co-link' href='https://careers.bms.com/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="41" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="35" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Counsel, Innovation Law - Small Molecule/Chemistry Patents</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">41</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">Cambridge Crossing - MA - US</span><span class="ats">via workday</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">Cambridge Crossing - MA - US</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://bristolmyerssquibb.wd5.myworkdayjobs.com/en-US/BMS/job/Cambridge-Crossing---MA---US/Senior-Counsel--Innovation-Law---Patents_R1604263" target="_blank" rel="noopener">View</a>
     </div>
@@ -747,10 +747,10 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Coinbase <span class='cmeta'>(🇺🇸, Fintech / Crypto)</span></h3><span class="co-count">1 role</span><a class='co-link' href='https://www.coinbase.com/careers' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="45" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="42" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Counsel, Commercial (Institutional)</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="jd-lane · jd-floor-high · employer+5">45</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="fit">&#9733; lane</span><span class="loc">Remote - UK</span><span class="ats">via greenhouse</span><span class="sig">jd:lane-signal · jd:high-floor</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="jd-lane · jd-floor-high">42</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="fit">&#9733; lane</span><span class="loc">Remote - UK</span><span class="ats">via greenhouse</span><span class="sig">jd:lane-signal · jd:high-floor</span></div>
       </div>
       <a class="apply" href="https://www.coinbase.com/careers/positions/7602261?gh_jid=7602261" target="_blank" rel="noopener">View</a>
     </div>
@@ -818,24 +818,24 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Google <span class='cmeta'>(🇺🇸, Technology)</span></h3><span class="co-count">3 roles</span><a class='co-link' href='https://www.google.com/about/careers/applications/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="61" data-band="junior" data-new="0" data-loc="rest" data-lane="on-ramp">
+    <div class="role" data-fit="57" data-band="junior" data-new="0" data-loc="rest" data-lane="on-ramp">
       <div class="role-main">
         <div class="role-title">Associate Commercial Counsel Research Emea Partnerships</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="jd-lane · junior-band · jd-floor-high · employer+6">61</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit">&#9733; lane</span><span class="loc">United Kingdom</span><span class="ats">via google</span><span class="sig">jd:lane-signal · jd:high-floor</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="jd-lane · junior-band · jd-floor-high">57</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit">&#9733; lane</span><span class="loc">United Kingdom</span><span class="ats">via google</span><span class="sig">jd:lane-signal · jd:high-floor</span></div>
       </div>
       <a class="apply" href="https://www.google.com/about/careers/applications/jobs/results/143133641000526534-associate-commercial-counsel-research-emea-partnerships" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="61" data-band="mid" data-new="1" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="1" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title"><span class="newbadge">new</span> Policy Compliance Manager</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+6">61</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">United Kingdom</span><span class="ats">via google</span><span class="sig">employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">United Kingdom</span><span class="ats">via google</span></div>
       </div>
       <a class="apply" href="https://www.google.com/about/careers/applications/jobs/results/132194934823232198-policy-compliance-manager" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="30" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Director Emea Employment Legal</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6 · capped:wrong-lane">30</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">United Kingdom</span><span class="ats">via google</span><span class="sig">senior-band · employer+6 · capped:wrong-lane</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:wrong-lane">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">United Kingdom</span><span class="ats">via google</span><span class="sig">senior-band · capped:wrong-lane</span></div>
       </div>
       <a class="apply" href="https://www.google.com/about/careers/applications/jobs/results/91469268943545030-director-emea-employment-legal" target="_blank" rel="noopener">View</a>
     </div>
@@ -900,7 +900,7 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="role" data-fit="30" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">VAT Compliance &amp; Advisory Manager</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="employer+5 · capped:wrong-lane">30</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">Colchester, gb</span><span class="ats">via smartrecruiters</span><span class="sig">employer+5 · capped:wrong-lane</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="capped:wrong-lane">30</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">Colchester, gb</span><span class="ats">via smartrecruiters</span><span class="sig">capped:wrong-lane</span></div>
       </div>
       <a class="apply" href="https://jobs.smartrecruiters.com/InformaGroupPlc/744000137844990" target="_blank" rel="noopener">View</a>
     </div>
@@ -908,17 +908,17 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Johnson &amp; Johnson <span class='cmeta'>(🇺🇸, Pharmaceuticals)</span></h3><span class="co-count">2 roles</span><a class='co-link' href='https://www.careers.jnj.com/en/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="41" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="35" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Legal Counsel, Innovative Medicine Supply Chain</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">41</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">High Wycombe, Buckinghamshire, United Kingdom</span><span class="ats">via workday</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">High Wycombe, Buckinghamshire, United Kingdom</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/High-Wycombe-Buckinghamshire-United-Kingdom/Senior-Legal-Counsel--Innovative-Medicine-Supply-Chain_R-091712-1" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="31" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal Director, UK, Ireland &amp; Nordics</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">31</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">Leeds, West Yorkshire, United Kingdom</span><span class="ats">via workday</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">Leeds, West Yorkshire, United Kingdom</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Leeds-West-Yorkshire-United-Kingdom/Legal-Director--UK--Ireland---Nordics_R-089339" target="_blank" rel="noopener">View</a>
     </div>
@@ -1022,17 +1022,17 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Merck (MSD) <span class='cmeta'>(🇺🇸, Pharmaceuticals)</span></h3><span class="co-count">2 roles</span><a class='co-link' href='https://jobs.msd.com/gb/en' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="31" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Director, Legal – U.S. Commercial and Compliance Legal</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">31</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">USA - Pennsylvania - North Wales (Upper Gwynedd)</span><span class="ats">via workday</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">USA - Pennsylvania - North Wales (Upper Gwynedd)</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Pennsylvania---North-Wales-Upper-Gwynedd/Director--Legal---US-Commercial-and-Compliance-Legal_R408897" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="31" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Director, Legal – U.S. Commercial and Compliance Legal</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">31</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">USA - Pennsylvania - North Wales (Upper Gwynedd)</span><span class="ats">via workday</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">USA - Pennsylvania - North Wales (Upper Gwynedd)</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Pennsylvania---North-Wales-Upper-Gwynedd/Director--US-Commercial-and-Compliance_R408057" target="_blank" rel="noopener">View</a>
     </div>
@@ -1097,10 +1097,10 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Next plc <span class='cmeta'>(🇬🇧, General retailers)</span></h3><span class="co-count">1 role</span><a class='co-link' href='https://careers.next.co.uk/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="69" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">In-house Commercial Lawyer</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+4">69</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">Leicester, Leicestershire, United Kingdom</span><span class="ats">via oracle</span><span class="sig">employer+4</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">Leicester, Leicestershire, United Kingdom</span><span class="ats">via oracle</span></div>
       </div>
       <a class="apply" href="https://ekeq.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_3001/job/76765" target="_blank" rel="noopener">View</a>
     </div>
@@ -1119,10 +1119,10 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>RELX <span class='cmeta'>(🇬🇧, Media)</span></h3><span class="co-count">1 role</span><a class='co-link' href='https://www.relx.com/careers' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="30" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Company Secretarial Assistant</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+5">30</span><span class="badge">Company Secretarial / Governance</span><span class="band band-senior">senior</span><span class="loc">London Strand</span><span class="ats">via workday</span><span class="sig">senior-band · employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Company Secretarial / Governance</span><span class="band band-senior">senior</span><span class="loc">London Strand</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/London-Strand/Senior-Company-Secretarial-Assistant_R115788-1" target="_blank" rel="noopener">View</a>
     </div>
@@ -1130,17 +1130,17 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Salesforce <span class='cmeta'>(🇺🇸, Software)</span></h3><span class="co-count">2 roles</span><a class='co-link' href='https://careers.salesforce.com/en/jobs/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="45" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="42" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Corp Counsel (12-month fixed-term contract)</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="jd-lane · jd-floor-high · employer+5">45</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="fit">&#9733; lane</span><span class="loc">United Kingdom - London</span><span class="ats">via workday</span><span class="sig">jd:lane-signal · jd:high-floor</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="jd-lane · jd-floor-high">42</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="fit">&#9733; lane</span><span class="loc">United Kingdom - London</span><span class="ats">via workday</span><span class="sig">jd:lane-signal · jd:high-floor</span></div>
       </div>
       <a class="apply" href="https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/United-Kingdom---London/Counsel--12-month-fixed-term-contract-_JR342649" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="40" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="35" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Corporate Counsel</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+5">40</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">United Kingdom - London</span><span class="ats">via workday</span><span class="sig">senior-band · employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">United Kingdom - London</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/United-Kingdom---London/Senior-Corporate-Counsel_JR349439" target="_blank" rel="noopener">View</a>
     </div>
@@ -1224,31 +1224,31 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Stripe <span class='cmeta'>(🇺🇸, Fintech)</span></h3><span class="co-count">4 roles</span><a class='co-link' href='https://stripe.com/jobs' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="61" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Compliance Manager, User Enablement</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+6">61</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">Dublin OR London</span><span class="ats">via greenhouse</span><span class="sig">employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">Dublin OR London</span><span class="ats">via greenhouse</span></div>
       </div>
       <a class="apply" href="https://stripe.com/jobs/search?gh_jid=7530580" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="61" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Privacy Operations Program Manager</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+6">61</span><span class="badge">Privacy / Data Protection</span><span class="band band-mid">mid</span><span class="loc">Dublin, London</span><span class="ats">via greenhouse</span><span class="sig">employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Privacy / Data Protection</span><span class="band band-mid">mid</span><span class="loc">Dublin, London</span><span class="ats">via greenhouse</span></div>
       </div>
       <a class="apply" href="https://stripe.com/jobs/search?gh_jid=8094087" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="61" data-band="mid" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Product Compliance and Enablement Advisor</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+6">61</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, Dublin</span><span class="ats">via greenhouse</span><span class="sig">employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">London, Dublin</span><span class="ats">via greenhouse</span></div>
       </div>
       <a class="apply" href="https://stripe.com/jobs/search?gh_jid=8003129" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="31" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Investigations, Law Enforcement and Engagement Lead</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">31</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London, Dublin</span><span class="ats">via greenhouse</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London, Dublin</span><span class="ats">via greenhouse</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://stripe.com/jobs/search?gh_jid=8048904" target="_blank" rel="noopener">View</a>
     </div>
@@ -1256,17 +1256,17 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Visa <span class='cmeta'>(🇺🇸, Payments)</span></h3><span class="co-count">2 roles</span><a class='co-link' href='https://corporate.visa.com/en/jobs.html' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="90" data-band="junior" data-new="0" data-loc="london" data-lane="on-ramp">
+    <div class="role" data-fit="92" data-band="junior" data-new="0" data-loc="london" data-lane="on-ramp">
       <div class="role-main">
         <div class="role-title">Sr. Associate Counsel</div>
-        <div class="role-meta"><span class="fitscore fs-hi" title="jd-lane · junior-band">90</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit">&#9733; lane</span><span class="loc">GB - London, United Kingdom</span><span class="ats">via workday</span><span class="sig">jd:lane-signal</span></div>
+        <div class="role-meta"><span class="fitscore fs-hi" title="jd-lane · junior-band">92</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit">&#9733; lane</span><span class="loc">GB - London, United Kingdom</span><span class="ats">via workday</span><span class="sig">jd:lane-signal</span></div>
       </div>
       <a class="apply" href="https://visa.wd5.myworkdayjobs.com/en-US/Visa/job/GB---London-United-Kingdom/Sr-Associate-Counsel_REF082216W" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="10" data-band="senior" data-new="0" data-loc="london" data-lane="other">
+    <div class="role" data-fit="12" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Sr. Counsel (Payments or fintech experience)</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="jd-lane · senior-band · jd:8+ PQE · jd-floor-high · capped:floor">10</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="fit">&#9733; lane</span><span class="loc">GB - London, United Kingdom</span><span class="ats">via workday</span><span class="sig">PQE: 8+ PQE · jd:lane-signal · jd:floor-8y</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="jd-lane · senior-band · jd:8+ PQE · jd-floor-high · capped:floor">12</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="fit">&#9733; lane</span><span class="loc">GB - London, United Kingdom</span><span class="ats">via workday</span><span class="sig">PQE: 8+ PQE · jd:lane-signal · jd:floor-8y</span></div>
       </div>
       <a class="apply" href="https://visa.wd5.myworkdayjobs.com/en-US/Visa/job/GB---London-United-Kingdom/Sr-Counsel_REF078881W" target="_blank" rel="noopener">View</a>
     </div>
@@ -1373,33 +1373,33 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>AstraZeneca <span class='cmeta'>(🇬🇧, Pharmaceuticals &amp; biotechnology)</span></h3><span class="co-count">4 roles</span><a class='co-link' href='https://careers.astrazeneca.com/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="76" data-band="junior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="70" data-band="junior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Regulatory Affairs Associate</div>
-        <div class="role-meta"><span class="fitscore fs-hi" title="junior-band · employer+6">76</span><span class="badge">Compliance / Regulatory</span><span class="band band-junior">NQ-junior</span><span class="loc">4 Locations</span><span class="ats">via workday</span><span class="sig">junior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-hi" title="junior-band">70</span><span class="badge">Compliance / Regulatory</span><span class="band band-junior">NQ-junior</span><span class="loc">4 Locations</span><span class="ats">via workday</span><span class="sig">junior-band</span></div>
       </div>
       <a class="apply" href="https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Gaithersburg---MD/Regulatory-Affairs-Associate_R-257408-1" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="56" data-band="senior" data-new="0" data-loc="rest" data-lane="lane">
-      <div class="role-main">
-        <div class="role-title">Director/Senior Director, Data Governance (China)</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="title-lane · senior-band · employer+6">56</span><span class="badge">Company Secretarial / Governance</span><span class="band band-senior">senior</span><span class="fit">&#9733; lane</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">title-lane · senior-band · employer+6</span></div>
-      </div>
-      <a class="apply" href="https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Shanghai-JingAn-Office/Director-Senior-Director--Data-Governance--China-_R-254366-1" target="_blank" rel="noopener">View</a>
-    </div>
-    <div class="role" data-fit="31" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Director Promotional Regulatory Affairs</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">31</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Wilmington---DE/Director-Promotional-Regulatory-Affairs_R-253828-1" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="31" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Director Promotional Regulatory Affairs</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">31</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/US---Gaithersburg---MD/Director-Promotional-Regulatory-Affairs_R-245549" target="_blank" rel="noopener">View</a>
+    </div>
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+      <div class="role-main">
+        <div class="role-title">Director/Senior Director, Data Governance (China)</div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Company Secretarial / Governance</span><span class="band band-senior">senior</span><span class="fit">&#9733; lane</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
+      </div>
+      <a class="apply" href="https://astrazeneca.wd3.myworkdayjobs.com/en-US/Careers/job/Shanghai-JingAn-Office/Director-Senior-Director--Data-Governance--China-_R-254366-1" target="_blank" rel="noopener">View</a>
     </div>
     </div>
     <div class="company">
@@ -1505,17 +1505,17 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Bristol Myers Squibb <span class='cmeta'>(🇺🇸, Pharmaceuticals)</span></h3><span class="co-count">2 roles</span><a class='co-link' href='https://careers.bms.com/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="31" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Associate Director, Compliance &amp; Ethics Investigations</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">31</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://bristolmyerssquibb.wd5.myworkdayjobs.com/en-US/BMS/job/Princeton---NJ---US/Associate-Director--Compliance---Ethics-Investigations_R1604666" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="31" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Director, Compliance &amp; Ethics Investigations</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">31</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://bristolmyerssquibb.wd5.myworkdayjobs.com/en-US/BMS/job/Princeton---NJ---US/Director--Compliance---Ethics-Investigations_R1604949" target="_blank" rel="noopener">View</a>
     </div>
@@ -1523,17 +1523,17 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Burberry Group <span class='cmeta'>(🇬🇧, Personal goods)</span></h3><span class="co-count">2 roles</span><a class='co-link' href='https://burberrycareers.com/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="67" data-band="mid" data-new="0" data-loc="unclear" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="unclear" data-lane="other">
       <div class="role-main">
         <div class="role-title">Trade Compliance Systems Manager</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+12">67</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc loc-empty">location unspecified</span><span class="ats">via successfactors</span><span class="sig">employer+12</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc loc-empty">location unspecified</span><span class="ats">via successfactors</span></div>
       </div>
       <a class="apply" href="https://burberrycareers.com/job/London-Trade-Compliance-Systems-Manager-Not/1415164700/" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="37" data-band="senior" data-new="0" data-loc="unclear" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="unclear" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Manager, Finance Compliance - 12 Months FTC</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+12">37</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc loc-empty">location unspecified</span><span class="ats">via successfactors</span><span class="sig">senior-band · employer+12</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc loc-empty">location unspecified</span><span class="ats">via successfactors</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://burberrycareers.com/job/Leeds-Senior-Manager%2C-Finance-Compliance-12-Months-FTC-Not/1390206800/" target="_blank" rel="noopener">View</a>
     </div>
@@ -1569,10 +1569,10 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
       </div>
       <a class="apply" href="https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/RTP-North-Carolina-US/Strategy---Planning-Manager--Corporate-Legal-Affairs_2020552" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="40" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="42" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Corporate Counsel: AI Software and Platform</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="jd-lane · jd-floor-high">40</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="fit">&#9733; lane</span><span class="loc">7 Locations</span><span class="ats">via workday</span><span class="sig">jd:lane-signal · jd:high-floor</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="jd-lane · jd-floor-high">42</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="fit">&#9733; lane</span><span class="loc">7 Locations</span><span class="ats">via workday</span><span class="sig">jd:lane-signal · jd:high-floor</span></div>
       </div>
       <a class="apply" href="https://cisco.wd5.myworkdayjobs.com/en-US/Cisco_Careers/job/RTP-North-Carolina-US/Corporate-Counsel--AI-Software-and-Platform_2020322" target="_blank" rel="noopener">View</a>
     </div>
@@ -1630,38 +1630,38 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Johnson &amp; Johnson <span class='cmeta'>(🇺🇸, Pharmaceuticals)</span></h3><span class="co-count">5 roles</span><a class='co-link' href='https://www.careers.jnj.com/en/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="61" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Manager, Technical Regulatory Compliance</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+6">61</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">3 Locations</span><span class="ats">via workday</span><span class="sig">employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">3 Locations</span><span class="ats">via workday</span></div>
       </div>
       <a class="apply" href="https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Raynham-Massachusetts-United-States-of-America/Manager--Technical-Regulatory-Compliance_R-074949-1" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="61" data-band="mid" data-new="1" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="1" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title"><span class="newbadge">new</span> Manager, Technology Regulatory Compliance</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+6">61</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">3 Locations</span><span class="ats">via workday</span><span class="sig">employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">3 Locations</span><span class="ats">via workday</span></div>
       </div>
       <a class="apply" href="https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/West-Chester-Pennsylvania-United-States-of-America/Manager--Technology-Regulatory-Compliance_R-090130-2" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="31" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Associate Director, Regulatory Affairs, MSM- EP/NV</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">31</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Zuchwil-Switzerland/Associate-Director--Regulatory-Affairs--MSM--Electrophysiology_R-083093" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="31" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Manager, Health Care Compliance Officer</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">31</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">4 Locations</span><span class="ats">via workday</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">4 Locations</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Irvine-California-United-States-of-America/Senior-Manager--Health-Care-Compliance-Officer_R-091163-1" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="31" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Sr. Director, Regulatory Law, Orthopedics</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">31</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">3 Locations</span><span class="ats">via workday</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">3 Locations</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://jj.wd5.myworkdayjobs.com/en-US/JJ/job/Raynham-Massachusetts-United-States-of-America/Sr-Director--Regulatory-Law--Orthopedics_R-071874-1" target="_blank" rel="noopener">View</a>
     </div>
@@ -1708,17 +1708,17 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Merck (MSD) <span class='cmeta'>(🇺🇸, Pharmaceuticals)</span></h3><span class="co-count">2 roles</span><a class='co-link' href='https://jobs.msd.com/gb/en' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="61" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Sr. Scientist, Regulatory Affairs-CMC</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+6">61</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">2 Locations</span><span class="ats">via workday</span></div>
       </div>
       <a class="apply" href="https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Pennsylvania---North-Wales-Upper-Gwynedd/Sr-Scientist--Regulatory-Affairs-CMC_R408499" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="31" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Director, Regulatory Affairs Liaison, Vaccines &amp; Infectious Diseases</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+6">31</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">4 Locations</span><span class="ats">via workday</span><span class="sig">senior-band · employer+6</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Compliance / Regulatory</span><span class="band band-senior">senior</span><span class="loc">4 Locations</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://msd.wd5.myworkdayjobs.com/en-US/SearchJobs/job/USA---Pennsylvania---North-Wales-Upper-Gwynedd/Director--Regulatory-Affairs-Liaison--Vaccines---Infectious-Diseases_R404836" target="_blank" rel="noopener">View</a>
     </div>
@@ -1748,101 +1748,101 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>RELX <span class='cmeta'>(🇬🇧, Media)</span></h3><span class="co-count">14 roles</span><a class='co-link' href='https://www.relx.com/careers' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="75" data-band="junior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="70" data-band="junior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal Analyst</div>
-        <div class="role-meta"><span class="fitscore fs-hi" title="junior-band · employer+5">75</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">51 Locations</span><span class="ats">via workday</span><span class="sig">junior-band · employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-hi" title="junior-band">70</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">51 Locations</span><span class="ats">via workday</span><span class="sig">junior-band</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/Home-based-Virginia/Legal-Analyst_R116045-1" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal AI Product Manager</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">2 Locations</span><span class="ats">via workday</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/USA---Raleigh-NC-RDU/Legal-AI-Product-Manager_R106761-1" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal Engineer - Workflows Specialist (Large Law)</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">4 Locations</span><span class="ats">via workday</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">4 Locations</span><span class="ats">via workday</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/Home-based-California/Position-Legal-Engineer---Workflows-Specialist--Large-Law-_R115259-1" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal Engineer- Corporate Legal (JD Required)</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">5 Locations</span><span class="ats">via workday</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">5 Locations</span><span class="ats">via workday</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/New-York/Legal-Engineer--Corporate-Legal--JD-Required-_R110093-1" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal Tech Client Manager- JD Preferred</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">4 Locations</span><span class="ats">via workday</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">4 Locations</span><span class="ats">via workday</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/Home-based-Oregon/Large-Law-Markets-Client-Manager--WA--OR-_R115356-1" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">University Partnerships Manager - Legal Education</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">2 Locations</span><span class="ats">via workday</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/Brisbane/Account-Relationship-Specialist---Academic_R108265-1" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="30" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal Forms &amp; Precedents-  AI Optimization Lead</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+5">30</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band · employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/United-Kingdom/Forms---Precedents-AI-Optimization-Lead_R115340-1" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="30" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Regional Legal Operations Lead</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+5">30</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">6 Locations</span><span class="ats">via workday</span><span class="sig">senior-band · employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">6 Locations</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/Home-based-North-Carolina/Regional-Legal-Operations-Lead_R115102-2" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="30" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Data Protection Manager: UK Hub</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+5">30</span><span class="badge">Privacy / Data Protection</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band · employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">25</span><span class="badge">Privacy / Data Protection</span><span class="band band-senior">senior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/UK---Richmond/Senior-Data-Protection-Manager--UK-Hub_R115188-1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="10" data-band="junior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal Analyst</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · jd-floor-high · employer+5 · capped:foreign-bar">10</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">jd:foreign-bar</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · jd-floor-high · capped:foreign-bar">10</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">jd:foreign-bar</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/Iloilo/Digital-Content-Writer-I_R114604" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="10" data-band="junior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal Analyst</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · jd-floor-high · employer+5 · capped:foreign-bar">10</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">3 Locations</span><span class="ats">via workday</span><span class="sig">jd:foreign-bar</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · jd-floor-high · capped:foreign-bar">10</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">3 Locations</span><span class="ats">via workday</span><span class="sig">jd:foreign-bar</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/PHL-RE-Shared-Services-Manila/Digital-Content-Writer-I_R114603" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="10" data-band="junior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal Analyst</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · jd-floor-high · employer+5 · capped:foreign-bar">10</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">jd:foreign-bar</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · jd-floor-high · capped:foreign-bar">10</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">jd:foreign-bar</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/PHL-RE-Shared-Services-Manila/Digital-Content-Writer-I_R114602" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="10" data-band="junior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal Analyst</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · jd-floor-high · employer+5 · capped:foreign-bar">10</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">jd:foreign-bar</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · jd-floor-high · capped:foreign-bar">10</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">jd:foreign-bar</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/Manila/Digital-Content-Writer-I_R114605" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="10" data-band="junior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal Content Analyst</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · jd-floor-high · employer+5 · capped:foreign-bar">10</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">6 Locations</span><span class="ats">via workday</span><span class="sig">jd:foreign-bar</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · jd-floor-high · capped:foreign-bar">10</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">6 Locations</span><span class="ats">via workday</span><span class="sig">jd:foreign-bar</span></div>
       </div>
       <a class="apply" href="https://relx.wd3.myworkdayjobs.com/en-US/relx/job/Home-based-North-Carolina/Legal-Content-Analyst_R115132-1" target="_blank" rel="noopener">View</a>
     </div>
@@ -1882,24 +1882,24 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Salesforce <span class='cmeta'>(🇺🇸, Software)</span></h3><span class="co-count">3 roles</span><a class='co-link' href='https://careers.salesforce.com/en/jobs/' target='_blank' rel='noopener'>careers site &rsaquo;</a></div>
       
-    <div class="role" data-fit="93" data-band="junior" data-new="0" data-loc="rest" data-lane="on-ramp">
+    <div class="role" data-fit="88" data-band="junior" data-new="0" data-loc="rest" data-lane="on-ramp">
       <div class="role-main">
         <div class="role-title">Counsel</div>
-        <div class="role-meta"><span class="fitscore fs-hi" title="junior-band · jd:1-3 PQE · employer+5">93</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit fit-ramp">on-ramp</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">PQE: 1-3 PQE</span></div>
+        <div class="role-meta"><span class="fitscore fs-hi" title="junior-band · jd:1-3 PQE">88</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit fit-ramp">on-ramp</span><span class="loc">2 Locations</span><span class="ats">via workday</span><span class="sig">PQE: 1-3 PQE</span></div>
       </div>
       <a class="apply" href="https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/Australia---Sydney/Counsel_JR351390" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="60" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Export Control Manager &amp; ITAR Compliance Official</div>
-        <div class="role-meta"><span class="fitscore fs-mid" title="employer+5">60</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">6 Locations</span><span class="ats">via workday</span><span class="sig">employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Compliance / Regulatory</span><span class="band band-mid">mid</span><span class="loc">6 Locations</span><span class="ats">via workday</span></div>
       </div>
       <a class="apply" href="https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/District-of-Columbia---Washington/Export-Control-Manager---ITAR-Compliance-Official_JR346062" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="40" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="35" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Corporate Counsel - Office of Global Ethics &amp; Integrity - JAPAC (India)</div>
-        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · employer+5">40</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">4 Locations</span><span class="ats">via workday</span><span class="sig">senior-band · employer+5</span></div>
+        <div class="role-meta"><span class="fitscore fs-lo" title="senior-band">35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">4 Locations</span><span class="ats">via workday</span><span class="sig">senior-band</span></div>
       </div>
       <a class="apply" href="https://salesforce.wd12.myworkdayjobs.com/en-US/External_Career_Site/job/India---Bangalore/Senior-Corporate-Counsel---Office-of-Global-Ethics---Integrity---JAPAC--India-_JR352055" target="_blank" rel="noopener">View</a>
     </div>
@@ -1943,7 +1943,7 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
 
 </div>
 <footer>
-  Scanned 137 · covered 64 · amazon: 27 · apple: 1 · eightfold: 18 · google: 3 · greenhouse: 46 · jibe: 1 · oracle: 164 · radancy: 7 · smartrecruiters: 18 · successfactors: 10 · successfactors_api: 23 · wordpress_acf: 3 · workday: 272<br>
+  Scanned 137 · covered 64 · amazon: 27 · apple: 1 · eightfold: 18 · google: 3 · greenhouse: 46 · jibe: 1 · oracle: 163 · radancy: 7 · smartrecruiters: 18 · successfactors: 10 · successfactors_api: 24 · wordpress_acf: 3 · workday: 272<br>
   <code>tools/ftse-law-jobs</code> · verify PQE on the employer site before applying.
 </footer>
 <script>
