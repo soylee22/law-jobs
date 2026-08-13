@@ -225,6 +225,7 @@ h2 .muted { color: var(--mute); font-weight: 500; letter-spacing: 0.08em; }
 .fs-lo { background: var(--clay-wash); color: #8B3A32; }
 .newbadge { background: var(--clay); color: #fff; letter-spacing: 0.1em; font-size: 9px; }
 .gonebadge { background: #5A5A55; color: #fff; letter-spacing: 0.1em; font-size: 9px; }
+.appliedbadge { background: var(--lilac-deep); color: #fff; letter-spacing: 0.1em; font-size: 9px; }
 .loc {
   background: #EEF2F6;
   color: #2F4A66;
@@ -361,11 +362,11 @@ footer code {
 <header class="hero">
   <div class="kicker">Mithril · Open market</div>
   <h1>UK legal vacancies</h1>
-  <div class="sub">Thursday 13 August 2026, 23:41 · employer ATS feeds · UK-wide · not London-only</div>
+  <div class="sub">Friday 14 August 2026, 00:19 · employer ATS feeds · UK-wide · not London-only</div>
   <div class="stats">
     <div class="stat"><b>157</b><span>UK roles</span></div>
     <div class="stat"><b>130</b><span>high-fit</span></div>
-    <div class="stat"><b>34</b><span>new today</span></div>
+    
     <div class="stat"><b>0</b><span>unclear loc</span></div>
     <div class="stat"><b>137/92</b><span>companies</span></div>
   </div>
@@ -377,7 +378,7 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
 
 <details class="method"><summary>How this search works</summary><p>The open-market net: about a dozen broad LinkedIn guest searches (legal counsel, in-house counsel, commercial counsel, corporate counsel, newly qualified solicitor, commercial contracts, data protection, technology lawyer and more) across London and the wider UK, including remote and national postings. This is the long tail of employers the In-house tab cannot see (mid-size companies, scale-ups, recruiters posting direct), kept to Min&#x27;s lanes (commercial, corporate, IP and brands, disputes, data and tech) and hard-filtered out of the wrong practice areas (property, immigration, family, personal injury, crime, private client). The widest, freshest apply-now pool. Fit score (0 to 100) = title lane (IP, brand, China) + level (NQ to mid) + employer/sector prior, then a light Python JD scan (httpx + BeautifulSoup, no browser) of roles scoring ≥65 to pull PQE / IP-China signals and re-rank. Three shortlist lanes: lane match, generic title at priority employers, on-ramp junior/NQ. A red NEW badge means first seen today. Ex jobs tab = dropped off. Filters narrow the full list.</p></details>
 
-<div class="note"><strong>Three-lane shortlist.</strong> Fit = title lane (IP/brand/China) + level (NQ to mid) + employer/sector prior + optional JD-body signals (PQE, moat words) on a selective subset of roles. Generic "Legal Counsel" at priority employers is its own panel so it is not buried by keyword hits. A red <span class="newbadge">new</span> badge marks roles first seen today (no separate new section). Ex-jobs that dropped off live under the Ex jobs tab. Verify PQE in the JD before applying. UK-wide, not London-only. Enrich: {'selected': 73, 'fetched': 0, 'cache_hits': 0, 'failed': 73, 'fit_min': 65, 'limit': 80}.</div><div class="note"><strong>Her lane.</strong> Title or JD body signals IP, brand, trade mark, China, Mandarin, or cross-border.</div><h2>Lane match · IP / brand / China <span class="muted">(6)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <strong>Legal Counsel Ip Data</strong> <span class="co">🇬🇧 Almac Group</span> <span class="loc">United Kingdom</span> <span class="bits">title-lane</span><a class="apply" href="https://uk.linkedin.com/jobs/view/legal-counsel-ip-data-at-almac-group-4448882573" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <strong>Intellectual Property Solicitor Patent Tier 1 Law Firm</strong> <span class="co">🇬🇧 Capeclarke</span> <span class="loc">United Kingdom</span> <span class="bits">title-lane</span><a class="apply" href="https://uk.linkedin.com/jobs/view/intellectual-property-solicitor-patent-tier-1-law-firm-at-capeclarke-4446657616" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <strong>Ip Counsel</strong> <span class="co">🇬🇧 Oxford Pv</span> <span class="loc">United Kingdom</span> <span class="bits">title-lane</span><a class="apply" href="https://uk.linkedin.com/jobs/view/ip-counsel-at-oxford-pv-4446569665" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <strong>Intellectual Property Knowledge Lawyer Elite Us Law Firm</strong> <span class="co">🇬🇧 Pembury Legal</span> <span class="loc">United Kingdom</span> <span class="bits">title-lane</span><a class="apply" href="https://uk.linkedin.com/jobs/view/intellectual-property-knowledge-lawyer-elite-us-law-firm-at-pembury-legal-4440012054" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <strong>Professional Support Lawyer – Eu Intellectual Property</strong> <span class="co">🇬🇧 White Case Llp</span> <span class="loc">United Kingdom</span> <span class="bits">title-lane</span><a class="apply" href="https://uk.linkedin.com/jobs/view/professional-support-lawyer-%E2%80%93-eu-intellectual-property-at-white-case-llp-4427510529" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <strong>Intellectual Property Solicitor</strong> <span class="co">🇬🇧 William James Recruitment (recruiter — client undisclosed)</span> <span class="loc">United Kingdom</span> <span class="bits">title-lane</span><a class="apply" href="https://uk.linkedin.com/jobs/view/intellectual-property-solicitor-at-william-james-recruitment-4446312104" target="_blank" rel="noopener">View</a></div></div><h2>Generic title · priority employer <span class="muted">(0)</span></h2><p class='empty'>None this run.</p><div class="note"><strong>PQE builders.</strong> Junior or explicit NQ titles (not pure attorney-profession track).</div><h2>On-ramp · junior / NQ band <span class="muted">(15)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-hi" title="junior-band · nq-title · nq-capped:15-&gt;10">90</span> <strong>Nq Or Solicitor Healthcare Nhsr</strong> <span class="co">🇬🇧 Dwf</span> <span class="loc">United Kingdom</span> <span class="bits">junior-band · nq-title · nq-capped:15-&gt;10</span><a class="apply" href="https://uk.linkedin.com/jobs/view/nq-or-solicitor-healthcare-nhsr-at-dwf-4341754631" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band · nq-title · nq-capped:15-&gt;10">90</span> <span class="newbadge">new</span> <strong>Solicitor Or Nq Catastrophic Loss Team</strong> <span class="co">🇬🇧 Dwf</span> <span class="loc">United Kingdom</span> <span class="bits">junior-band · nq-title · nq-capped:15-&gt;10</span><a class="apply" href="https://uk.linkedin.com/jobs/view/solicitor-or-nq-solicitor-catastrophic-loss-team-at-dwf-4453117235" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band · nq-title · nq-capped:15-&gt;10">90</span> <strong>Fs Regulatory Lawyer Nq 2Pqe</strong> <span class="co">🇬🇧 Hydrogen Group</span> <span class="loc">London</span> <span class="bits">junior-band · nq-title · nq-capped:15-&gt;10</span><a class="apply" href="https://uk.linkedin.com/jobs/view/fs-regulatory-lawyer-nq-2pqe-at-hydrogen-group-4403429032" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Associate Legal Counsel</strong> <span class="co">🇬🇧 Agco Corporation</span> <span class="loc">United Kingdom</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/associate-legal-counsel-at-agco-corporation-4452609729" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Solicitor Associate Enfranchisement</strong> <span class="co">🇬🇧 Birketts Llp</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/solicitor-associate-enfranchisement-at-birketts-llp-4448525518" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Associate Commercial Lawyer</strong> <span class="co">🇬🇧 Em Law</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/associate-commercial-lawyer-at-em-law-4442456227" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Associate Commercial Counsel</strong> <span class="co">🇬🇧 Harvey</span> <span class="loc">United Kingdom</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/associate-commercial-counsel-london-at-harvey-4436591661" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Junior Legal Counsel</strong> <span class="co">🇬🇧 Htb Group Recruitment</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/junior-legal-counsel-at-htb-group-recruitment-4448304438" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Associate Solicitor</strong> <span class="co">🇬🇧 Jfh Law</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/associate-solicitor-at-jfh-law-4437753596" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <span class="newbadge">new</span> <strong>Junior Finance Lawyer</strong> <span class="co">🇬🇧 Law Absolute</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/junior-finance-lawyer-at-law-absolute-4449857616" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Associate Legal Counsel</strong> <span class="co">🇬🇧 Legend</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/associate-legal-counsel-at-legend-4444995733" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Interim Junior Regulatory Legal Counsel £100K £120K Fintech</strong> <span class="co">🇬🇧 Major Lindsey Africa</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/interim-junior-regulatory-legal-counsel-%C2%A3100k-%C2%A3120k-fintech-at-major-lindsey-africa-4445134913" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <span class="newbadge">new</span> <strong>Assistant Lawyer</strong> <span class="co">🇬🇧 Thompsons Solicitors</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/assistant-lawyer-at-thompsons-solicitors-4452481558" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Junior Lawyer</strong> <span class="co">🇬🇧 Veise</span> <span class="loc">United Kingdom</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/junior-lawyer-at-veise-4446681503" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Junior Legal Counsel</strong> <span class="co">🇬🇧 Verian Group</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/junior-legal-counsel-at-verian-group-4449579530" target="_blank" rel="noopener">View</a></div></div>
+<div class="note"><strong>Three-lane shortlist.</strong> Fit = title lane (IP/brand/China) + level (NQ to mid) + employer/sector prior + optional JD-body signals (PQE, moat words) on a selective subset of roles. Generic "Legal Counsel" at priority employers is its own panel so it is not buried by keyword hits. A red <span class="newbadge">new</span> badge marks roles first seen today (no separate new section). Ex-jobs that dropped off live under the Ex jobs tab. Verify PQE in the JD before applying. UK-wide, not London-only. Enrich: {'selected': 73, 'fetched': 0, 'cache_hits': 0, 'failed': 73, 'fit_min': 65, 'limit': 80}.</div><div class="note"><strong>Her lane.</strong> Title or JD body signals IP, brand, trade mark, China, Mandarin, or cross-border.</div><h2>Lane match · IP / brand / China <span class="muted">(6)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <strong>Legal Counsel Ip Data</strong> <span class="co">🇬🇧 Almac Group</span> <span class="loc">United Kingdom</span> <span class="bits">title-lane</span><a class="apply" href="https://uk.linkedin.com/jobs/view/legal-counsel-ip-data-at-almac-group-4448882573" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <strong>Intellectual Property Solicitor Patent Tier 1 Law Firm</strong> <span class="co">🇬🇧 Capeclarke</span> <span class="loc">United Kingdom</span> <span class="bits">title-lane</span><a class="apply" href="https://uk.linkedin.com/jobs/view/intellectual-property-solicitor-patent-tier-1-law-firm-at-capeclarke-4446657616" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <strong>Ip Counsel</strong> <span class="co">🇬🇧 Oxford Pv</span> <span class="loc">United Kingdom</span> <span class="bits">title-lane</span><a class="apply" href="https://uk.linkedin.com/jobs/view/ip-counsel-at-oxford-pv-4446569665" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <strong>Intellectual Property Knowledge Lawyer Elite Us Law Firm</strong> <span class="co">🇬🇧 Pembury Legal</span> <span class="loc">United Kingdom</span> <span class="bits">title-lane</span><a class="apply" href="https://uk.linkedin.com/jobs/view/intellectual-property-knowledge-lawyer-elite-us-law-firm-at-pembury-legal-4440012054" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <strong>Professional Support Lawyer – Eu Intellectual Property</strong> <span class="co">🇬🇧 White Case Llp</span> <span class="loc">United Kingdom</span> <span class="bits">title-lane</span><a class="apply" href="https://uk.linkedin.com/jobs/view/professional-support-lawyer-%E2%80%93-eu-intellectual-property-at-white-case-llp-4427510529" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <span class="appliedbadge">applied</span> <strong>Intellectual Property Solicitor</strong> <span class="co">🇬🇧 William James Recruitment (recruiter — client undisclosed)</span> <span class="loc">United Kingdom</span> <span class="bits">title-lane</span><a class="apply" href="https://uk.linkedin.com/jobs/view/intellectual-property-solicitor-at-william-james-recruitment-4446312104" target="_blank" rel="noopener">View</a></div></div><h2>Generic title · priority employer <span class="muted">(0)</span></h2><p class='empty'>None this run.</p><div class="note"><strong>PQE builders.</strong> Junior or explicit NQ titles (not pure attorney-profession track).</div><h2>On-ramp · junior / NQ band <span class="muted">(15)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-hi" title="junior-band · nq-title · nq-capped:15-&gt;10">90</span> <strong>Nq Or Solicitor Healthcare Nhsr</strong> <span class="co">🇬🇧 Dwf</span> <span class="loc">United Kingdom</span> <span class="bits">junior-band · nq-title · nq-capped:15-&gt;10</span><a class="apply" href="https://uk.linkedin.com/jobs/view/nq-or-solicitor-healthcare-nhsr-at-dwf-4341754631" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band · nq-title · nq-capped:15-&gt;10">90</span> <strong>Solicitor Or Nq Catastrophic Loss Team</strong> <span class="co">🇬🇧 Dwf</span> <span class="loc">United Kingdom</span> <span class="bits">junior-band · nq-title · nq-capped:15-&gt;10</span><a class="apply" href="https://uk.linkedin.com/jobs/view/solicitor-or-nq-solicitor-catastrophic-loss-team-at-dwf-4453117235" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band · nq-title · nq-capped:15-&gt;10">90</span> <strong>Fs Regulatory Lawyer Nq 2Pqe</strong> <span class="co">🇬🇧 Hydrogen Group</span> <span class="loc">London</span> <span class="bits">junior-band · nq-title · nq-capped:15-&gt;10</span><a class="apply" href="https://uk.linkedin.com/jobs/view/fs-regulatory-lawyer-nq-2pqe-at-hydrogen-group-4403429032" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Associate Legal Counsel</strong> <span class="co">🇬🇧 Agco Corporation</span> <span class="loc">United Kingdom</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/associate-legal-counsel-at-agco-corporation-4452609729" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Solicitor Associate Enfranchisement</strong> <span class="co">🇬🇧 Birketts Llp</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/solicitor-associate-enfranchisement-at-birketts-llp-4448525518" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Associate Commercial Lawyer</strong> <span class="co">🇬🇧 Em Law</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/associate-commercial-lawyer-at-em-law-4442456227" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Associate Commercial Counsel</strong> <span class="co">🇬🇧 Harvey</span> <span class="loc">United Kingdom</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/associate-commercial-counsel-london-at-harvey-4436591661" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Junior Legal Counsel</strong> <span class="co">🇬🇧 Htb Group Recruitment</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/junior-legal-counsel-at-htb-group-recruitment-4448304438" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Associate Solicitor</strong> <span class="co">🇬🇧 Jfh Law</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/associate-solicitor-at-jfh-law-4437753596" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Junior Finance Lawyer</strong> <span class="co">🇬🇧 Law Absolute</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/junior-finance-lawyer-at-law-absolute-4449857616" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <span class="appliedbadge">applied</span> <strong>Associate Legal Counsel</strong> <span class="co">🇬🇧 Legend</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/associate-legal-counsel-at-legend-4444995733" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Interim Junior Regulatory Legal Counsel £100K £120K Fintech</strong> <span class="co">🇬🇧 Major Lindsey Africa</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/interim-junior-regulatory-legal-counsel-%C2%A3100k-%C2%A3120k-fintech-at-major-lindsey-africa-4445134913" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Assistant Lawyer</strong> <span class="co">🇬🇧 Thompsons Solicitors</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/assistant-lawyer-at-thompsons-solicitors-4452481558" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Junior Lawyer</strong> <span class="co">🇬🇧 Veise</span> <span class="loc">United Kingdom</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/junior-lawyer-at-veise-4446681503" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="junior-band">80</span> <strong>Junior Legal Counsel</strong> <span class="co">🇬🇧 Verian Group</span> <span class="loc">London</span> <span class="bits">junior-band</span><a class="apply" href="https://uk.linkedin.com/jobs/view/junior-legal-counsel-at-verian-group-4449579530" target="_blank" rel="noopener">View</a></div></div>
 
 <div class="filterbar">
   <span class="flabel">Filter</span>
@@ -416,9 +417,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Accenture Uk Ireland <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="55" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Contract Management</div>
+        <div class="role-title">Contract Management</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/contract-management-at-accenture-uk-ireland-4453253837" target="_blank" rel="noopener">View</a>
@@ -504,9 +505,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Ascent Performance Group Ltd <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="65" data-band="mid" data-new="1" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Solicitor</div>
+        <div class="role-title">Solicitor</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">United Kingdom</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/solicitor-at-ascent-performance-group-ltd-4453692692" target="_blank" rel="noopener">View</a>
@@ -619,9 +620,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/commercial-lawyer-at-baringa-4435258173" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="35" data-band="senior" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="35" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Senior Commercial Counsel</div>
+        <div class="role-title">Senior Commercial Counsel</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:senior">35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via linkedin</span><span class="sig">senior-band · capped:senior</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/senior-commercial-counsel-at-baringa-4435242750" target="_blank" rel="noopener">View</a>
@@ -703,9 +704,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Bridewell <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="25" data-band="senior" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Senior Data Privacy Consultant</div>
+        <div class="role-title">Senior Data Privacy Consultant</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:senior">25</span><span class="badge">Privacy / Data Protection</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via linkedin</span><span class="sig">senior-band · capped:senior</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/senior-data-privacy-consultant-at-bridewell-4452722099" target="_blank" rel="noopener">View</a>
@@ -849,9 +850,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Codat <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="65" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Legal Counsel</div>
+        <div class="role-title">Legal Counsel</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-codat-4443111464" target="_blank" rel="noopener">View</a>
@@ -988,9 +989,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Dragados Uk Ireland <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="55" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Contract Manager</div>
+        <div class="role-title">Contract Manager</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/contract-manager-at-dragados-uk-ireland-4341226277" target="_blank" rel="noopener">View</a>
@@ -1006,9 +1007,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/nq-or-solicitor-healthcare-nhsr-at-dwf-4341754631" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="90" data-band="junior" data-new="1" data-loc="rest" data-lane="on-ramp">
+    <div class="role" data-fit="90" data-band="junior" data-new="0" data-loc="rest" data-lane="on-ramp">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Solicitor Or Nq Catastrophic Loss Team</div>
+        <div class="role-title">Solicitor Or Nq Catastrophic Loss Team</div>
         <div class="role-meta"><span class="fitscore fs-hi" title="junior-band · nq-title · nq-capped:15-&gt;10">90</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit fit-ramp">on-ramp</span><span class="loc">United Kingdom</span><span class="ats">via linkedin</span><span class="sig">junior-band · nq-title · nq-capped:15-&gt;10</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/solicitor-or-nq-solicitor-catastrophic-loss-team-at-dwf-4453117235" target="_blank" rel="noopener">View</a>
@@ -1072,9 +1073,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Fireblocks <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="55" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Contract Manager</div>
+        <div class="role-title">Contract Manager</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/contract-manager-at-fireblocks-4448652521" target="_blank" rel="noopener">View</a>
@@ -1134,9 +1135,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Grant Thornton Uk <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="35" data-band="senior" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="35" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Senior Commercial Legal Counsel</div>
+        <div class="role-title">Senior Commercial Legal Counsel</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:senior">35</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via linkedin</span><span class="sig">senior-band · capped:senior</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/senior-commercial-legal-counsel-at-grant-thornton-uk-4448431618" target="_blank" rel="noopener">View</a>
@@ -1167,9 +1168,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Hf <span class='cmeta'>(🇨🇳)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="61" data-band="mid" data-new="1" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="61" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Legal Opportunities – Motor</div>
+        <div class="role-title">Legal Opportunities – Motor</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="employer:6">61</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">United Kingdom</span><span class="ats">via linkedin</span><span class="sig">employer:6</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/legal-opportunities-%E2%80%93-motor-at-hf-4362706150" target="_blank" rel="noopener">View</a>
@@ -1196,9 +1197,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/fs-regulatory-lawyer-nq-2pqe-at-hydrogen-group-4403429032" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="70" data-band="junior" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="70" data-band="junior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Privacy Cyber Digital Regulatory Associate 3 6 Pqe</div>
+        <div class="role-title">Privacy Cyber Digital Regulatory Associate 3 6 Pqe</div>
         <div class="role-meta"><span class="fitscore fs-hi" title="junior-band">70</span><span class="badge">Privacy / Data Protection</span><span class="band band-junior">NQ-junior</span><span class="loc">London</span><span class="ats">via linkedin</span><span class="sig">junior-band</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/privacy-cyber-digital-regulatory-associate-3-6-pqe-at-hydrogen-group-4454034862" target="_blank" rel="noopener">View</a>
@@ -1207,9 +1208,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Ice <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="65" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Legal Counsel</div>
+        <div class="role-title">Legal Counsel</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-ice-4435196040" target="_blank" rel="noopener">View</a>
@@ -1258,9 +1259,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Kingsley Wood <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="65" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Corporate Technology Ai Solicitor</div>
+        <div class="role-title">Corporate Technology Ai Solicitor</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/corporate-technology-ai-solicitor-at-kingsley-wood-4444962553" target="_blank" rel="noopener">View</a>
@@ -1291,9 +1292,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Lassie <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="70" data-band="junior" data-new="1" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="70" data-band="junior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Compliance And Legal Officer M F D London</div>
+        <div class="role-title">Compliance And Legal Officer M F D London</div>
         <div class="role-meta"><span class="fitscore fs-hi" title="junior-band">70</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">United Kingdom</span><span class="ats">via linkedin</span><span class="sig">junior-band</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/compliance-and-legal-officer-m-f-d-london-uk-at-lassie-4450339853" target="_blank" rel="noopener">View</a>
@@ -1302,23 +1303,23 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Law Absolute <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">3 roles</span></div>
       
-    <div class="role" data-fit="80" data-band="junior" data-new="1" data-loc="london" data-lane="on-ramp">
+    <div class="role" data-fit="80" data-band="junior" data-new="0" data-loc="london" data-lane="on-ramp">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Junior Finance Lawyer</div>
+        <div class="role-title">Junior Finance Lawyer</div>
         <div class="role-meta"><span class="fitscore fs-hi" title="junior-band">80</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit fit-ramp">on-ramp</span><span class="loc">London</span><span class="ats">via linkedin</span><span class="sig">junior-band</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/junior-finance-lawyer-at-law-absolute-4449857616" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="65" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Finance Lawyer</div>
+        <div class="role-title">Finance Lawyer</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/finance-lawyer-at-law-absolute-4449852796" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="55" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Deputy Data Protection Officer</div>
+        <div class="role-title">Deputy Data Protection Officer</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Privacy / Data Protection</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/deputy-data-protection-officer-at-law-absolute-4451186733" target="_blank" rel="noopener">View</a>
@@ -1393,9 +1394,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Lr Legal Recruitment <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="70" data-band="junior" data-new="1" data-loc="london" data-lane="on-ramp">
+    <div class="role" data-fit="70" data-band="junior" data-new="0" data-loc="london" data-lane="on-ramp">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Associate Dispute Resolution Nq +</div>
+        <div class="role-title">Associate Dispute Resolution Nq +</div>
         <div class="role-meta"><span class="fitscore fs-hi" title="junior-band · nq-title · nq-capped:15-&gt;0">70</span><span class="badge">Litigation / Disputes</span><span class="band band-junior">NQ-junior</span><span class="fit fit-ramp">on-ramp</span><span class="loc">London</span><span class="ats">via linkedin</span><span class="sig">junior-band · nq-title · nq-capped:15-&gt;0</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/associate-dispute-resolution-nq-%2B-london-at-lr-legal-recruitment-4447511403" target="_blank" rel="noopener">View</a>
@@ -1455,9 +1456,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Ministry Of Justice Uk <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="55" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Data Protection Team Business Delivery Manager Ref 20445</div>
+        <div class="role-title">Data Protection Team Business Delivery Manager Ref 20445</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Privacy / Data Protection</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/data-protection-team-business-delivery-manager-ref-20445-at-ministry-of-justice-uk-4448527937" target="_blank" rel="noopener">View</a>
@@ -1521,9 +1522,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Nottingham City Council <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="65" data-band="mid" data-new="1" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Solicitor Children And Adults Team</div>
+        <div class="role-title">Solicitor Children And Adults Team</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">United Kingdom</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/solicitor-children-and-adults-team-at-nottingham-city-council-4443248975" target="_blank" rel="noopener">View</a>
@@ -1532,9 +1533,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Nuffield Health <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="70" data-band="junior" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="70" data-band="junior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Data Protection Analyst</div>
+        <div class="role-title">Data Protection Analyst</div>
         <div class="role-meta"><span class="fitscore fs-hi" title="junior-band">70</span><span class="badge">Privacy / Data Protection</span><span class="band band-junior">NQ-junior</span><span class="loc">London</span><span class="ats">via linkedin</span><span class="sig">junior-band</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/data-protection-analyst-at-nuffield-health-4452431535" target="_blank" rel="noopener">View</a>
@@ -1587,9 +1588,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Pipedrive <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="55" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Data Protection Officer</div>
+        <div class="role-title">Data Protection Officer</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Privacy / Data Protection</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/data-protection-officer-at-pipedrive-4443957000" target="_blank" rel="noopener">View</a>
@@ -1642,9 +1643,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Royal Borough Of Windsor And Maidenhead <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="25" data-band="senior" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Deputy Data Protection Officer Senior Information Governance</div>
+        <div class="role-title">Deputy Data Protection Officer Senior Information Governance</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:senior">25</span><span class="badge">Company Secretarial / Governance</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via linkedin</span><span class="sig">senior-band · capped:senior</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/deputy-data-protection-officer-senior-information-governance-officer-at-royal-borough-of-windsor-and-maidenhead-4441904999" target="_blank" rel="noopener">View</a>
@@ -1675,9 +1676,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Santander Uk <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="65" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Legal Counsel Operations Infrastructure S3 Multiple Locations Open</div>
+        <div class="role-title">Legal Counsel Operations Infrastructure S3 Multiple Locations Open</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/legal-counsel-operations-infrastructure-s3-legal-multiple-locations-open-at-santander-uk-4452398739" target="_blank" rel="noopener">View</a>
@@ -1686,9 +1687,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Score Group <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="65" data-band="mid" data-new="1" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Legal Counsel</div>
+        <div class="role-title">Legal Counsel</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">United Kingdom</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-score-group-4453116067" target="_blank" rel="noopener">View</a>
@@ -1697,9 +1698,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Scott Brownrigg <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="55" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Legal Advisor</div>
+        <div class="role-title">Legal Advisor</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/legal-advisor-at-scott-brownrigg-4453098877" target="_blank" rel="noopener">View</a>
@@ -1719,9 +1720,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Shaneel Enterprises Ltd <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="65" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Legal Counsel</div>
+        <div class="role-title">Legal Counsel</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-shaneel-enterprises-ltd-4443683959" target="_blank" rel="noopener">View</a>
@@ -1730,9 +1731,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Sharegain <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="65" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Legal Counsel</div>
+        <div class="role-title">Legal Counsel</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-sharegain-4450806127" target="_blank" rel="noopener">View</a>
@@ -1821,9 +1822,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Tech Mahindra <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="55" data-band="mid" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Data Protection Officer</div>
+        <div class="role-title">Data Protection Officer</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Privacy / Data Protection</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/data-protection-officer-at-tech-mahindra-4451683092" target="_blank" rel="noopener">View</a>
@@ -1832,9 +1833,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>The Trade Desk <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="35" data-band="senior" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="35" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Associate General Counsel Commercial Privacy Emea</div>
+        <div class="role-title">Associate General Counsel Commercial Privacy Emea</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:senior">35</span><span class="badge">Privacy / Data Protection</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via linkedin</span><span class="sig">senior-band · capped:senior</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/associate-general-counsel-commercial-privacy-emea-at-the-trade-desk-4437998921" target="_blank" rel="noopener">View</a>
@@ -1854,9 +1855,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Thompsons Solicitors <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="80" data-band="junior" data-new="1" data-loc="london" data-lane="on-ramp">
+    <div class="role" data-fit="80" data-band="junior" data-new="0" data-loc="london" data-lane="on-ramp">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Assistant Lawyer</div>
+        <div class="role-title">Assistant Lawyer</div>
         <div class="role-meta"><span class="fitscore fs-hi" title="junior-band">80</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit fit-ramp">on-ramp</span><span class="loc">London</span><span class="ats">via linkedin</span><span class="sig">junior-band</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/assistant-lawyer-at-thompsons-solicitors-4452481558" target="_blank" rel="noopener">View</a>
@@ -1865,9 +1866,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Thomson Legal Recruitment Company <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="55" data-band="mid" data-new="1" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Legal Advisor</div>
+        <div class="role-title">Legal Advisor</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">United Kingdom</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/legal-advisor-at-thomson-legal-recruitment-company-4451430265" target="_blank" rel="noopener">View</a>
@@ -1953,9 +1954,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>Vni Legal <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="65" data-band="mid" data-new="1" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Legal Counsel</div>
+        <div class="role-title">Legal Counsel</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">United Kingdom</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-vni-legal-4442106227" target="_blank" rel="noopener">View</a>
@@ -2008,9 +2009,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
     <div class="company">
       <div class="co-head"><h3>William Graves Corporation Ltd <span class='cmeta'>(🇬🇧)</span></h3><span class="co-count">1 role</span></div>
       
-    <div class="role" data-fit="65" data-band="mid" data-new="1" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Legal Counsel</div>
+        <div class="role-title">Legal Counsel</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">United Kingdom</span><span class="ats">via linkedin</span></div>
       </div>
       <a class="apply" href="https://uk.linkedin.com/jobs/view/legal-counsel-at-william-graves-corporation-ltd-4453372072" target="_blank" rel="noopener">View</a>
