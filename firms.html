@@ -362,11 +362,11 @@ footer code {
 <header class="hero">
   <div class="kicker">Mithril · Law firms</div>
   <h1>UK legal vacancies</h1>
-  <div class="sub">Saturday 05 September 2026, 06:52 · employer ATS feeds · UK-wide · not London-only</div>
+  <div class="sub">Sunday 06 September 2026, 06:53 · employer ATS feeds · UK-wide · not London-only</div>
   <div class="stats">
     <div class="stat"><b>135</b><span>UK roles</span></div>
     <div class="stat"><b>24</b><span>high-fit</span></div>
-    <div class="stat"><b>5</b><span>new today</span></div>
+    
     <div class="stat"><b>35</b><span>unclear loc</span></div>
     <div class="stat"><b>20/39</b><span>companies</span></div>
   </div>
@@ -378,7 +378,7 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
 
 <details class="method"><summary>How this search works</summary><p>We read vacancies from UK IP, brand and China-desk law firms&#x27; own systems. Because every fee-earner role at a law firm is a legal job, the filter here is broader (associate, solicitor, trainee, paralegal, counsel) rather than only in-house legal keywords, and we keep UK roles (UK-wide, not London-only; location shown on each role). This is the on-ramp pool: a junior firm role in the right niche banks UK-counted PQE before a move in-house. We hit the legacy legal recruitment platforms directly (Candidats.io, CVMail, AllHires, Current-Vacancies, Eploy, Workable) as well as the mainstream ones, and best-effort scrape the server-rendered careers pages of the IP boutiques (HGF, EIP, Mathys &amp; Squire). The short tail of firms with no machine-readable feed (JS-only pages or email/LinkedIn recruiting) is listed in an apply-direct panel below the live roles. Fit score (0 to 100) = title lane (IP, brand, China) + level (NQ to mid) + employer/sector prior, then a light Python JD scan (httpx + BeautifulSoup, no browser) of roles scoring ≥65 to pull PQE / IP-China signals and re-rank. Three shortlist lanes: lane match, generic title at priority employers, on-ramp junior/NQ. A red NEW badge means first seen today. Ex jobs tab = dropped off. Filters narrow the full list.</p></details>
 
-<div class="note"><strong>Three-lane shortlist.</strong> Fit = title lane (IP/brand/China) + level (NQ to mid) + employer/sector prior + optional JD-body signals (PQE, moat words) on a selective subset of roles. Generic "Legal Counsel" at priority employers is its own panel so it is not buried by keyword hits. A red <span class="newbadge">new</span> badge marks roles first seen today (no separate new section). Ex-jobs that dropped off live under the Ex jobs tab. Verify PQE in the JD before applying. UK-wide, not London-only. Enrich: {'selected': 27, 'fetched': 0, 'cache_hits': 27, 'failed': 0, 'fit_min': 65, 'limit': 300}.</div><div class="note"><strong>Her lane.</strong> Title or JD body signals IP, brand, trade mark, China, Mandarin, or cross-border.</div><h2>Lane match · IP / brand / China <span class="muted">(2)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <strong>Trade Mark and Design Specialist (m/f/d) (full or part-time)</strong> <span class="co">🇬🇧 D Young &amp; Co</span> <span class="loc loc-empty">location unspecified</span> <span class="sig">jd:lane-signal</span> <span class="bits">title-lane</span><a class="apply" href="https://www.dyoung.com/en/careers/vacancies/paralegal-munich" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-lo" title="title-lane · commercial+ip · senior-band · capped:senior">40</span> <strong>Senior Associate, Commercial Intellectual Property</strong> <span class="co">🇬🇧 Fieldfisher</span> <span class="loc">London/Manchester/Birmingham</span> <span class="bits">title-lane · commercial+ip · senior-band · capped:senior</span><a class="apply" href="https://fieldfisher.current-vacancies.com/Jobs/Advert/4291521?cid=2074&amp;t=Senior-Associate--Commercial-Intellectual-Property" target="_blank" rel="noopener">View</a></div></div><h2>Generic title · priority employer <span class="muted">(0)</span></h2><p class='empty'>None this run.</p><div class="note"><strong>PQE builders.</strong> Junior or explicit NQ titles (not pure attorney-profession track).</div><h2>On-ramp · junior / NQ band <span class="muted">(2)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-hi" title="jd-lane · junior-band · jd:NQ">100</span> <strong>Solicitor, Dispute Resolution</strong> <span class="co">🇬🇧 Fieldfisher</span> <span class="loc">Birmingham</span> <span class="sig">PQE: NQ · jd:lane-signal</span> <span class="bits">jd-lane · junior-band · jd:NQ</span><a class="apply" href="https://fieldfisher.current-vacancies.com/Jobs/Advert/4291109?cid=2074&amp;t=Solicitor--Dispute-Resolution" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="jd-lane · junior-band · nq-title · nq-capped:15-&gt;12">94</span> <strong>Associate (1-5 PQE) –Emerging Companies</strong> <span class="co">🇬🇧 Mishcon de Reya</span> <span class="loc">London</span> <span class="sig">PQE: 1-3 PQE · jd:lane-signal</span> <span class="bits">jd-lane · junior-band · nq-title · nq-capped:15-&gt;12</span><a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78662&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a></div></div>
+<div class="note"><strong>Three-lane shortlist.</strong> Fit = title lane (IP/brand/China) + level (NQ to mid) + employer/sector prior + optional JD-body signals (PQE, moat words) on a selective subset of roles. Generic "Legal Counsel" at priority employers is its own panel so it is not buried by keyword hits. A red <span class="newbadge">new</span> badge marks roles first seen today (no separate new section). Ex-jobs that dropped off live under the Ex jobs tab. Verify PQE in the JD before applying. UK-wide, not London-only. Enrich: {'selected': 27, 'fetched': 0, 'cache_hits': 27, 'failed': 0, 'fit_min': 65, 'limit': 300}.</div><div class="note"><strong>Her lane.</strong> Title or JD body signals IP, brand, trade mark, China, Mandarin, or cross-border.</div><h2>Lane match · IP / brand / China <span class="muted">(2)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-hi" title="title-lane">90</span> <strong>Trade Mark and Design Specialist (m/f/d) (full or part-time)</strong> <span class="co">🇬🇧 D Young &amp; Co</span> <span class="loc loc-empty">location unspecified</span> <span class="sig">jd:lane-signal</span> <span class="bits">title-lane</span><a class="apply" href="https://www.dyoung.com/en/careers/vacancies/paralegal-munich" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-lo" title="title-lane · commercial+ip · senior-band · capped:senior">40</span> <strong>Senior Associate, Commercial Intellectual Property</strong> <span class="co">🇬🇧 Fieldfisher</span> <span class="loc">London/Manchester/Birmingham</span> <span class="bits">title-lane · commercial+ip · senior-band · capped:senior</span><a class="apply" href="https://fieldfisher.current-vacancies.com/Jobs/Advert/4291521?cid=2074&amp;t=Senior-Associate--Commercial-Intellectual-Property" target="_blank" rel="noopener">View</a></div></div><h2>Generic title · priority employer <span class="muted">(0)</span></h2><p class='empty'>None this run.</p><div class="note"><strong>PQE builders.</strong> Junior or explicit NQ titles (not pure attorney-profession track).</div><h2>On-ramp · junior / NQ band <span class="muted">(2)</span></h2><div class="shortlist"><div class="row"><span class="fitscore fs-hi" title="jd-lane · junior-band · jd:NQ">100</span> <strong>Solicitor, Dispute Resolution</strong> <span class="co">🇬🇧 Fieldfisher</span> <span class="loc">Birmingham</span> <span class="sig">PQE: NQ · jd:lane-signal</span> <span class="bits">jd-lane · junior-band · jd:NQ</span><a class="apply" href="https://fieldfisher.current-vacancies.com/Jobs/Advert/4291109?cid=2074&amp;t=Solicitor--Dispute-Resolution" target="_blank" rel="noopener">View</a></div><div class="row"><span class="fitscore fs-hi" title="jd-lane · junior-band · nq-title · nq-capped:15-&gt;12">94</span> <strong>Associate (1-5 PQE) –Emerging Companies</strong> <span class="co">🇬🇧 Mishcon de Reya</span> <span class="loc">London</span> <span class="sig">PQE: 1-3 PQE · jd:lane-signal</span> <span class="bits">jd-lane · junior-band · nq-title · nq-capped:15-&gt;12</span><a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78662&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a></div></div>
 
 <div class="filterbar">
   <span class="flabel">Filter</span>
@@ -505,9 +505,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
       </div>
       <a class="apply" href="https://fieldfisher.current-vacancies.com/Jobs/Advert/4301587?cid=2074&amp;t=Court-of-Protection-Solicitor" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="55" data-band="mid" data-new="1" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Data &amp; Privacy Manager</div>
+        <div class="role-title">Data &amp; Privacy Manager</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Privacy / Data Protection</span><span class="band band-mid">mid</span><span class="loc">Belfast (Hybrid)</span><span class="ats">via current_vacancies</span></div>
       </div>
       <a class="apply" href="https://fieldfisher.current-vacancies.com/Jobs/Advert/4308376?cid=2074&amp;t=Data-And-Privacy-Manager" target="_blank" rel="noopener">View</a>
@@ -863,154 +863,154 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
         <div class="role-title">Associate (1-5 PQE) –Emerging Companies</div>
         <div class="role-meta"><span class="fitscore fs-hi" title="jd-lane · junior-band · nq-title · nq-capped:15-&gt;12">94</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="fit">&#9733; lane</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">PQE: 1-3 PQE · jd:lane-signal</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78662&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78662&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="70" data-band="junior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Associate (2-3PQE) - Reputation Protection</div>
         <div class="role-meta"><span class="fitscore fs-hi" title="junior-band">70</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">junior-band</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78846&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78846&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="70" data-band="junior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Associate (2-4 PQE) - Commercial Litigation</div>
         <div class="role-meta"><span class="fitscore fs-hi" title="junior-band">70</span><span class="badge">Litigation / Disputes</span><span class="band band-junior">NQ-junior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">junior-band</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78786&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78786&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="70" data-band="junior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Associate (2-5 PQE) - Incentives and Remuneration</div>
         <div class="role-meta"><span class="fitscore fs-hi" title="junior-band">70</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">junior-band</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78469&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78469&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="70" data-band="junior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Associate (3-5 PQE) –Tech Disputes</div>
         <div class="role-meta"><span class="fitscore fs-hi" title="junior-band">70</span><span class="badge">Litigation / Disputes</span><span class="band band-junior">NQ-junior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">junior-band</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=76768&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=76768&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="65" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Risk Lawyer</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">65</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via cvmail</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78706&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78706&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal PA - Fraud</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via cvmail</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78649&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78649&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="55" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Legal PA - Private</div>
         <div class="role-meta"><span class="fitscore fs-mid" title="">55</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via cvmail</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78796&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78796&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="30" data-band="junior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Associate (2-3 PQE) - Contentious Construction</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · capped:wrong-lane">30</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">junior-band · capped:wrong-lane</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78722&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78722&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="30" data-band="junior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Associate (2-6PQE) - Insolvency</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · capped:wrong-lane">30</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">junior-band · capped:wrong-lane</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78865&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78865&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="30" data-band="junior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Associate (3+ PQE) - Employment Core</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · capped:wrong-lane">30</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">junior-band · capped:wrong-lane</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=77713&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=77713&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="30" data-band="mid" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Financial Crime Lawyer</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="capped:wrong-lane">30</span><span class="badge">Legal / Counsel</span><span class="band band-mid">mid</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">capped:wrong-lane</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78707&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78707&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="30" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Knowledge Lawyer (5+ PQE) - Employment</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:wrong-lane · capped:senior">30</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">senior-band · capped:wrong-lane · capped:senior</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78805&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78805&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="30" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Knowledge Lawyer (8+ PQE) – Private Wealth &amp; Tax</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:wrong-lane · capped:senior">30</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">senior-band · capped:wrong-lane · capped:senior</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78661&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78661&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Division Assistant and Legal Operations Lead - Disputes</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:senior">25</span><span class="badge">Litigation / Disputes</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">senior-band · capped:senior</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78694&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78694&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Finance Business Partner</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:senior">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">senior-band · capped:senior</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78635&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78635&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Managing Associate (5+ PQE) Real Estate Planning</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:wrong-lane · capped:senior">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">senior-band · capped:wrong-lane · capped:senior</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=77508&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=77508&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Managing Associate (6+PQE) - Reputation Protection</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:senior">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">senior-band · capped:senior</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=76540&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=76540&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Legal PA - Dispute Resolution</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:senior">25</span><span class="badge">Litigation / Disputes</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">senior-band · capped:senior</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78650&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78650&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Legal PA - Fraud</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:senior">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">senior-band · capped:senior</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78798&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78798&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Legal PA – Private Real Estate</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:wrong-lane · capped:senior">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">senior-band · capped:wrong-lane · capped:senior</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78810&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78810&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
         <div class="role-title">Senior Legal PA – Real Estate (12 month FTC)</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:wrong-lane · capped:senior">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">London</span><span class="ats">via cvmail</span><span class="sig">senior-band · capped:wrong-lane · capped:senior</span></div>
       </div>
-      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78797&amp;rcd=5370475&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
+      <a class="apply" href="https://fsr.cvmailuk.com/mishcon/main.cfm?page=jobSpecific&amp;jobId=78797&amp;rcd=8375434&amp;queryString=srxksl%3D1" target="_blank" rel="noopener">View</a>
     </div>
     </div>
     <div class="company">
@@ -1233,16 +1233,16 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
       </div>
       <a class="apply" href="https://ehpy.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/3527" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="25" data-band="senior" data-new="1" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Senior Manager, Legal Delivery - Construction &amp; Projects</div>
+        <div class="role-title">Senior Manager, Legal Delivery - Construction &amp; Projects</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:wrong-lane · capped:senior">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">MANCHESTER, United Kingdom</span><span class="ats">via oracle</span><span class="sig">senior-band · capped:wrong-lane · capped:senior</span></div>
       </div>
       <a class="apply" href="https://ehpy.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/3571" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="25" data-band="senior" data-new="1" data-loc="rest" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="rest" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Senior Manager, Legal Delivery – Corporate &amp; Employment</div>
+        <div class="role-title">Senior Manager, Legal Delivery – Corporate &amp; Employment</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:wrong-lane · capped:senior">25</span><span class="badge">Legal / Counsel</span><span class="band band-senior">senior</span><span class="loc">MANCHESTER, United Kingdom</span><span class="ats">via oracle</span><span class="sig">senior-band · capped:wrong-lane · capped:senior</span></div>
       </div>
       <a class="apply" href="https://ehpy.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/3572" target="_blank" rel="noopener">View</a>
@@ -1378,9 +1378,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
       </div>
       <a class="apply" href="https://careers.winstontaylor-emea.com/Careeropportunities/job/London-Restructuring-&amp;-Insolvency-Senior-Associate/1350396955/" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="25" data-band="senior" data-new="1" data-loc="london" data-lane="other">
+    <div class="role" data-fit="25" data-band="senior" data-new="0" data-loc="london" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Senior BD Executive -Disputes</div>
+        <div class="role-title">Senior BD Executive -Disputes</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="senior-band · capped:senior">25</span><span class="badge">Litigation / Disputes</span><span class="band band-senior">senior</span><span class="loc">London, GB</span><span class="ats">via successfactors</span><span class="sig">senior-band · capped:senior</span></div>
       </div>
       <a class="apply" href="https://careers.winstontaylor-emea.com/Careeropportunities/job/London-Senior-BD-Executive-Disputes/1367279855/" target="_blank" rel="noopener">View</a>
@@ -1562,9 +1562,9 @@ applicant-tracking feed. View opens on the employer domain — not a job board.<
       </div>
       <a class="apply" href="https://careers.osborneclarke.com/vacancies/592/pensions-associate-director.html" target="_blank" rel="noopener">View</a>
     </div>
-    <div class="role" data-fit="15" data-band="junior" data-new="1" data-loc="unclear" data-lane="other">
+    <div class="role" data-fit="15" data-band="junior" data-new="0" data-loc="unclear" data-lane="other">
       <div class="role-main">
-        <div class="role-title"><span class="newbadge">new</span> Corporate Paralegal</div>
+        <div class="role-title">Corporate Paralegal</div>
         <div class="role-meta"><span class="fitscore fs-lo" title="junior-band · capped:not-solicitor-role">15</span><span class="badge">Legal / Counsel</span><span class="band band-junior">NQ-junior</span><span class="loc loc-empty">location unspecified</span><span class="ats">via eploy</span><span class="sig">junior-band · capped:not-solicitor-role</span></div>
       </div>
       <a class="apply" href="https://careers.osborneclarke.com/vacancies/665/corporate-paralegal.html" target="_blank" rel="noopener">View</a>
