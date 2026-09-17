@@ -1,9 +1,12 @@
 {
   "mode": "embedded-offline",
-  "passed": 16,
+  "passed": 20,
   "checks": [
     "Initial page is bounded to 20 cards",
     "Initial DOM below 1200 elements",
+    "New today is limited to the latest snapshot",
+    "Today view explains the shortlist boundary",
+    "Today view keeps the latest-snapshot filter visible",
     "Combined fresh and London filter applied to every card",
     "Deep link includes both filters",
     "Pagination changes the result slice",
@@ -11,6 +14,7 @@
     "Evidence distinguishes unverified requirements",
     "Job modal has an accessible title",
     "Escape closes modal",
+    "Returning to New today keeps only latest-snapshot listings",
     "Slash shortcut focuses search",
     "No horizontal overflow at 390px",
     "First mobile job is above 550 pixels",

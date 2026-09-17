@@ -4,7 +4,7 @@ An evidence-led legal job-search workspace, built from the existing `soylee22/la
 
 ## What works
 
-The application offers a responsive Today view, full discovery, combined search and filters, exact-phrase and exclusion search, stable URL state, 20-result pagination, practice-area discovery signals, explicit PQE evidence, source-health reporting and possible cross-post flags. A job detail view separates source observation, first discovery, description verification and the user's own review.
+The application offers a responsive New today view limited to the latest snapshot, an All listings view, combined search and filters, exact-phrase and exclusion search, stable URL state, 20-result pagination, practice-area signals, explicit PQE evidence, source-health reporting and possible cross-post flags. A clearly labelled private Shortlist keeps saved and preparing roles separate from discovery. A job detail view separates source observation, first discovery, description verification and the user's own review.
 
 Saved roles, application stages, histories, notes, follow-up dates and saved searches belong in an **encrypted local workspace**, not the public feed. The workspace supports encrypted backup/restore and automatic inactivity locking. It does not synchronise across devices or submit applications.
 
@@ -12,7 +12,7 @@ The importer fixes the known Morgan Stanley/Vodafone relative-link patterns, con
 
 ## Included snapshot
 
-The migration uses the audited deployment at commit `40a1184c9d4c34da98b6442a89b56a1107414e74`, observed 16 September 2026. It retains **3,853 present-in-snapshot listings** and **1,269 missing/uncertain historical listings**. The 36-row increase over the old combined page comes from preserving records found in route outputs, not from claiming 36 newly discovered jobs. Eleven relative links are repaired. No jobs were freshly crawled as part of this migration.
+The published page uses a 17 September 2026 source refresh observed at 20:10 UTC. It retains **3,901 listed records**, **1,153 missing records** and **863 uncertain records**, for **5,917 total records**. **409 roles are new in this snapshot** and 12 relative links are repaired. These are source observations, not live availability checks.
 
 Every imported description-verification date remains unknown. An old "high-fit" score or cached keyword signal is not evidence that an advert has been read or that a candidate meets its requirements. None of the old detailed candidate narratives or applied badges are copied into the public JSON.
 
@@ -51,7 +51,7 @@ Edit `web/index.html`, `web/app.css`, `web/app.mjs`, `web/core.mjs`, `web/vault.
 ```sh
 # The legacy scanner output must be generated OUTSIDE the public repository.
 python scripts/build.py --legacy /private/path/to/scanner-output --out /path/to/law-jobs
-# Run checks, then commit the safe output — not the original HTML reports.
+# Run checks, then commit the safe output, not the original HTML reports.
 ```
 
 Without this change, the old scanner may overwrite the new interface or republish private material. CI detects generated-output discrepancies but, by itself, does not prevent a branch-based GitHub Pages site publishing an unsafe push. Require the quality check before merging publisher changes and stop direct raw-HTML pushes.
@@ -64,7 +64,7 @@ The public snapshot has an explicit field allowlist. Candidate questionnaires, a
 
 The local workspace uses Web Crypto PBKDF2-HMAC-SHA-256 with 600,000 iterations, a random 16-byte salt, and AES-256-GCM with a fresh random 12-byte IV on every save. Passwords and keys remain in memory; persistent storage and backups contain ciphertext. This is not an independently audited security product or a server-side access-control system. It does not protect unlocked data from device compromise, hostile extensions or malicious same-origin scripts. Use a long unique passphrase and protect the device. There is no password recovery.
 
-The client escapes displayed data, validates external URLs, avoids third-party resources, uses a restrictive content security policy and prevents public CSV exports from including private notes. Backups are verified before replacing existing data. Concurrent writes are queued, and stale-tab updates are rejected.
+Displayed data is escaped, external URLs are validated, third-party resources are avoided, a restrictive content security policy is used and public CSV exports exclude private notes. Backups are verified before replacing existing data. Concurrent writes are queued, and stale-tab updates are rejected.
 
 ## Next engineering priorities
 

@@ -1,4 +1,10 @@
-# Mithril 2.0 — 16 September 2026
+# Mithril 2.0: 17 September 2026
+
+## Published update
+
+Clarified the navigation so New today is limited to the latest snapshot, All listings is the wider discovery set and Shortlist is the private saved and preparing view. Removed score-like wording from the visible ordering control. Published the refreshed public snapshot through the guarded importer.
+
+# Mithril 2.0: 16 September 2026
 
 ## Implemented
 
