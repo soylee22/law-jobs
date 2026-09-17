@@ -1,0 +1,23 @@
+{
+  "mode": "embedded-offline",
+  "passed": 16,
+  "checks": [
+    "Initial page is bounded to 20 cards",
+    "Initial DOM below 1200 elements",
+    "Combined fresh and London filter applied to every card",
+    "Deep link includes both filters",
+    "Pagination changes the result slice",
+    "Search matches the organisation",
+    "Evidence distinguishes unverified requirements",
+    "Job modal has an accessible title",
+    "Escape closes modal",
+    "Slash shortcut focuses search",
+    "No horizontal overflow at 390px",
+    "First mobile job is above 550 pixels",
+    "Mobile filter disclosure works",
+    "No horizontal overflow at 360px",
+    "No horizontal overflow at 768px",
+    "No uncaught JavaScript exceptions"
+  ],
+  "errors": []
+}

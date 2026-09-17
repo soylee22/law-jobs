@@ -1,0 +1,13 @@
+{
+  "mode": "temporary-local-repository",
+  "passed": 6,
+  "checks": [
+    "Creates an isolated local branch",
+    "Does not commit or push",
+    "Preserves unrelated checkout files",
+    "Installs every manifest file with matching SHA-256",
+    "Refuses a dirty checkout",
+    "Refuses a different repository"
+  ],
+  "network_writes": false
+}

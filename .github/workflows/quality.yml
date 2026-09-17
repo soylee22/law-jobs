@@ -1,0 +1,45 @@
+name: Mithril quality checks
+on:
+  push:
+    branches: [main, mithril-v2]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: mithril-quality-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install test dependencies
+        run: |
+          python -m pip install -r requirements.txt playwright==1.57.0
+          python -m playwright install --with-deps chromium
+      - name: Refuse legacy candidate reports or unpublished changes
+        run: |
+          python scripts/build.py --out .
+          git diff --exit-code -- index.html all.html inhouse.html china.html firms.html traditional.html openmarket.html boards.html gone.html shortlist.html data/jobs.json
+      - name: Test public-data import and privacy boundaries
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Test filtering and encryption
+        run: node --test tests/*.test.mjs
+      - name: Test real browser modules, CSP, encryption and mobile layout
+        run: python tests/browser.py --output browser-results
+      - name: Upload test results and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mithril-browser-results
+          path: browser-results
+          if-no-files-found: ignore
+          retention-days: 7
